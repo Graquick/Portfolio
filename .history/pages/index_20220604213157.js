@@ -48,7 +48,7 @@ export default function Home() {
   }
   
   return (
-    <motion.div className="px-5 py-0 "
+    <motion.div className="flex flex-col justify-between min-h-screen px-5 py-0"
       variants={container}
       initial="hidden"
       animate="visible"
@@ -62,7 +62,7 @@ export default function Home() {
 
       <Header />
 
-      <main className="flex flex-col justify-center flex-1 px-0 py-16 align-center"
+      <main className="flex flex-col justify-around flex-1 px-0 py-16 align-center"
       // className={styles.main}
       >
         <motion.h1 className="m-0 text-6xl leading-tight text-center"
@@ -80,8 +80,8 @@ export default function Home() {
         </motion.p>
 
         <motion.div className="flex flex-wrap justify-center m-auto max-w-7xl align-center"
-          // className={styles.grid}
           variants={children}
+        
         >
           <Link href="/">
             <motion.a className="max-w-xs p-6 m-4 text-left no-underline border border-gray-200 border-solid cursor-pointer rounded-xl"
@@ -96,7 +96,6 @@ export default function Home() {
           
           <Link href="/about">
             <motion.a className="max-w-xs p-6 m-4 text-left no-underline border border-gray-200 border-solid cursor-pointer rounded-xl"
-              // className={styles.card}
               whileHover={{ y: -5, x: -5, borderColor: "#000", borderWidth: "2px", transition: { duration: .1 } }}
               whileTap={{ scale: 0.9, transition: { duration: .001 } }}
             >
@@ -107,7 +106,6 @@ export default function Home() {
           
           <Link href="/extras">
             <motion.a className="max-w-xs p-6 m-4 text-left no-underline border border-gray-200 border-solid cursor-pointer rounded-xl"
-              // className={styles.card}
               whileHover={{ y: -5, x: -5, borderColor: "#000", borderWidth: "2px", transition: { duration: .1 } }}
               whileTap={{ scale: 0.9, transition: { duration: .001 } }}
             >
@@ -118,7 +116,6 @@ export default function Home() {
           
           <Link href="/hobbies">
             <motion.a className="max-w-xs p-6 m-4 text-left no-underline border border-gray-200 border-solid cursor-pointer rounded-xl"
-              // className={styles.card}
               whileHover={{ y: -5, x: -5, borderColor: "#000", borderWidth: "2px", transition: { duration: .1 } }}
               whileTap={{ scale: 0.9, transition: { duration: .001 } }}
             >
@@ -129,7 +126,6 @@ export default function Home() {
           
           <Link href="/something">
             <motion.a className="max-w-xs p-6 m-4 text-left no-underline border border-gray-200 border-solid cursor-pointer rounded-xl"
-              // className={styles.card}
               whileHover={{ y: -5, x: -5, borderColor: "#000", borderWidth: "2px", transition: { duration: .1 } }}
               whileTap={{ scale: 0.9, transition: { duration: .001 } }}
             >
@@ -140,7 +136,6 @@ export default function Home() {
           
           <Link href="/contact">
             <motion.a className="max-w-xs p-6 m-4 text-left no-underline border-2 border-black border-solid cursor-pointer rounded-xl"
-              // className={styles.contactcard}
               whileHover={{ y: -5, x: -5, borderWidth: "2px", transition: { duration: .1 } }}
               whileTap={{ scale: 0.9, transition: { duration: .001 } }}
             >

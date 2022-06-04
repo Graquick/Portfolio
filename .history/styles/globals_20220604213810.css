@@ -51,6 +51,11 @@ button {
   visibility: hidden;
   z-index: 10;
 }
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
 .sideul {
   position: relative;
   top: 350px;
@@ -66,7 +71,14 @@ button {
   display: none;
   visibility: hidden;
 }
-
+li {
+  list-style: none;
+  margin-bottom: 20px;
+  display: none;
+  visibility: none;
+  align-items: center;
+  cursor: pointer;
+}
 .icon-placeholder {
   height: 50px;
   width: 50px;

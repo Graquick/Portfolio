@@ -48,7 +48,7 @@ export default function Home() {
   }
   
   return (
-    <motion.div className="px-5 py-0 "
+    <motion.div className="flex flex-col justify-between min-h-screen px-5 py-0"
       variants={container}
       initial="hidden"
       animate="visible"

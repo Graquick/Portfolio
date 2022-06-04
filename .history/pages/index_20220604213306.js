@@ -48,7 +48,7 @@ export default function Home() {
   }
   
   return (
-    <motion.div className="px-5 py-0 "
+    <motion.div className="flex flex-col justify-between min-h-screen px-5 py-0"
       variants={container}
       initial="hidden"
       animate="visible"
@@ -62,7 +62,7 @@ export default function Home() {
 
       <Header />
 
-      <main className="flex flex-col justify-center flex-1 px-0 py-16 align-center"
+      <main className="flex flex-col justify-around flex-1 px-0 py-16 align-center"
       // className={styles.main}
       >
         <motion.h1 className="m-0 text-6xl leading-tight text-center"
@@ -140,7 +140,7 @@ export default function Home() {
           
           <Link href="/contact">
             <motion.a className="max-w-xs p-6 m-4 text-left no-underline border-2 border-black border-solid cursor-pointer rounded-xl"
-              // className={styles.contactcard}
+              // className={styles.card}
               whileHover={{ y: -5, x: -5, borderWidth: "2px", transition: { duration: .1 } }}
               whileTap={{ scale: 0.9, transition: { duration: .001 } }}
             >
