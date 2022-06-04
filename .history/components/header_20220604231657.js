@@ -70,7 +70,7 @@ export default function Header() {
                         key={links.id}
                         initial={{ opacity: 0, translateY: -100 }}
                         animate={{ opacity: 1, translateY: 0, transition: {duration: 0.2, delay: i * 0.25}}}
-                        className={router.pathname === links.href ? "activePage" : "otherPage"}
+                        className={router.pathname === links.href ? "activePage" : ".otherPage"}
                         // className={router.pathname === links.href ? styles.activePage : styles.otherPage}
                     >
                         <Link href={links.href}>
