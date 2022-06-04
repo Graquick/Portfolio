@@ -151,7 +151,7 @@ export default function Home() {
         </motion.div>
       </main>
 
-      <footer className="flex justify-center flex-1 px-0 py-8 border-t border-gray-200 align-center"
+      <footer className="flex justify-center flex-1 px-0 py-5 border-t border-gray-200 align-center"
       // className={styles.footer}
       >
         <Link className="flex justify-center flex-grow align-center"
@@ -160,7 +160,7 @@ export default function Home() {
         >
             <a>
               Copyright{' '}
-              <span className="h-4 ml-2"
+              <span
               // className={styles.logo}
               >
                &copy; Brima Freeman 2022 {' '}

@@ -32,37 +32,28 @@ export default function Header() {
 
     return (
 
-    <header className="sticky bg-red-500 top-0 max-w-7xl flex mx-auto justify-between z-10 h-24"
+    <header className="sticky bg-red-500 top-0 max-w-7xl flex mx-auto justify-between"
     // className={styles.header}
     >
-        <motion.div className="uppercase border-transparent text-3xl font-medium cursor-pointer h-14 w-56 self-center flex flex-col justify-center"
-            exit={{ y: -100}}
-            initial={{ y: -100 }}
-            animate={{ y: 0, transition: { delay: .25 } }}
-            transition={{ type: 'spring', stiffness: 300}}
-        >
-            <Link href="/">
-                <div className="flex w-full text-center align-center justify-center"
-                // className={styles.logo}
+            <div className="uppercase border-transparent font-medium cursor-pointer h-full w-20 bg-slate-500"
+            // className={styles.logo}
+            >
+                graquick
+                <svg className="relative left-4 top-2"
+                    width={11}
+                    height={22}
+                    viewBox="0 0 11 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
                 >
-                    graquick
-                    <svg className="relative top-1 left-3"
-                        width={16}
-                        height={28}
-                        viewBox="0 0 11 22"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="none"
-                    >
-                    <path d="M4.08709 22.0001C4.25375 19.3334 3.68709 14.8 0.0870855 16C0.0870855 12 7.38709 15.8 2.58709 11C-2.21291 6.2 0.587067 1.5 3.58707 0L4.08709 3L2.58709 6C1.08708 10 9.5646 9.77337 10.5871 12.5C12.0871 16.5 6.42042 20.6667 4.08709 22.0001Z" fill="black"
-                    />
-                    </svg>
-                </div>
-            </Link>
-        </motion.div>
+                <path d="M4.08709 22.0001C4.25375 19.3334 3.68709 14.8 0.0870855 16C0.0870855 12 7.38709 15.8 2.58709 11C-2.21291 6.2 0.587067 1.5 3.58707 0L4.08709 3L2.58709 6C1.08708 10 9.5646 9.77337 10.5871 12.5C12.0871 16.5 6.42042 20.6667 4.08709 22.0001Z" fill="black"
+                />
+                </svg>
+            </div>
 
-        <div className="bg-orange-400 w-96 font-medium uppercase flex flex-col justify-center text-xl">
-            <ul className="flex align-center justify-around bg-emerald-600 h-12"
+        <div className="bg-orange-400 flex w-20">
+            <ul
             // className={styles.links} 
             >
                 {links.map((links, i) => (
@@ -70,7 +61,7 @@ export default function Header() {
                         key={links.id}
                         initial={{ opacity: 0, translateY: -100 }}
                         animate={{ opacity: 1, translateY: 0, transition: {duration: 0.2, delay: i * 0.25}}}
-                        className={router.pathname === links.href ? "border-b-2 border-black" : "border-b-2 border-transparent text-black"}
+                        // className={router.pathname === links.href ? "border-b-2 border-black" : "border-b-2 border-transparent text-black"}
                         // className={router.pathname === links.href ? styles.activePage : styles.otherPage}
                     >
                         <Link href={links.href}>

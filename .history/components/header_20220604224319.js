@@ -32,23 +32,25 @@ export default function Header() {
 
     return (
 
-    <header className="sticky bg-red-500 top-0 max-w-7xl flex mx-auto justify-between z-10 h-24"
+    <header className="sticky bg-red-500 top-0 max-w-7xl flex mx-auto justify-between"
     // className={styles.header}
     >
-        <motion.div className="uppercase border-transparent text-3xl font-medium cursor-pointer h-14 w-56 self-center flex flex-col justify-center"
-            exit={{ y: -100}}
-            initial={{ y: -100 }}
-            animate={{ y: 0, transition: { delay: .25 } }}
-            transition={{ type: 'spring', stiffness: 300}}
+        <motion.div
+
         >
-            <Link href="/">
-                <div className="flex w-full text-center align-center justify-center"
+            <motion.Link href="/"
+                exit={{ y: -100}}
+                initial={{ y: -100 }}
+                animate={{ y: 0, transition: { delay: .25 } }}
+                transition={{ type: 'spring', stiffness: 300}}
+            >
+                <div className="uppercase border-transparent font-medium cursor-pointer h-full w-20 bg-slate-500"
                 // className={styles.logo}
                 >
                     graquick
-                    <svg className="relative top-1 left-3"
-                        width={16}
-                        height={28}
+                    <svg className="relative left-4 top-2"
+                        width={11}
+                        height={22}
                         viewBox="0 0 11 22"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -58,11 +60,11 @@ export default function Header() {
                     />
                     </svg>
                 </div>
-            </Link>
+            </motion.Link>
         </motion.div>
 
-        <div className="bg-orange-400 w-96 font-medium uppercase flex flex-col justify-center text-xl">
-            <ul className="flex align-center justify-around bg-emerald-600 h-12"
+        <div className="bg-orange-400 flex w-20">
+            <ul
             // className={styles.links} 
             >
                 {links.map((links, i) => (
@@ -70,7 +72,7 @@ export default function Header() {
                         key={links.id}
                         initial={{ opacity: 0, translateY: -100 }}
                         animate={{ opacity: 1, translateY: 0, transition: {duration: 0.2, delay: i * 0.25}}}
-                        className={router.pathname === links.href ? "border-b-2 border-black" : "border-b-2 border-transparent text-black"}
+                        // className={router.pathname === links.href ? "border-b-2 border-black" : "border-b-2 border-transparent text-black"}
                         // className={router.pathname === links.href ? styles.activePage : styles.otherPage}
                     >
                         <Link href={links.href}>

@@ -160,7 +160,7 @@ export default function Home() {
         >
             <a>
               Copyright{' '}
-              <span className="h-4 ml-2"
+              <span
               // className={styles.logo}
               >
                &copy; Brima Freeman 2022 {' '}
