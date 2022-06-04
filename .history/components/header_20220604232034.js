@@ -61,7 +61,7 @@ export default function Header() {
             </Link>
         </motion.div>
 
-        <div className="bg-orange-400 w-96 font-medium uppercase flex flex-col justify-center text-md">
+        <div className="bg-orange-400 w-96 font-medium uppercase flex flex-col justify-center text-xl">
             <ul className="flex align-center justify-around bg-emerald-600 h-10"
             // className={styles.links} 
             >

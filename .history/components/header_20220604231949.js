@@ -61,16 +61,16 @@ export default function Header() {
             </Link>
         </motion.div>
 
-        <div className="bg-orange-400 w-96 font-medium uppercase flex flex-col justify-center text-md">
-            <ul className="flex align-center justify-around bg-emerald-600 h-10"
+        <div className="bg-orange-400 w-96 font-medium uppercase flex flex-col justify-center text-xl">
+            <ul className="flex align-center justify-around bg-emerald-600 h-12"
             // className={styles.links} 
             >
                 {links.map((links, i) => (
-                    <motion.div
+                    <motion.div className="relative flex justify-center mb-0 cursor-pointer h-50px w-100px align-center"
                         key={links.id}
                         initial={{ opacity: 0, translateY: -100 }}
                         animate={{ opacity: 1, translateY: 0, transition: {duration: 0.2, delay: i * 0.25}}}
-                        className={router.pathname === links.href ? "activePage" : "otherPage"}
+                        // className={router.pathname === links.href ? "activePage" : "otherPage"}
                         // className={router.pathname === links.href ? styles.activePage : styles.otherPage}
                     >
                         <Link href={links.href}>
