@@ -1,0 +1,12 @@
+
+.grid {
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 900px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    max-height: 600px;
+    margin: auto;
+  }

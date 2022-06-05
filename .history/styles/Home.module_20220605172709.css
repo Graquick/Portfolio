@@ -1,0 +1,13 @@
+.main {
+    background-color: pink;
+    height: 1000px;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    background-color: ;
+}
