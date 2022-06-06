@@ -1,0 +1,7 @@
+.logo {
+    display: flex;
+    width: 5rem;
+    height: 3rem;
+    font-size: 0.5rem;
+    background-color: red;
+}

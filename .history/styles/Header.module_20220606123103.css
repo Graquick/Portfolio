@@ -1,0 +1,13 @@
+.logo {
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #f7df1e;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}

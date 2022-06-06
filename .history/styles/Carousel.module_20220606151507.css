@@ -1,0 +1,37 @@
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+    background-color: pink;
+    width: 100%;
+}
+
+.innerCarousel {
+    display: flex;
+    background-color: yellow;
+    height: 384px;
+    width: 1000px;
+    position: relative;
+}
+
+.innerCarousel::after {
+    content: 'drage me';
+    text-align: center;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    bottom: 0.25rem;
+    left: 20rem;
+}
+
+.item {
+    width: 240px;
+    height: auto;
+    padding: 20px;
+}
+
+.item img {
+    border-radius: .75rem;
+    pointer-events: none;
+}

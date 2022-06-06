@@ -1,0 +1,14 @@
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+}
+
+.innerCarousel {
+    display: flex;
+    background-color: red;
+}
+
+.item {
+    min-height: 10rem;
+    
+}

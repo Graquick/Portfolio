@@ -1,0 +1,11 @@
+.logo {
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #f7df1e;
+    margin-left: 1rem;
+    align-items: flex-end;
+    
+}

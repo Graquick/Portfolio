@@ -1,0 +1,16 @@
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+}
+
+.innerCarousel {
+    display: flex;
+    background-color: red;
+}
+
+.item {
+    min-height: 10rem;
+    min-width: 17rem;
+    padding: 20px;
+    border-radius: 10px;
+}

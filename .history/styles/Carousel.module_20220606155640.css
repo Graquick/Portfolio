@@ -1,0 +1,45 @@
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+    width: 100%;
+    border: solid 1px #eaeaea;
+    border-radius: 10px;
+}
+
+.innerCarousel {
+    display: flex;  
+    height: 350px;
+    width: 1000px;
+    position: relative;
+}
+
+.innerCarousel::after {
+    content: '< drag me >';
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    bottom: 0;
+    left: 15rem;
+}
+
+.item {
+    width: 230px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.item img {
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.item:hover img {
+    border-radius: .75rem;
+    transform: scale(1.25)
+}

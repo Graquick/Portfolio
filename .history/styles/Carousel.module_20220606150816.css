@@ -1,0 +1,23 @@
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+    background-color: pink;
+}
+
+.innerCarousel {
+    display: flex;
+    background-color: yellow;
+    height: 384px;
+
+}
+
+.item {
+    width: 200px;
+    height: auto;
+    padding: 20px;
+}
+
+.item img {
+    border-radius: .75rem;
+    pointer-events: none;
+}
