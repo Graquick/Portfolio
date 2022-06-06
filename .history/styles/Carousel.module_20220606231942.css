@@ -14,8 +14,8 @@
 }
 
 .item {
-    width: 125px;
-    height: 125px;
+    width: 15px;
+    height: 100px;
     margin: 10px;
     border-radius: 0.75rem;
     overflow: hidden;
@@ -27,5 +27,6 @@
 }
 
 .item:hover img {
+    border-radius: .75rem;
     transform: scale(1.25)
 }

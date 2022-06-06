@@ -17,7 +17,7 @@ export default function Carousel() {
     }, [])
 
     const images = [
-        { id: 1, src: 'map'},
+        { id: 1, src: 'suomi'},
         { id: 1, src: 'kiwi'},
         { id: 1, src: 'pumpkin'},
         { id: 1, src: 'mandarin'}

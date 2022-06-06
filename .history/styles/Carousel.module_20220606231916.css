@@ -8,14 +8,14 @@
 
 .innerCarousel {
     display: flex;  
-    height: 200px;
+    height: 30px;
     width: 1000px;
     position: relative;
 }
 
 .item {
-    width: 125px;
-    height: 125px;
+    width: 230px;
+    height: 300px;
     margin: 10px;
     border-radius: 0.75rem;
     overflow: hidden;
@@ -27,5 +27,6 @@
 }
 
 .item:hover img {
+    border-radius: .75rem;
     transform: scale(1.25)
 }
