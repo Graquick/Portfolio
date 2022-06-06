@@ -27,7 +27,7 @@ export default function Header() {
     
     const links = [
         { id: 1, title: 'home', href: '/', icon: 'ic:round-home' },
-        { id: 2, title: 'projects', href: '/projects', icon: 'bxs:user' },
+        { id: 2, title: 'gallery', href: '/projects', icon: 'bxs:user' },
         { id: 3, title: 'contact', href: '/contact', icon: 'bxs:contact' }
     ]
 
