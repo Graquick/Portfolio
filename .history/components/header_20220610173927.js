@@ -8,7 +8,7 @@ import styles from '../styles/Header.module.css'
 
 import { Example } from './SideBar/example';
 
-export default function Header(props) {
+export default function Header(animation) {
 
     const router = useRouter();
 
@@ -54,11 +54,10 @@ export default function Header(props) {
     // className={styles.header}
     >
         <motion.div className="self-center w-56 uppercase border-transparent cursor-pointer h-14"
-            variants={props.variants}
+            variants={animation}
             exit="exit"
             initial="hidden"
             animate="visible"
-            transition={{ type: 'spring', stiffness: 300}}
             whileHover={{ x: 10 }}
         >
             <Link href="/">

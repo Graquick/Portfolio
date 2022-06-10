@@ -53,7 +53,7 @@ export default function Home() {
   }
 
   const mainContent = [
-    { id: 1, title: 'Hello!', desc: 'Welcome to my website! I have been looking forward to meeting you. Click the link below to start.', href: '/home/index2', href2: 'how i became a web developer', src: 'me'}
+    { id: 1, title: 'Hello!', desc: 'Welcome to my website! I have been looking forward to meeting you. Click the link below to start.', href: '/home/index2', href2: 'how i became a web developer', src: 'me'},KC
 ]
 
 const items = [
@@ -76,10 +76,6 @@ const gridVariants = {
       bounce: 0.4,
       duration: 1.4
     }
-  },
-  exit: {
-    y: -1000,
-    opacity: 0
   }
 };
 
@@ -130,17 +126,14 @@ const [selectedId, setSelectedId] = useState(null)
 
       <Header variants={pageLoad} />
 
-    <AnimatePresence>
       <motion.main className="flex flex-col justify-start flex-1 max-w-6xl min-h-screen gap-64 px-0 py-16 m-auto mb-32 align-center"
-        variants={gridVariants}
-        exit="exit"
+
       >
           {mainContent.map((tags, i) => {
                     return (
                         <motion.div
                             className={styles.grid}
                             key={tags.id}
-                            exit="exit"
                             initial="offscreen"
                             whileInView="onscreen"
                             viewport={{ once: true, amount: .8 }}
@@ -187,7 +180,6 @@ const [selectedId, setSelectedId] = useState(null)
                     )
                 })}
       </motion.main>
-    </AnimatePresence>
 
       <footer className="flex justify-center flex-1 px-0 py-8 border-t border-gray-200 align-center"
       // className={styles.footer}

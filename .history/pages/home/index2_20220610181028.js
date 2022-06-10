@@ -5,10 +5,10 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Icon } from '@iconify/react';
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
-import Header from '../components/header'
-import Carousel from '../components/carousel'
+import Header from '../../components/header'
+import Carousel from '../../components/carousel'
 
 export default function Home() {
 
@@ -53,7 +53,7 @@ export default function Home() {
   }
 
   const mainContent = [
-    { id: 1, title: 'Hello!', desc: 'Welcome to my website! I have been looking forward to meeting you. Click the link below to start.', href: '/home/index2', href2: 'how i became a web developer', src: 'me'}
+    { id: 1, title: 'BEGINNING', desc: 'Welcome to my website! I have been looking forward to meeting you. Click the link below to start.', href: '/home/index3', href2: 'what i am doing now', src: 'shoes'}
 ]
 
 const items = [
@@ -65,58 +65,52 @@ const items = [
 
 const gridVariants = {
   offscreen: {
-    y: 100,
+    x: 100,
     opacity: 0
   },
   onscreen: {
-    y: 0,
+    x: 0,
     opacity: 1,
     transition: {
       type: "spring",
       bounce: 0.4,
       duration: 1.4
     }
-  },
-  exit: {
-    y: -1000,
-    opacity: 0
   }
 };
 
 const pageLoad = {
-  exit: {
-      y: -100
-  },
-  hidden: {
-      y: -100
-  },
-  visible: {
-      y: 0,
-      transition: {
-          delay: .75
-      }
-  }
-};
-
-const pageNotLoad = {
-  exit: {
-      y: 0
-  },
-  hidden: {
-      y: 0
-  },
-  visible: {
-      y: 0,
-      transition: {
-          delay: .75
-      }
-  }
-};
+    exit: {
+        y: -100
+    },
+    hidden: {
+        y: -100
+    },
+    visible: {
+        y: 0,
+        transition: {
+            delay: .75
+        }
+    }
+  };
+  
+  const pageNotLoad = {
+    exit: {
+        y: 0
+    },
+    hidden: {
+        y: 0
+    },
+    visible: {
+        y: 0,
+        transition: {
+            delay: .75
+        }
+    }
+  };
 
 const links = [
-  { id: 1, icon: 'akar-icons:github-fill', href: '/' },
-  { id: 2, icon: 'akar-icons:linkedin-box-fill', href: '/gallery' },
-  { id: 3, icon: 'simple-icons:codesandbox', href: '/contact' }
+  { id: 1, icon: 'akar-icons:github-fill', href: '/' }
 ]
   
 const [selectedId, setSelectedId] = useState(null)
@@ -128,19 +122,16 @@ const [selectedId, setSelectedId] = useState(null)
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header variants={pageLoad} />
+      <Header variants={pageNotLoad} />
 
-    <AnimatePresence>
       <motion.main className="flex flex-col justify-start flex-1 max-w-6xl min-h-screen gap-64 px-0 py-16 m-auto mb-32 align-center"
-        variants={gridVariants}
-        exit="exit"
+
       >
           {mainContent.map((tags, i) => {
                     return (
                         <motion.div
                             className={styles.grid}
                             key={tags.id}
-                            exit="exit"
                             initial="offscreen"
                             whileInView="onscreen"
                             viewport={{ once: true, amount: .8 }}
@@ -187,7 +178,6 @@ const [selectedId, setSelectedId] = useState(null)
                     )
                 })}
       </motion.main>
-    </AnimatePresence>
 
       <footer className="flex justify-center flex-1 px-0 py-8 border-t border-gray-200 align-center"
       // className={styles.footer}

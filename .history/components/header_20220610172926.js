@@ -8,39 +8,12 @@ import styles from '../styles/Header.module.css'
 
 import { Example } from './SideBar/example';
 
-export default function Header(props) {
+export default function Header() {
 
     const router = useRouter();
 
-    const pageLoad = {
-        exit: {
-            y: -100
-        },
-        hidden: {
-            y: -100
-        },
-        visible: {
-            y: 0,
-            transition: {
-                delay: .75
-            }
-        }
-    }
+
     
-    const pageNotLoad = {
-        exit: {
-            y: 0
-        },
-        hidden: {
-            y: 0
-        },
-        visible: {
-            y: 0,
-            transition: {
-                delay: .75
-            }
-        }
-    }
     
     const links = [
         { id: 1, title: 'home', href: '/', icon: 'ic:round-home' },
@@ -54,9 +27,9 @@ export default function Header(props) {
     // className={styles.header}
     >
         <motion.div className="self-center w-56 uppercase border-transparent cursor-pointer h-14"
-            variants={props.variants}
+            variants={pageLoad}
             exit="exit"
-            initial="hidden"
+            initial="initial"
             animate="visible"
             transition={{ type: 'spring', stiffness: 300}}
             whileHover={{ x: 10 }}

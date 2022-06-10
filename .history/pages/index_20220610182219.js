@@ -78,7 +78,7 @@ const gridVariants = {
     }
   },
   exit: {
-    y: -1000,
+    y: 100,
     opacity: 0
   }
 };
@@ -92,6 +92,7 @@ const pageLoad = {
   },
   visible: {
       y: 0,
+      
       transition: {
           delay: .75
       }
@@ -132,8 +133,7 @@ const [selectedId, setSelectedId] = useState(null)
 
     <AnimatePresence>
       <motion.main className="flex flex-col justify-start flex-1 max-w-6xl min-h-screen gap-64 px-0 py-16 m-auto mb-32 align-center"
-        variants={gridVariants}
-        exit="exit"
+
       >
           {mainContent.map((tags, i) => {
                     return (

@@ -69,7 +69,7 @@ const gridVariants = {
     opacity: 0
   },
   onscreen: {
-    y: 0,
+    x: 0,
     opacity: 1,
     transition: {
       type: "spring",
@@ -78,7 +78,7 @@ const gridVariants = {
     }
   },
   exit: {
-    y: -1000,
+    y: 100,
     opacity: 0
   }
 };
@@ -130,13 +130,12 @@ const [selectedId, setSelectedId] = useState(null)
 
       <Header variants={pageLoad} />
 
-    <AnimatePresence>
       <motion.main className="flex flex-col justify-start flex-1 max-w-6xl min-h-screen gap-64 px-0 py-16 m-auto mb-32 align-center"
-        variants={gridVariants}
-        exit="exit"
+
       >
           {mainContent.map((tags, i) => {
                     return (
+                      <AnimatePresence>
                         <motion.div
                             className={styles.grid}
                             key={tags.id}
@@ -184,10 +183,10 @@ const [selectedId, setSelectedId] = useState(null)
                                 placeholder='blur' />
                             </motion.div>
                         </motion.div>
+                      </AnimatePresence>
                     )
                 })}
       </motion.main>
-    </AnimatePresence>
 
       <footer className="flex justify-center flex-1 px-0 py-8 border-t border-gray-200 align-center"
       // className={styles.footer}
