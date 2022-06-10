@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import styles from '../styles/Projects.module.css'
 
 import Header from '../components/header'
 

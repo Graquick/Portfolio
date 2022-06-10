@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import styles from '../styles/Projects.module.css'
 
 import Header from '../components/header'
 
@@ -82,8 +81,8 @@ const About = () => {
 
       <Header />
 
-      <motion.main // className="flex flex-col justify-center flex-1 max-w-6xl min-h-screen gap-64 px-0 py-16 m-auto align-center"
-      className={styles.main}
+      <motion.main className="flex flex-col justify-center flex-1 max-w-6xl min-h-screen gap-64 px-0 py-16 m-auto xl:h- align-center"
+      // className={styles.main}
       >
                 {aboutContent.map((tags, i) => {
                     return (

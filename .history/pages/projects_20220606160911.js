@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import styles from '../styles/Projects.module.css'
 
 import Header from '../components/header'
 
@@ -82,8 +81,8 @@ const About = () => {
 
       <Header />
 
-      <motion.main // className="flex flex-col justify-center flex-1 max-w-6xl min-h-screen gap-64 px-0 py-16 m-auto align-center"
-      className={styles.main}
+      <motion.main className="min-h-screen gap-64 m-auto max-w-6xl flex flex-col justify-center flex-1 px-0 py-16 align-center"
+      // className={styles.main}
       >
                 {aboutContent.map((tags, i) => {
                     return (
@@ -101,7 +100,7 @@ const About = () => {
                                 <motion.div 
                                     variants={gridVariants}
                                 >
-                                    <h1 className="mb-4 text-5xl font-medium leading-tight">{tags.title}</h1>
+                                    <h1 className="text-5xl leading-tight mb-4 font-medium">{tags.title}</h1>
                                     <p className="mb-8">{tags.desc}</p>
                                 </motion.div>
 

@@ -108,6 +108,7 @@ a {
   .gridReverse {
     flex-direction: column;
     background-color: #eaeaea;
+    height: 1000px;
   }
 }
 
@@ -214,7 +215,7 @@ button {
   height: 350px;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
+  display: flex;
   flex-direction: column;
   z-index: 10;
 }

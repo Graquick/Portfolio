@@ -103,14 +103,6 @@ a {
   margin: auto;
 }
 
-@media (max-width: 1279px) {
-  .grid,
-  .gridReverse {
-    flex-direction: column;
-    background-color: #eaeaea;
-  }
-}
-
 .description {
   text-align: left;
   margin: 0 0 4rem 0;
@@ -214,7 +206,7 @@ button {
   height: 350px;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
+  display: flex;
   flex-direction: column;
   z-index: 10;
 }

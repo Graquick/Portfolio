@@ -103,11 +103,12 @@ a {
   margin: auto;
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1200px) {
   .grid,
   .gridReverse {
     flex-direction: column;
     background-color: #eaeaea;
+    height: 10000px;
   }
 }
 
@@ -214,7 +215,7 @@ button {
   height: 350px;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
+  display: flex;
   flex-direction: column;
   z-index: 10;
 }
