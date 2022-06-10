@@ -11,13 +11,45 @@ import { Example } from './SideBar/example';
 export default function Header(props) {
 
     const router = useRouter();
+
+    const pageLoad = {
+        exit: {
+            y: -100
+        },
+        hidden: {
+            y: -100
+        },
+        visible: {
+            y: 0,
+            transition: {
+                delay: .75
+            }
+        }
+    }
+    
+    const pageNotLoad = {
+        exit: {
+            y: 0
+        },
+        hidden: {
+            y: 0
+        },
+        visible: {
+            y: 0,
+            transition: {
+                delay: .75
+            }
+        }
+    }
     
     const links = [
         { id: 1, title: 'home', href: '/', icon: 'ic:round-home' },
         { id: 2, title: 'projects', href: '/projects', icon: 'bxs:user' },
         { id: 3, title: 'contact', href: '/contact', icon: 'bxs:contact' }
     ]
+
     
+
     return (
 
     <header className="sticky top-0 z-10 flex justify-between h-24 mx-auto bg-white shadow-sm max-w-7xl rounded-xl"

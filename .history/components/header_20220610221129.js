@@ -11,6 +11,48 @@ import { Example } from './SideBar/example';
 export default function Header(props) {
 
     const router = useRouter();
+
+    const linksVariants = {
+        open: {
+            opacity: 1,
+            transition: {
+              opacity: { stiffness: 1000, velocity: -100 },
+              staggerChildren: 0.07, delayChildren: 0.2
+            },
+            transitionEnd: {
+              display: 'flex',
+              visibility: 'visible'
+            }
+          },
+          closed: {
+            opacity: 0,
+            transition: {
+              opacity: { stiffness: 1000 },
+              staggerChildren: 0.05, staggerDirection: -1
+            },
+            transitionEnd: {
+              display: 'none',
+              visibility: 'hidden'
+            }
+          }
+    }
+
+    const variants = {
+        open: {
+            y: 0,
+            opacity: 1,
+            transition: {
+              y: { stiffness: 1000, velocity: -100 }
+            }
+          },
+          closed: {
+            y: 50,
+            opacity: 0,
+            transition: {
+              y: { stiffness: 1000 }
+            }
+          }
+    }
     
     const links = [
         { id: 1, title: 'home', href: '/', icon: 'ic:round-home' },
@@ -47,14 +89,19 @@ export default function Header(props) {
                 {links.map((links, i) => (
                     <motion.div
                         key={links.id}
-                        initial={{ opacity: 0, y: -100 }}
-                        animate={{ opacity: 1, y: 0, transition: {duration: 0.2, delay: i * 0.25}}}
+                        variants={linksVariants}
+                        initial="closed"
+                        animate="open"
                         className={router.pathname === links.href ? "activePage" : "otherPage"}
                         // className={router.pathname === links.href ? styles.activePage : styles.otherPage}
                     >
-                        <Link href={links.href}>
-                            {links.title}
-                        </Link>
+                        <motion.div
+                            variants={variants}
+                        >
+                            <Link href={links.href}>
+                                {links.title}
+                            </Link>
+                        </motion.div>
                         
                     </motion.div>
                 ))}

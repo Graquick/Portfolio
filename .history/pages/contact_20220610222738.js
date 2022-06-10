@@ -129,8 +129,8 @@ const Contact = () => {
                     Start by filling in the form, and I will get back to you as soon as possible.
                 </p>
 
-                <motion.div className={styles.grid} variants={gridVariants}>
-                    <div className={styles.card}>
+                <motion.div className={styles.grid}>
+                    <div className={styles.card} variants={gridVariants}>
                         <h1>Let&apos;s get in touch</h1>
                         <p >I&apos;m looking forward to working on a new project with you.</p>
 

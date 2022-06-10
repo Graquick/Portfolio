@@ -47,14 +47,23 @@ export default function Header(props) {
                 {links.map((links, i) => (
                     <motion.div
                         key={links.id}
-                        initial={{ opacity: 0, y: -100 }}
-                        animate={{ opacity: 1, y: 0, transition: {duration: 0.2, delay: i * 0.25}}}
+                        variants={props.variants}
+                        exit="exit"
+                        initial="hidden"
+                        animate="visible"
                         className={router.pathname === links.href ? "activePage" : "otherPage"}
                         // className={router.pathname === links.href ? styles.activePage : styles.otherPage}
                     >
-                        <Link href={links.href}>
-                            {links.title}
-                        </Link>
+                        <motion.div
+                            variants={props.kidvariants}
+                            exit="exit"
+                            initial="hidden"
+                            animate="visible"
+                        >
+                            <Link href={links.href}>
+                                {links.title}
+                            </Link>
+                        </motion.div>
                         
                     </motion.div>
                 ))}

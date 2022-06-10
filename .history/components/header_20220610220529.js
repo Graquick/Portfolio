@@ -11,6 +11,20 @@ import { Example } from './SideBar/example';
 export default function Header(props) {
 
     const router = useRouter();
+
+    const linksVariants = {
+        hidden: {
+            opacity: 0,
+            y: -100
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                
+            }
+        }
+    }
     
     const links = [
         { id: 1, title: 'home', href: '/', icon: 'ic:round-home' },

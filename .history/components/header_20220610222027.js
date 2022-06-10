@@ -12,6 +12,7 @@ export default function Header(props) {
 
     const router = useRouter();
     
+    
     const links = [
         { id: 1, title: 'home', href: '/', icon: 'ic:round-home' },
         { id: 2, title: 'projects', href: '/projects', icon: 'bxs:user' },

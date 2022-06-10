@@ -11,6 +11,21 @@ import { Example } from './SideBar/example';
 export default function Header(props) {
 
     const router = useRouter();
+
+    const linksVariants = {
+        hidden: {
+            opacity: 0,
+            y: -100
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                staggerChildren: 0.07,
+                delayChildren: 0.2
+            }
+        }
+    }
     
     const links = [
         { id: 1, title: 'home', href: '/', icon: 'ic:round-home' },
@@ -47,11 +62,14 @@ export default function Header(props) {
                 {links.map((links, i) => (
                     <motion.div
                         key={links.id}
-                        initial={{ opacity: 0, y: -100 }}
-                        animate={{ opacity: 1, y: 0, transition: {duration: 0.2, delay: i * 0.25}}}
+                        variants={linksVariants}
+                        initial="hidden"
+                        animate="visible"
                         className={router.pathname === links.href ? "activePage" : "otherPage"}
                         // className={router.pathname === links.href ? styles.activePage : styles.otherPage}
                     >
+                        <motion.div>
+                        </motion.div>
                         <Link href={links.href}>
                             {links.title}
                         </Link>

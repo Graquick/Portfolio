@@ -129,8 +129,8 @@ const Contact = () => {
                     Start by filling in the form, and I will get back to you as soon as possible.
                 </p>
 
-                <motion.div className={styles.grid} variants={gridVariants}>
-                    <div className={styles.card}>
+                <div className={styles.grid}>
+                    <motion.div className={styles.card}>
                         <h1>Let&apos;s get in touch</h1>
                         <p >I&apos;m looking forward to working on a new project with you.</p>
 
@@ -149,9 +149,9 @@ const Contact = () => {
                                 </div>
                             ))}
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <form className={styles.cardI}
+                    <motion.form className={styles.cardI}
                     action="/success" id="form" name="contact" method="POST" data-netlify="true">
                         <input type="hidden" name="form-name" value="contact" />
                         <h1>Get in touch</h1>
@@ -205,8 +205,8 @@ const Contact = () => {
                         >
                             <input type="submit" value="Send Message" /> &rarr;
                         </motion.div>
-                    </form>
-                </motion.div>
+                    </motion.form>
+                </div>
             </motion.main>
 
             <footer className="flex justify-center flex-1 px-0 py-8 border-t border-gray-200 align-center"

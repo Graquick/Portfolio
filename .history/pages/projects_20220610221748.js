@@ -72,7 +72,7 @@ const About = () => {
         }
       };
 
-      const pageLoad = {
+      const home = {
         exit: {
             y: -100
         },
@@ -87,7 +87,7 @@ const About = () => {
         }
       };
       
-      const pageNotLoad = {
+      const notHome = {
         exit: {
             y: 0
         },
@@ -110,7 +110,7 @@ const About = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header variants={pageLoad} />
+      <Header  />
 
       <motion.main // className="flex flex-col justify-center flex-1 max-w-6xl min-h-screen gap-64 px-0 py-16 m-auto align-center"
       className={styles.main}

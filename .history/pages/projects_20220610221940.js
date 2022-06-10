@@ -110,7 +110,7 @@ const About = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header variants={pageLoad} />
+      <Header variants="pageNotLoad" />
 
       <motion.main // className="flex flex-col justify-center flex-1 max-w-6xl min-h-screen gap-64 px-0 py-16 m-auto align-center"
       className={styles.main}

@@ -11,6 +11,31 @@ import { Example } from './SideBar/example';
 export default function Header(props) {
 
     const router = useRouter();
+
+    const linksVariants = {
+        open: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 2.7, delayChildren: 0.2
+            }
+          },
+          closed: {
+            opacity: 0,
+            transition: {
+              staggerChildren: 2.5, staggerDirection: -1
+            }
+          }
+    }
+
+    const variants = {
+        open: {
+            y: 0,
+            
+          },
+          closed: {
+            y: -100,
+          }
+    }
     
     const links = [
         { id: 1, title: 'home', href: '/', icon: 'ic:round-home' },
@@ -47,14 +72,19 @@ export default function Header(props) {
                 {links.map((links, i) => (
                     <motion.div
                         key={links.id}
-                        initial={{ opacity: 0, y: -100 }}
-                        animate={{ opacity: 1, y: 0, transition: {duration: 0.2, delay: i * 0.25}}}
+                        variants={linksVariants}
+                        initial="closed"
+                        animate="open"
                         className={router.pathname === links.href ? "activePage" : "otherPage"}
                         // className={router.pathname === links.href ? styles.activePage : styles.otherPage}
                     >
-                        <Link href={links.href}>
-                            {links.title}
-                        </Link>
+                        <motion.div
+                            variants={variants}
+                        >
+                            <Link href={links.href}>
+                                {links.title}
+                            </Link>
+                        </motion.div>
                         
                     </motion.div>
                 ))}
