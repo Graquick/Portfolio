@@ -18,8 +18,7 @@ export default function myStory() {
   //     setShowModal(true)
   //   }, 5000)
   // }, [setShowModal]);
-  
-  // const router = useRouter()
+
 
   const container = {
     visible: {
@@ -112,8 +111,8 @@ const links = [
 ]
 
 
-// const [width, setWidth] = useState(0);
-// const carousel = useRef();
+const [width, setWidth] = useState(0);
+const carousel = useRef();
 
 //  useEffect(() => {
 //      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
