@@ -287,7 +287,7 @@ const links = [
               </motion.div>
               
               <motion.div className={styles.helloCard} variants={gridVariants}>
-                <p>Check out my latest work at my <span><Link href="/projects"><a className={styles.freeLink} style={{ textTransform: "none", fontWeight: 600, fontSize: "1.5rem", color: "#4194cb" }}>projects</a></Link></span> page. There you&apos;ll find a short description of every project and a preview of the live site.</p>
+                <p>Check out my latest work at my <span><Link href="/"><a className={styles.freeLink} style={{ textTransform: "none", fontWeight: 600, fontSize: "1.5rem", color: "#4194cb" }}>projects</a></Link></span> page. There you&apos;ll find a short description of every project and a preview of the live site.</p>
                 <br />
                 <p>In addition to web development, I love to design! In the design world, Figma is my absolute favourite platform. You can check all of my design work at my <span><Link href="https://www.freecodecamp.org/"><a className={styles.freeLink} style={{ textTransform: "none", fontWeight: 600, fontSize: "1.5rem", color: "#4194cb" }}>dribble</a></Link></span> site.</p>
                 
