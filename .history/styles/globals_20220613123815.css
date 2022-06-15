@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ---- -- -- ---- --- - -- -- ---- -- -- ---- --- - -- -- ---- -- -- ---- --- - -- -- */
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+}
+
+.links div {
+  height: 50px;
+  width: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  cursor: pointer;
+  margin-bottom: 0;
+
+  transition: all 300ms ease;
+}
+
+.otherPage {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 500;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+
+  transition: all 300ms ease;
+}
+
+.otherPage:hover {
+  border: 2px solid black;
+  
+} 
+
+.activePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 500;
+  padding: 0.5rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+}
+
+.links .liMoon {
+  height: 50px;
+  width: 50px;
+  font-size: 1.5rem;
+  border: 1px solid transparent;
+  color: black;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.links .liMoon:hover {
+  transform: rotate(360deg);
+  border: 1px solid black;
+}
+
+.links .liMoon:active {
+  transform: scale(.5);
+}
+
+.grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 900px;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  max-height: 600px;
+  margin: auto;
+}
+
+.gridReverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 900px;
+  max-height: 600px;
+  margin: auto;
+}
+
+@media (max-width: 1279px) {
+  .grid,
+  .gridReverse {
+    flex-direction: column;
+    background-color: #eaeaea;
+  }
+}
+
+.description {
+  text-align: left;
+  margin: 0 0 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  cursor: default;
+  width: 50%;
+  height: 90%;
+  background: #eaeaea;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: all 150ms ease;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.description:hover,
+.description:focus,
+.description:active {
+  transform: scale(.915);
+}
+
+.image {
+  width: 45%;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.aboutBtn {
+  border-radius: 10px;
+  height: 20%;
+  width: 210px;
+  padding: 0.5em;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  align-self: center;
+  font-size: 1.5rem;
+}
+
+
+.aboutBtn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  width: 0%;
+  height: 2px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-weight: 700;
+
+  transition: all 150ms ease;
+}
+
+.aboutBtn:hover::after {
+  width: 100%;
+}
+
+/* ---- -- -- ---- --- - -- -- ---- -- -- ---- --- - -- -- ---- -- -- ---- --- - -- -- */
+
+.background {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: none;
+  visibility: hidden;
+  z-index: 10;
+}
+
+button {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 28px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  display: none;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.sideul {
+  position: relative;
+  top: 450px;
+  width: 300px;
+  height: 350px;
+  padding-left: 50px ;
+  left: 41.5px;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+  z-index: 10;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.icon-placeholder {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  flex: 40px 0;
+  margin-right: 20px;
+}
+.text-placeholder {
+  width: 175px;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  margin: 0.5rem 0;
+  font-weight: 300;
+  display: flex;
+  color: white;
+}
+.sideIcon {
+  margin-left: 10px;
+  font-size: 28px;
+  position: relative;
+  top: 0px;
+}
+.refresh {
+  padding: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1279px) {
+  .background,
+  button {
+      display: block;
+      visibility: visible;
+  }
+
+  .activePage,
+  .otherPage {
+    display: none;
+    visibility: hidden;
+  }
+
+
+  .links div:not(.liMoon) {
+      display: none;
+      visibility: hidden;
+  }
+
+  .liMoon {
+      margin-right: 4.5em;
+  }
+}
+
+.animBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #ffffff 0%, #ffffff 100%);
+  z-index: -1;
+}
+
+#dots {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  animation: animDots 15s linear infinite;
+  box-shadow: 779px 1331px #000, 324px 42px #000, 303px 586px #000,
+    1312px 276px #000, 451px 625px #000, 521px 1931px #000, 1087px 1871px #000,
+    36px 1546px #000, 132px 934px #000, 1698px 901px #000, 1418px 664px #000,
+    1448px 1157px #000, 1084px 232px #000, 347px 1776px #000, 1722px 243px #000,
+    1629px 835px #000, 479px 969px #000, 1231px 960px #000, 586px 384px #000,
+    164px 527px #000, 8px 646px #000, 1150px 1126px #000, 665px 1357px #000,
+    1556px 1982px #000, 1260px 1961px #000, 1675px 1741px #000,
+    1843px 1514px #000, 718px 1628px #000, 242px 1343px #000, 1497px 1880px #000,
+    1364px 230px #000, 1739px 1302px #000, 636px 959px #000, 304px 686px #000,
+    614px 751px #000, 1935px 816px #000, 1428px 60px #000, 355px 335px #000,
+    1594px 158px #000, 90px 60px #000, 1553px 162px #000, 1239px 1825px #000,
+    1945px 587px #000, 749px 1785px #000, 1987px 1172px #000, 1301px 1237px #000,
+    1039px 342px #000, 1585px 1481px #000, 995px 1048px #000, 524px 932px #000,
+    214px 413px #000, 1701px 1300px #000, 1037px 1613px #000, 1871px 996px #000,
+    1360px 1635px #000, 1110px 1313px #000, 412px 1783px #000, 1949px 177px #000,
+    903px 1854px #000, 700px 1936px #000, 378px 125px #000, 308px 834px #000,
+    1118px 962px #000, 1350px 1929px #000, 781px 1811px #000, 561px 137px #000,
+    757px 1148px #000, 1670px 1979px #000, 343px 739px #000, 945px 795px #000,
+    576px 1903px #000, 1078px 1436px #000, 1583px 450px #000, 1366px 474px #000,
+    297px 1873px #000, 192px 162px #000, 1624px 1633px #000, 59px 453px #000,
+    82px 1872px #000, 1933px 498px #000, 1966px 1974px #000, 1975px 1688px #000,
+
+}
+
+#dots::after {
+  content: '';
+  position: absolute;
+  bottom: 2000px;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  box-shadow: 779px 1331px #000, 324px 42px #000, 303px 586px #000,
+    1312px 276px #000, 451px 625px #000, 521px 1931px #000, 1087px 1871px #000,
+    36px 1546px #000, 132px 934px #000, 1698px 901px #000, 1418px 664px #000,
+    1448px 1157px #000, 1084px 232px #000, 347px 1776px #000, 1722px 243px #000,
+    1629px 835px #000, 479px 969px #000, 1231px 960px #000, 586px 384px #000,
+    164px 527px #000, 8px 646px #000, 1150px 1126px #000, 665px 1357px #000,
+    1556px 1982px #000, 1260px 1961px #000, 1675px 1741px #000,
+    1843px 1514px #000, 718px 1628px #000, 242px 1343px #000, 1497px 1880px #000,
+    1364px 230px #000, 1739px 1302px #000, 636px 959px #000, 304px 686px #000,
+    614px 751px #000, 1935px 816px #000, 1428px 60px #000, 355px 335px #000,
+    1594px 158px #000, 90px 60px #000, 1553px 162px #000, 1239px 1825px #000,
+    1945px 587px #000, 749px 1785px #000, 1987px 1172px #000, 1301px 1237px #000,
+    1039px 342px #000, 1585px 1481px #000, 995px 1048px #000, 524px 932px #000,
+    214px 413px #000, 1701px 1300px #000, 1037px 1613px #000, 1871px 996px #000,
+    1360px 1635px #000, 1110px 1313px #000, 412px 1783px #000, 1949px 177px #000,
+    903px 1854px #000, 700px 1936px #000, 378px 125px #000, 308px 834px #000
+}
+
+@keyframes animDots {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(2000px);
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  width: 1100px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 100%;
+  column-gap: 6rem;
+  row-gap: 2rem;
+  padding: 1rem;
+  justify-content: center;
+  
+  position: relative;
+  background-color: red;
+}
+
+/* .grid::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 500px;
+  height: 900px;
+  background: rgb(255, 255, 255);
+  border: solid 2px black;
+  border-radius: 0.5rem;
+  z-index: -1;
+} */
+
+
+.helloCard {
+  background: white;
+  box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.267);
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  padding: 2rem;
+  
+}
+
+.helloCard h1 {
+  font-weight: 500;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.helloCard p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.helloCard span {
+  display: inline-block;
+  transition: all 150ms ease;
+}
+
+.helloCard span:hover {
+  transform: translateY(-7px);
+}
+
+.helloCard span:hover + a {
+  
+}
+
+.helloCard a {
+  font-size: 1.65rem;
+  text-transform: uppercase;
+}
+
+.modalCard {
+  background: white;
+  box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.267);
+  cursor: grab;
+  overflow: hidden;
+  width: 100%;
+
+  height: 55%;
+  position: relative;
+}
+.modalCard::after {
+  content: 'hold and drag to scroll \261d';
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 500;
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  height: 3px;
+}
+
+.imgCard {
+  grid-row-start: span 2;
+  overflow: hidden;
+}
+
+@media (max-width: 1279px) {
+  .grid {
+    height: 1000px;
+    width: 900px;
+    column-gap: 2rem;
+  }
+
+  .helloCard {
+    order: 1;
+  }
+  
+  .modalCard {
+    order: 2;
+  }
+
+  .imgCard {
+    order: 3;
+    grid-column-start: span 2;
+    grid-row-start: 2;
+  }
+}
+
+@media (max-width: 1023px) {
+  .grid {
+    width: 650px;
+    grid-template-columns: 90%;
+    grid-template-rows: 31% 31% 31%;
+  }
+
+  .helloCard,
+  .imgCard,
+  .modalCard {
+    grid-column-start: span 2;
+  }
+
+  .modalCard {
+    height: 55%;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    width: 500px;
+  }
+}
+
+@media (max-width: 639px) {
+  .grid {
+    width: 375px;
+  }
+}
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .links div {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-size: 2rem;
+  
+    transition: all 300ms ease;
+  }
+
+  .links .liIcon:hover {
+    transform: rotate(360deg);
+  }
+  
+  .links .liIcon:active {
+    transform: scale(.5);
+  }

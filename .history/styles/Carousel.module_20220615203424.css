@@ -1,0 +1,34 @@
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.innerCarousel {
+    background-color: rgb(32, 117, 190);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 2000px;
+    position: relative;
+    padding: 0 4rem;
+}
+
+.item {
+    width: 125px;
+    height: 125px;
+    margin: 0 3rem;
+    box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.267);
+    overflow: hidden;
+}
+
+.item img {
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.item:hover img {
+    transform: scale(1.25)
+}

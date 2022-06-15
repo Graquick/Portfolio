@@ -1,0 +1,32 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    justify-items: stretch;
+    padding: 1rem 0;
+    height: 6rem;
+    max-width: 70%;
+    margin: auto;
+    background: #d7d7d7;
+    box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.267);
+}
+
+.logo {
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    margin-left: 1rem;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 0.25rem;
+    
+    transition: all 300ms ease;
+    transition-delay: 0.25s;
+}

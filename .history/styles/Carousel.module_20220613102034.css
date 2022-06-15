@@ -1,0 +1,30 @@
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.innerCarousel {
+    display: flex;  
+    height: 200px;
+    width: 1000px;
+    position: relative;
+}
+
+.item {
+    width: 19px;
+    height: 190px;
+    margin: 10px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.item img {
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.item:hover img {
+    transform: scale(1.25)
+}

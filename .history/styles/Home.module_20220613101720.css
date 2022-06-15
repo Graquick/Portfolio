@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  width: 1100px;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 45% 45%;
+  column-gap: 6rem;
+  row-gap: 2rem;
+  padding: 1rem;
+  justify-content: center;
+  
+  position: relative;
+}
+
+.grid div {
+  border-radius: 0.5rem;
+}
+
+.helloCard {
+  box-shadow: .5px .5px 10px #d1d1d1;
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  padding: 1rem;
+  
+}
+
+.helloCard h1 {
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.helloCard p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.helloCard a {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.modalCard {
+  box-shadow: .5px .5px 10px #d8d8d8;
+  back
+
+  cursor: grab;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+
+  height: 55%;
+}
+
+.imgCard {
+  box-shadow: .5px .5px 10px #dee4e7;
+  grid-row-start: span 2;
+  overflow: hidden;
+}
+
+@media (max-width: 1279px) {
+  .grid {
+    height: 1000px;
+    width: 900px;
+    column-gap: 2rem;
+  }
+
+  .helloCard {
+    order: 1;
+  }
+  
+  .modalCard {
+    order: 2;
+  }
+
+  .imgCard {
+    order: 3;
+    grid-column-start: span 2;
+    grid-row-start: 2;
+  }
+}
+
+@media (max-width: 1023px) {
+  .grid {
+    width: 650px;
+    grid-template-columns: 90%;
+    grid-template-rows: 31% 31% 31%;
+  }
+
+  .helloCard,
+  .imgCard,
+  .modalCard {
+    grid-column-start: span 2;
+  }
+
+  .modalCard {
+    height: 55%;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    width: 500px;
+  }
+}
+
+@media (max-width: 639px) {
+  .grid {
+    width: 375px;
+  }
+}
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .links div {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-size: 2rem;
+  
+    transition: all 300ms ease;
+  }
+
+  .links .liIcon:hover {
+    transform: rotate(360deg);
+  }
+  
+  .links .liIcon:active {
+    transform: scale(.5);
+  }
