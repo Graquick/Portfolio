@@ -1,0 +1,19 @@
+.htmlModal {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+    width: 800px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
+
+    padding: ;
+}
+
+.htmlModal h1 {
+    font-weight: 500;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
