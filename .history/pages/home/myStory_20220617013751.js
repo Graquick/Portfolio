@@ -108,12 +108,12 @@ const pageNotLoad = {
 }
 
   const [showG1Modal, setShowG1Modal] = useState(false);
-
+  
  const [width, setWidth] = useState(0);
- const Carousel = useRef();
+ const carousel = useRef();
 
   useEffect(() => {
-      setWidth(Carousel.current.scrollWidth - Carousel.current.offsetWidth);
+      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
  }, [])
 
  const modalContent = [
@@ -173,7 +173,7 @@ const pageNotLoad = {
                 initial="hidden"
                 animate="visible"        
               >
-                <motion.div className={stylesCarousel.carousel} ref={Carousel}>
+                <motion.div className={stylesCarousel.carousel} ref={carousel}>
                   <motion.div className={stylesCarousel.innerCarousel}
                   drag="x" dragConstraints={{ right: 0, left: -width }}
                   >

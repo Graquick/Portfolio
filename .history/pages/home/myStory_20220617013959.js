@@ -113,7 +113,7 @@ const pageNotLoad = {
  const Carousel = useRef();
 
   useEffect(() => {
-      setWidth(Carousel.current.scrollWidth - Carousel.current.offsetWidth);
+      setWidth(Carousel.current.scrollWidth - carousel.current.offsetWidth);
  }, [])
 
  const modalContent = [
@@ -173,7 +173,7 @@ const pageNotLoad = {
                 initial="hidden"
                 animate="visible"        
               >
-                <motion.div className={stylesCarousel.carousel} ref={Carousel}>
+                <motion.div className={stylesCarousel.carousel} ref={carousel}>
                   <motion.div className={stylesCarousel.innerCarousel}
                   drag="x" dragConstraints={{ right: 0, left: -width }}
                   >

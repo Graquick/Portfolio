@@ -173,7 +173,7 @@ const pageNotLoad = {
                 initial="hidden"
                 animate="visible"        
               >
-                <motion.div className={stylesCarousel.carousel} ref={Carousel}>
+                <motion.div className={stylesCarousel.carousel} ref={carousel}>
                   <motion.div className={stylesCarousel.innerCarousel}
                   drag="x" dragConstraints={{ right: 0, left: -width }}
                   >
