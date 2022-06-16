@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Icon } from '@iconify/react';
-import styles from '../../styles/MyStory.module.css';
+import styles from '../../styles/myStory.module.css';
 import stylesCarousel from '../../styles/Carousel.module.css';
 
 import Gallery1Modal from '../../components/Modals/Gallery1Modal';
@@ -13,7 +13,7 @@ import Gallery1Modal from '../../components/Modals/Gallery1Modal';
 import Header from '../../components/header';
 import Carousel from '../../components/carousel';
 
-export default function MyStory() {
+export default function myStory() {
   const [showG1Modal, setShowG1Modal] = useState(false);
   
   //  useEffect(() => {
