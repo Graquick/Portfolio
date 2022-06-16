@@ -14,7 +14,7 @@ import Header from '../../components/header';
 import Carousel from '../../components/carousel';
 
 export default function myStory() {
-  const [showG1Modal, setShowG1Modal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   
   //  useEffect(() => {
   //    setTimeout(() => {

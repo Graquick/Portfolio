@@ -14,20 +14,56 @@ import Header from '../../components/header';
 import Carousel from '../../components/carousel';
 
 export default function myStory() {
-  const [showG1Modal, setShowG1Modal] = useState(false);
-  
-  //  useEffect(() => {
-  //    setTimeout(() => {
-  //      setShowModal(true)
-  //    }, 5000)
-  //  }, [setShowModal]);
-  
-  const router = useRouter()
 
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setShowModal(true)
+  //   }, 5000)
+  // }, [setShowModal]);
+  
+  // const router = useRouter()
+
+  const container = {
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: .3,
+      },
+    },
+    hidden: {
+      x: "100vw",
+      opacity: 0,
+      transition: {
+        when: "afterChildren",
+      },
+    },
+    exit: {
+      x: "100vw",
+      opacity: 0,
+      transition: {
+        when: "afterChildren",
+      },
+    }
+  }
+
+  const children = {
+    visible: {
+      x: 0,
+      y: 0,
+      opacity: 1,
+    },
+    hidden: {
+      x: 100,
+      y: 100,
+      opacity: 0
+    }
+  }
 
 const gridVariants = {
   hidden: {
-    x: 600,
+    x: 0,
     opacity: 0
   },
   visible: {
@@ -51,14 +87,14 @@ const pageLoad = {
   visible: {
       y: 0,
       transition: {
-          delay: .75,
+          delay: .75
       }
   }
 };
 
 const pageNotLoad = {
   exit: {
-      y: -200
+      y: 0
   },
   hidden: {
       y: 0
@@ -69,11 +105,12 @@ const pageNotLoad = {
           delay: .75
       }
   }
-};
+}
 
+  const [showG1Modal, setShowG1Modal] = useState(false);
 
-const [width, setWidth] = useState(0);
-const carousel = useRef();
+ const [width, setWidth] = useState(0);
+ const arousel = useRef();
 
   useEffect(() => {
       setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);

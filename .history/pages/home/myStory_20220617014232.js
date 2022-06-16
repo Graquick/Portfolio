@@ -14,7 +14,11 @@ import Header from '../../components/header';
 import Carousel from '../../components/carousel';
 
 export default function myStory() {
-  const [showG1Modal, setShowG1Modal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [showCModal, setShowCModal] = useState(false);
+  const [showJModal, setShowJModal] = useState(false);
+  const [showRModal, setShowRModal] = useState(false);
+  const [showNModal, setShowNModal] = useState(false);
   
   //  useEffect(() => {
   //    setTimeout(() => {
