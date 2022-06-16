@@ -105,7 +105,7 @@ const modalContent = [
     width="17.6"
     height="17.6"
     rx="1.8"
-    strokeWidth="2.4"
+    stroke-width="2.4"
   />
   <circle cx={13} cy={7} r="2.5" />
 </svg>snap</div>, setShowFalse: () => setShowModal(false), modalType: <HtmlModal /> },
