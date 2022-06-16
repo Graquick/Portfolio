@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Icon } from '@iconify/react';
-import styles from './../styles/MyStory.module.css';
-import stylesCarousel from './../styles/Carousel.module.css';
+import styles from '../styles/MyStory.module.css';
+import stylesCarousel from '../../styles/Carousel.module.css';
 
 import Gallery1Modal from '../../components/Modals/Gallery1Modal';
 
