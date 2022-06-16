@@ -108,11 +108,11 @@ const pageNotLoad = {
 }
 
 
- const [width, setWidth] = useState(0);
- const carousel = useRef();
+// const [width, setWidth] = useState(0);
+// const carousel = useRef();
 
-  useEffect(() => {
-      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+//  useEffect(() => {
+//      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
  }, [])
 
  const modalContent = [

@@ -108,12 +108,13 @@ const pageNotLoad = {
 }
 
 
- const [width, setWidth] = useState(0);
- const carousel = useRef();
+// const [width, setWidth] = useState(0);
+// const carousel = useRef();
 
-  useEffect(() => {
-      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
- }, [])
+//  useEffect(() => {
+//      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+// }, [])
+
 
  const modalContent = [
   { id: 1, setShowTrue: () => setShowG1Modal(true), title: <div className={styles.gallery1}>Gallery Item 1</div>, setShowFalse: () => setShowG1Modal(false), modalType: <Gallery1Modal /> },

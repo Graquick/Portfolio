@@ -108,10 +108,10 @@ const pageNotLoad = {
 }
 
 
- const [width, setWidth] = useState(0);
- const carousel = useRef();
+// const [width, setWidth] = useState(0);
+// const carousel = useRef();
 
-  useEffect(() => {
+//  useEffect(() => {
       setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
  }, [])
 
