@@ -1,0 +1,34 @@
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.innerCarousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 1900px;
+    padding: 0;
+}
+
+.innerCarousel div, .innerCarousel svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #d7d7d7;
+    cursor: pointer;
+    transition: color 500ms ease, transform 150ms ease;
+}
+.innerCarousel div:hover, 
+.innerCarousel div:hover, {
+    color: #a8a8a8;
+}
+.innerCarousel div:active {
+    transform: scale(.5);
+}
+
+

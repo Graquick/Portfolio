@@ -1,0 +1,84 @@
+.closeBtn {
+    width: fit-content;
+    padding: 0.5em;
+    cursor: pointer;
+    color: #8e8e8e;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.closeBtn::after {
+    content: '';
+    position: absolute;
+    tobottomp: 0;
+    left: 0;
+    background-color: black;
+    width: 0%;
+    height: 2px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-weight: 700;
+  
+    transition: all 150ms ease;
+  }
+  
+  .closeBtn:hover::after {
+    width: 100%;
+  }
+
+  /* -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --  */
+
+
+.Modal {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+    width: 800px;
+    height: 400px;
+    background: url('/snap-hero.PNG');
+    background-size: cover;
+    box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
+
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 100%;
+    padding: 2rem;
+    text-align: left;
+}
+.Modal h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    background: red;
+    width: fit-content;
+    font-size: 4rem;
+    font-weight: 600;
+    position: relative;
+  }
+  .Modal h1 svg {
+    position: absolute;
+    top: 2.5rem;
+    right: -2rem;
+    width: 26px;
+    height: 26px;
+
+  }
+  .Modal h1 svg .rectBehind {
+    fill: none;
+  }
+  .Modal h1 svg circle {
+    stroke: rgb(0, 0, 0);
+  }
+  .Modal h1:hover svg {
+    fill: black;
+    stroke: black;
+  }
+.Modal p {
+    font-size: 1.25rem;
+}
+
+  /* -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --  */
+

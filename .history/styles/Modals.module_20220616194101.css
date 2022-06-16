@@ -1,0 +1,65 @@
+.closeBtn {
+    width: fit-content;
+    padding: 0.5em;
+    cursor: pointer;
+    color: #8e8e8e;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.closeBtn::after {
+    content: '';
+    position: absolute;
+    tobottomp: 0;
+    left: 0;
+    background-color: black;
+    width: 0%;
+    height: 2px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-weight: 700;
+  
+    transition: all 150ms ease;
+  }
+  
+  .closeBtn:hover::after {
+    width: 100%;
+  }
+
+  /* -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --  */
+
+
+.Modal {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+    width: 800px;
+    height: 400px;
+    background: url('/h');
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
+
+    display: grid;
+    grid-template-columns: 60%;
+    grid-template-rows: 100%;
+    padding: 2rem;
+    text-align: left;
+}
+.Modal h1 {
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.Modal p {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+  /* -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --  */
+
