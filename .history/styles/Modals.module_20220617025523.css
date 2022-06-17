@@ -74,7 +74,7 @@
     font-size: 4rem;
     font-weight: 600;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .snapModal h1 svg {
     position: absolute;
@@ -93,37 +93,9 @@
     stroke: white;
   }
 .snapModal p {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
   /* -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --  */
 
-.apparellModal {
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-
-  width: 800px;
-  height: 400px;
-  background: url('/apparel-hero.PNG');
-  background-size: cover;
-  box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
-
-  display: grid;
-  grid-template-columns: 45%;
-  grid-template-rows: 100%;
-  padding: 2rem;
-  text-align: left;
-}
-.apparellModal h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 4rem;
-  font-weight: 300;
-  position: relative;
-  margin-bottom: 1rem;
-}
-.apparellModal p {
-  font-size: 1.3rem;
-  font-weight: 500;
-}

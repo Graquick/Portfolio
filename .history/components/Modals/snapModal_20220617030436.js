@@ -57,7 +57,7 @@ const SnapModal = ( {showModal, setShowModal} ) => {
                             />
                             <circle cx={13} cy={7} r="2.5" />
                             </svg>snap</h1>
-                            <p>An intro section with a dropdown navigation. Includes dropdown navigation menus.</p>
+                            <p>An intro section with a dropdown navigation. Includes a dropdown menu </p>
                             <br />
                             <p>Check out the full description at my projects page.</p>
                             <motion.div className={styles.closeBar}

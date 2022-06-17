@@ -74,7 +74,7 @@
     font-size: 4rem;
     font-weight: 600;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   .snapModal h1 svg {
     position: absolute;
@@ -93,7 +93,7 @@
     stroke: white;
   }
 .snapModal p {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
@@ -124,6 +124,6 @@
   margin-bottom: 1rem;
 }
 .apparellModal p {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 500;
 }
