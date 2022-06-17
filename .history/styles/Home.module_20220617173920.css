@@ -335,7 +335,7 @@
   position: relative;
   color: #d7d7d7;
   text-transform: capitalize;
-  transition: color 500ms ease, transform 150ms ease;
+  transition: color 500ms ease;
 }
 .calculator:hover {
   color: black;

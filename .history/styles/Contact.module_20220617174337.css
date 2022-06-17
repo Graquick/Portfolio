@@ -29,18 +29,20 @@
 }
 
 .grid {
-    width: 1600px;
-    height: 700px;
+    max-width: 1400px;
+    height: 800px;
     display: grid;
-    grid-template-columns: 35% 55%;
+    grid-template-columns: 40% 50%;
     grid-template-rows: 100%;
-    column-gap: 2rem;
+    column-gap: 1rem;
+    padding: 1rem;
     justify-content: center;
     
     position: relative;
 }
 
 .card {
+    margin: 1rem;
     padding: 1rem 3rem;
     text-align: left;
     color: inherit;
@@ -102,6 +104,7 @@
 
 
 .cardI {
+    margin: 1rem;
     padding: 1rem 3rem 2rem 3rem;
     text-align: left;
     color: inherit;
@@ -282,3 +285,86 @@
     height: 10px;
     color: #ed4337;
 } */
+
+
+@media (max-width: 1279px) {
+    .grid {
+        flex-direction: column;
+        height: 1450px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .description {
+        margin-bottom: 0;
+    }
+
+    .card,
+    .cardI {
+        width: 725px;
+    }
+
+    .card {
+        height: 40%;
+    }
+
+    .cardI {
+        height: 50%;
+    }
+
+    .cardI h1 {
+        margin-left: 2rem;
+    }
+
+    .formBtn {
+        margin-bottom: .5rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .grid {
+        max-width: 450px;
+        margin: auto;
+    }
+
+    .card,
+    .cardI {
+        width: 450px;
+    }
+
+    .card p,
+    .cardI p {
+        font-size: 1.25rem;
+    }
+
+    .cardI {
+        padding: 0;
+    }
+
+    .formNameContent,
+    .formMessageContent {
+        width: 85%;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        max-width: 400px;
+    }
+
+    .card p,
+    .cardI p {
+        font-size: 1rem;
+    }
+
+    .formNameContent,
+    .formMessageContent {
+        width: 77%;
+    }
+
+    .cardIcon {
+        width: 37px;
+        height: 37px;
+        font-size: 1rem;
+    }
+}

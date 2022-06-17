@@ -3,6 +3,7 @@
 }
 
 .main {
+    background: red;
     min-height: 100vh;
     padding: 4rem 0;
     display: flex;
@@ -29,13 +30,13 @@
 }
 
 .grid {
-    width: 1600px;
+    background: blue;
+    width: 1800px;
     height: 700px;
     display: grid;
-    grid-template-columns: 35% 55%;
+    grid-template-columns: 45% 50%;
     grid-template-rows: 100%;
     column-gap: 2rem;
-    justify-content: center;
     
     position: relative;
 }
