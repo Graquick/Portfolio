@@ -51,7 +51,7 @@ export default function Header(props) {
                 // className={styles.links} 
             >
                 {links.map((links, i) => (
-                    <div key={links}>
+                    <div key=>
                         {colorTheme === "light" ?
                             (
                                 <motion.div
