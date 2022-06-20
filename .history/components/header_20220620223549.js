@@ -54,7 +54,7 @@ export default function Header(props) {
     
     return (
 
-    <header className="shadow-sm backdrop-blur-lg sticky transition duration-500 top-0 z-10 flex justify-between w-[90%] h-24 px-8 py-4 m-auto max-w-[1400px] bg-white/90 dark:bg-black/80 "
+    <header className="shadow-sm backdrop-blur-lg sticky transition duration-500 delay-300 top-0 z-10 flex justify-between w-[90%] h-24 px-8 py-4 m-auto max-w-[1400px] bg-white/90 dark:bg-black/80 "
          // className={styles.header}
     >
         <AnimatePresence>

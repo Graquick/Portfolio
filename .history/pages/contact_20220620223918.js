@@ -134,19 +134,15 @@ const Contact = () => {
                         <h1 className="text-[2.5rem]">Let&apos;s get in touch</h1>
                         <p className="font-medium text-[1.125rem]">I&apos;m looking forward to working on a new project with you.</p>
 
-                        <div className="h-[65%] pt-4 pr-8 pb-4 pl-0 flex flex-col"
+                        <div
                           // className={styles.cardIconCont}
                         
                         >
                             {cardIconsParent.map((cards, i) => (
                                 <div className={styles.cardIconsParent}
                                     key={cards.id}>
-                                    <div className="w-[50px] h-[50px] rounded-full mr-8 bg-black flex justify-center items-center text-[1.5rem] dark:bg-white"
-                                      // className={styles.cardIcon}
-                                    >
-                                        <Icon className="text-white transition-all duration-150 ease-in-out dark:text-black"
-                                          // className={styles.Icon}
-                                        icon={cards.icon} />
+                                    <div className={styles.cardIcon}>
+                                        <Icon className={styles.Icon} icon={cards.icon} />
                                     </div>
                                     
                                     <div className={styles.cardIconText}>
@@ -158,8 +154,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <form className="pt-4 pb-8 pl-12 pr-12 text-left no-underline shadow-md text-inherit bg-white/80 backdrop-blur-sm dark:bg-black/50"
-                      // className={styles.cardI}
+                    <form className={styles.cardI}
                     action="/success" id="form" name="contact" method="POST" data-netlify="true">
                         <input type="hidden" name="form-name" value="contact" />
                         <h1>Get in touch</h1>

@@ -144,7 +144,7 @@ const Contact = () => {
                                     <div className="w-[50px] h-[50px] rounded-full mr-8 bg-black flex justify-center items-center text-[1.5rem] dark:bg-white"
                                       // className={styles.cardIcon}
                                     >
-                                        <Icon className="text-white transition-all duration-150 ease-in-out dark:text-black"
+                                        <Icon className="text-white transition-all duration-300 ease-in-out dark:text-black"
                                           // className={styles.Icon}
                                         icon={cards.icon} />
                                     </div>
@@ -158,8 +158,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <form className="pt-4 pb-8 pl-12 pr-12 text-left no-underline shadow-md text-inherit bg-white/80 backdrop-blur-sm dark:bg-black/50"
-                      // className={styles.cardI}
+                    <form className={styles.cardI}
                     action="/success" id="form" name="contact" method="POST" data-netlify="true">
                         <input type="hidden" name="form-name" value="contact" />
                         <h1>Get in touch</h1>
