@@ -77,11 +77,11 @@ export const MenuItem = ({ i }) => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <div className="w-[175px] h-[50px] uppercase text-[1.75rem] my-2 mx-0 flex text-black dark:text-white">
+          <div className="w-[175px] h-[50px] uppercase text-[]">
             <Link href={links.href}>
               {links.title}
             </Link>
-            <Icon icon={links.icon} className="ml-[10px] text-[28px] relative top-1" />
+            <Icon icon={links.icon} className="sideIcon" />
           </div>
         </motion.li>
       ))}

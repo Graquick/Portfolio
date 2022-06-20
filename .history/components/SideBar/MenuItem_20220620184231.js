@@ -81,7 +81,7 @@ export const MenuItem = ({ i }) => {
             <Link href={links.href}>
               {links.title}
             </Link>
-            <Icon icon={links.icon} className="ml-[10px] text-[28px] relative top-1" />
+            <Icon icon={links.icon} className="sideIcon" />
           </div>
         </motion.li>
       ))}

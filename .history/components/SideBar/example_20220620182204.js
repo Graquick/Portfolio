@@ -35,7 +35,7 @@ export const Example = () => {
       animate={isOpen ? "open" : "closed"}
       ref={containerRef}
     >
-      <motion.div className="absolute top-0 w-[300px] right-0 bottom-0 h-screen bg-gray-200 shadow-md hidden invisible z-1 xl:visible xl:block dark:bg-neutral-800" variants={sidebar}>
+      <motion.div className="absolute top-0 w-[300px] right-0 bottom-0 h-screen bg-gray-200 shadow-md hidden invisible z-1 xl:visible " variants={sidebar}>
         <Navigation />
         <MenuToggle toggle={() => toggleOpen()} />
       </motion.div>

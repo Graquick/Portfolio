@@ -6,7 +6,7 @@ const Path = props => (
     // fill="transparent"
     // strokeWidth="3"
     // stroke="#000"
-    strokeLinecap="round"
+    // strokeLinecap="round"
     {...props}
   />
 );

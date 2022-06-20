@@ -78,7 +78,7 @@ export default function Header(props) {
         </AnimatePresence>
 
         <div className={styles.middle}>
-            <ul className="flex items-center justify-around h-full text-xl uppercase transition duration-500 delay-150 dark:text-white"
+            <ul className="flex items-center justify-around h-full text-xl uppercase transition duration-500 delay-15- dark:text-white"
                 // className={styles.links} 
             >
                 {links.map((links, i) => (

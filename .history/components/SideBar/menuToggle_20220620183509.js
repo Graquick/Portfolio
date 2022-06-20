@@ -2,11 +2,11 @@ import * as React from "react";
 import { motion } from "framer-motion";
 
 const Path = props => (
-  <motion.path  className="stroke-[3] fill-gray-200 stroke-black dark:stroke-white"
+  <motion.path  className="stroke-[3] fill-gray-200 stroke-black"
     // fill="transparent"
     // strokeWidth="3"
     // stroke="#000"
-    strokeLinecap="round"
+    // strokeLinecap="round"
     {...props}
   />
 );
