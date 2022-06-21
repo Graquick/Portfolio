@@ -106,7 +106,7 @@
 
   width: 800px;
   height: 400px;
-  background: url('/apparel-hero.PNG');
+  background: url('/apparel-hero.png');
   background-size: cover;
   box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
 
@@ -148,7 +148,7 @@
   .blogModal {
     width: 800px;
     height: 400px;
-    background: url('/blog-hero.PNG');
+    background: url('/blog-hero.png');
     background-size: cover;
     box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
   
@@ -161,7 +161,7 @@
   .blogModalTwo {
     width: 800px;
     height: 400px;
-    background: url('/blog-mobile-hero.PNG');
+    background: url('/blog-mobile-hero.png');
     background-size: cover;
     box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
   
@@ -224,7 +224,7 @@
 
   width: 800px;
   height: 400px;
-  background: url('/calc-hero.PNG');
+  background: url('/calc-hero.png');
   background-size: cover;
   box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
 
