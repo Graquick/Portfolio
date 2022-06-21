@@ -178,10 +178,10 @@ const About = () => {
                             <motion.div className={i % 2 === 0 ? "overflow-hidden shadow-md w-[450px] h-[675px] flex flex-col justify-center order-1" : "overflow-hidden shadow-md w-[450px] h-[675px] flex flex-col justify-center order-1"}
                                 variants={gridVariants}
                             >
-                                <Image src={currentTheme === "dark" ? `/${tags.srcdark}.PNG` : `/${tags.src}.PNG`}
+                                <Image src={currentTheme === "dark" ? "`/${tags.srcdark}.PNG`" : "`/${tags.src}.PNG`"}
                                 alt="something should show here"
                                 width={450} height={675} layout="responsive"
-                                blurDataURL={currentTheme === "dark" ? `${tags.srcdark}.PNG` : `${tags.src}.PNG`}
+                                blurDataURL='`${tags.src}.PNG`'
                                 placeholder='blur' />
                             </motion.div>
                         </motion.div>
