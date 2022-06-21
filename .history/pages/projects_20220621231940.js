@@ -182,11 +182,11 @@ const About = () => {
                                 
                               /> */}
 
-                                <Image src={currentTheme === "dark" ? `/${tags.srcdark}.PNG` : `/${tags.src}.PNG`}
+                                {/* <Image src={currentTheme === "dark" ? `/${tags.srcdark}.PNG` : `/${tags.src}.PNG`}
                                 alt="something should show here"
                                 width={450} height={675} layout="responsive"
                                 blurDataURL={currentTheme === "dark" ? `${tags.srcdark}.PNG` : `${tags.src}.PNG`}
-                                placeholder='blur' />
+                                placeholder='blur' /> */}
                             </motion.div>
                         </motion.div>
                     )
