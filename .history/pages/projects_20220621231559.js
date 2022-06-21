@@ -178,9 +178,7 @@ const About = () => {
                             <motion.div className={i % 2 === 0 ? "overflow-hidden shadow-md w-[450px] h-[675px] flex flex-col justify-center order-1" : "overflow-hidden shadow-md w-[450px] h-[675px] flex flex-col justify-center order-1"}
                                 variants={gridVariants}
                             >
-                              <img src={currentTheme === "dark" ? `/${tags.srcdark}.PNG` : `/${tags.src}.PNG`} alt="Something should show here"
-                                
-                              />
+                              <img src=" alt="" />
 
                                 {/* <Image src={currentTheme === "dark" ? `/${tags.srcdark}.PNG` : `/${tags.src}.PNG`}
                                 alt="something should show here"
