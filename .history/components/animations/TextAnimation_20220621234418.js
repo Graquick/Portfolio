@@ -5,9 +5,9 @@ import styled, { keyframes } from 'styled-components';
 export default function TextAnimation() {
     const reactArray = "Coder".split("")
     // const swiftArray = "Designer".split("")
-    // const [items, setItems] = useState(reactArray)
-    // const [count, setCount] = useState(0)
-    // const [play, setPlay] = useState(false)
+    const [items, setItems] = useState(reactArray)
+    const [count, setCount] = useState(0)
+    const [play, setPlay] = useState(false)
 
     // useInterval (
     //     () => {

@@ -4,25 +4,25 @@ import styled, { keyframes } from 'styled-components';
 
 export default function TextAnimation() {
     const reactArray = "Coder".split("")
-    // const swiftArray = "Designer".split("")
-    // const [items, setItems] = useState(reactArray)
-    // const [count, setCount] = useState(0)
-    // const [play, setPlay] = useState(false)
+    const swiftArray = "Designer".split("")
+    const [items, setItems] = useState(reactArray)
+    const [count, setCount] = useState(0)
+    const [play, setPlay] = useState(false)
 
-    // useInterval (
-    //     () => {
-    //         // Animate React
-    //         setItems(reactArray)
-    //         setCount(count + 1)
+    useInterval (
+        () => {
+            // Animate React
+            setItems(reactArray)
+            setCount(count + 1)
 
-    //         // Animate Swift, Looping
-    //         if (count == 1) {
-    //             setCount(0)
-    //             setItems(swiftArray)
-    //         }
-    //     },
-    //     play ? 6000 : null
-    // )
+            // Animate Swift, Looping
+            if (count == 1) {
+                setCount(0)
+                setItems(swiftArray)
+            }
+        },
+        play ? 6000 : null
+    )
 
     // useEffect(() => {
     //     const timer = setTimeout(() => {

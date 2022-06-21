@@ -174,7 +174,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
               <motion.div className={styles.imgCard} variants={gridVariants}
               >
                 <Image src="/code.jpg"
-                  alt="Picture of the author - Brima Freeman"
+                  alt=""
                   width={140} height={210} layout="responsive"
                   objectFit={"cover"}
                   blurDataURL="/code.jpg"

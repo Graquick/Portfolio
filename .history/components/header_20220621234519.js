@@ -67,7 +67,7 @@ export default function Header(props) {
                 transition={{ type: 'spring', stiffness: 300}}
                 whileHover={{ x: 10 }}
             >
-                <Link href="/" passHref>
+                <Link href="/index.js">
                     <div   className="flex items-end justify-end w-16 h-16 px-1 py-0 text-lg font-bold uppercase transition duration-500 bg-gray-200 shadow-sm dark:bg-neutral-800 dark:text-white"
                         // className={styles.logo}
                     >
