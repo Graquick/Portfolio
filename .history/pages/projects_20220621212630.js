@@ -55,7 +55,7 @@ const About = () => {
       }
 
       const aboutContent = [
-        { id: 1, title: <div className="font-[Arial, Helvetica, sans-serif] text-[4rem] font-bold text-black cursor-default transition-all duration-150 ease-in-out relative group dark:text-white">  <svg
+        { id: 1, title: <div className="font-[Arial, Helvetica, sans-serif] text-[4rem] font-bold text-black cursor-pointer transition-all duration-150 ease-in-out relative group dark:text-white">  <svg
         className="absolute top-[2.5rem] -right-8 w-[26px] h-[26px] transition-all duration-500 ease-in-out group-hover:fill-black group-hover:stroke-black "
         width={26}
         height={24}
@@ -79,9 +79,9 @@ const About = () => {
 
         { id: 2, title: <div className="font-roboto text-[4rem] font-light text-black cursor-default transition-all duration-150 ease-in-out relative group dark:text-white">.apparell</div>, desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', src: 'apparel-projects-hero', srcdark: 'apparel-projects-hero-dark', href: '/'},
 
-        { id: 3, title: <div className="w-[275px] flex gap-2 cursor-default transition-all duration-150 ease-in-out group mb-8"><div className="text-[1.5rem] font-bold uppercase bg-black text-white w-16 h-16 flex items-end justify-end py-0 px-1 transition-all duration-500 ease-in-out dark:bg-white dark:text-black">bf</div><div className="text-[1.5rem] flex items-end justify-end font-bold uppercase text-black transition-all duration-500 ease-in-out dark:text-white">blog</div></div>, desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', src: 'blog-projects-hero', srcdark: 'blog-projects-hero-dark' , href: '/'},
+        { id: 3, title: <div className="w-[275px] flex gap-2 cursor-pointer transition-all duration-150 ease-in-out group mb-8"><div className="text-[1.5rem] font-bold uppercase bg-black text-white w-16 h-16 flex items-end justify-end py-0 px-1 transition-all duration-500 ease-in-out dark:bg-white dark:text-black">bf</div><div className="text-[1.5rem] flex items-end justify-end font-bold uppercase text-black transition-all duration-500 ease-in-out dark:text-white">blog</div></div>, desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', src: 'blog-projects-hero', srcdark: 'blog-projects-hero-dark' , href: '/'},
         
-        { id: 4, title: <div className="font-play text-[2.5rem] font-[600] relative text-black cursor-default capitalize transition-[color] duration-color-500 transition-[transform] duration-transform-150 ease-in-out dark:text-white mb-8">Calco,inc.</div>, desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', src: 'calc-projects-hero', srcdark: 'calc-projects-hero-dark', href: '/'},
+        { id: 4, title: <div className="font-play text-[2.5rem] font-[600] relative text-black cursor-pointer capitalize transition-[color] duration-color-500 transition-[transform] duration-transform-150 ease-in-out hover:text-black dark:text-zinc-600 dark:hover:text-zinc-300 mb-8">Calco,inc.</div>, desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', src: 'calc-projects-hero', srcdark: 'calc-projects-hero', href: '/'},
     ]
 
     const gridVariants = {

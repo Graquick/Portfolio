@@ -146,7 +146,6 @@ a {
   width: 450px;
   height: 675px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   order: 1;
 }

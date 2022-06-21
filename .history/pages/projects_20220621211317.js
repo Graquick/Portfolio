@@ -55,7 +55,7 @@ const About = () => {
       }
 
       const aboutContent = [
-        { id: 1, title: <div className="font-[Arial, Helvetica, sans-serif] text-[4rem] font-bold text-black cursor-default transition-all duration-150 ease-in-out relative group dark:text-white">  <svg
+        { id: 1, title: <div className="font-[Arial, Helvetica, sans-serif] text-[4rem] font-bold text-gray-200 cursor-pointer transition-all duration-150 ease-in-out relative hover:text-black group dark:text-zinc-600 dark:hover:text-zinc-300">  <svg
         className="absolute top-[2.5rem] -right-8 w-[26px] h-[26px] transition-all duration-500 ease-in-out group-hover:fill-black group-hover:stroke-black "
         width={26}
         height={24}
@@ -64,9 +64,9 @@ const About = () => {
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
       >
-        <rect x="7.2" y="5.2" width="17.6" height="17.6" rx="1.8" strokeWidth="2.4" className="fill-white stroke-black dark:fill-black dark:stroke-white" />
+        <rect x="7.2" y="5.2" width="17.6" height="17.6" rx="1.8" strokeWidth="2.4" className="fill-white/80 stroke-gray-200 dark:fill-black/50 dark:stroke-zinc-600 dark:group-hover:fill-black dark:group-hover:stroke-zinc-300 group-hover:stroke-black group-hover:fill-white" />
         <rect
-          className="fill-black stroke-black dark:fill-white dark:stroke-white"
+          className="fill-gray-200 stroke-gray-200 group-hover:fill-black group-hover:stroke-black dark:fill-zinc-600 dark:stroke-zinc-600 dark:group-hover:fill-zinc-300 dark:group-hover:stroke-zinc-300"
           x="1.2"
           y="1.2"
           width="17.6"
@@ -74,14 +74,14 @@ const About = () => {
           rx="1.8"
           strokeWidth="2.4"
         />
-        <circle cx={13} cy={7} r="2.5" className="stroke-white fill-black dark:stroke-black/50 dark:fill-white"/>
+        <circle cx={13} cy={7} r="2.5" className="stroke-white/80 fill-white/80 group-hover:fill-black group-hover:stroke-white dark:stroke-zinc-600 dark:fill-black/50 dark:group-hover:fill-zinc-300 dark:group-hover:stroke-black/50"/>
       </svg>snap</div>, desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', src: 'snap-projects-mobile-hero', srcdark: 'snap-projects-mobile-hero-dark', href: '/'},
 
-        { id: 2, title: <div className="font-roboto text-[4rem] font-light text-black cursor-default transition-all duration-150 ease-in-out relative group dark:text-white">.apparell</div>, desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', src: 'apparel-projects-hero', srcdark: 'apparel-projects-hero-dark', href: '/'},
+        { id: 2, title: <div className="font-roboto text-[4rem] font-light text-gray-200 cursor-pointer transition-all duration-150 ease-in-out relative hover:text-black group dark:text-zinc-600 dark:hover:text-zinc-300">.apparell</div>, desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', src: 'apparel-projects-hero', srcdark: 'apparel-projects-hero-dark', href: '/'},
 
-        { id: 3, title: <div className="w-[275px] flex gap-2 cursor-default transition-all duration-150 ease-in-out group mb-8"><div className="text-[1.5rem] font-bold uppercase bg-black text-white w-16 h-16 flex items-end justify-end py-0 px-1 transition-all duration-500 ease-in-out dark:bg-white dark:text-black">bf</div><div className="text-[1.5rem] flex items-end justify-end font-bold uppercase text-black transition-all duration-500 ease-in-out dark:text-white">blog</div></div>, desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', src: 'blog-projects-hero', srcdark: 'blog-projects-hero-dark' , href: '/'},
+        { id: 3, title: <div className="w-[275px] flex gap-2 cursor-pointer transition-all duration-150 ease-in-out group mb-8"><div className="text-[1.5rem] font-bold uppercase bg-gray-200 text-white/70 w-16 h-16 flex items-end justify-end py-0 px-1 transition-all duration-500 ease-in-out dark:bg-zinc-600 dark:text-zinc-500 dark:group-hover:bg-zinc-300 dark:group-hover:text-zinc-600 group-hover:text-white group-hover:bg-black">bf</div><div className="text-[1.5rem] flex items-end justify-end font-bold uppercase text-gray-200 transition-all duration-500 ease-in-out dark:text-zinc-600 group-hover:text-black dark:group-hover:text-zinc-300">blog</div></div>, desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', src: 'blog-projects-hero', srcdark: 'blog-projects-hero-dark' , href: '/'},
         
-        { id: 4, title: <div className="font-play text-[2.5rem] font-[600] relative text-black cursor-default capitalize transition-[color] duration-color-500 transition-[transform] duration-transform-150 ease-in-out dark:text-white mb-8">Calco,inc.</div>, desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', src: 'calc-projects-hero', srcdark: 'calc-projects-hero-dark', href: '/'},
+        { id: 4, title: <div className="font-play text-[2.5rem] font-[600] relative text-gray-200 cursor-pointer capitalize transition-[color] duration-color-500 transition-[transform] duration-transform-150 ease-in-out hover:text-black dark:text-zinc-600 dark:hover:text-zinc-300 mb-8">Calco,inc.</div>, desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', src: 'calc-projects-hero', srcdark: 'calc-projects-hero',href: '/'},
     ]
 
     const gridVariants = {
