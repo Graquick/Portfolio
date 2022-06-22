@@ -173,7 +173,7 @@ const Contact = () => {
                             <div className={styles.formNameContent}>
                                 <div className={styles.formInputTheme}>
                                     <label htmlFor="fullname">full name</label>
-                                    <input name="fullname" type="text" id="fullname" placeholder="Name" required className="dark:text-black"
+                                    <input name="fullname" type="text" id="fullname" placeholder="Name" required class="dark:text-black"
                                     // style={errors.fullname ? { border: "solid 1.5px #ed4337" } : null} {...register("fullname", { required: true, minLength: 5 })}
                                     /> 
                                     {/* {errors.fullname?.type === "required" && <p>Please enter your full name.</p>}
@@ -182,7 +182,7 @@ const Contact = () => {
                                 </div>
                                 <div className={styles.formInputTheme}>
                                     <label htmlFor="email">email address</label>
-                                    <input name="email" type="email" id="email" placeholder="Email" required className="dark:text-black"
+                                    <input name="email" type="email" id="email" placeholder="Email" required class="dark:text-black"
                                     // style={errors.email ? { border: "solid 1.5px #ed4337" } : null} {...register("email", { required: true, pattern: { value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, message: "This is not a valid email address." } })}
                                     />
                                     {/* {errors.email?.type === "required" && <p>You must enter your email.</p>}
@@ -193,7 +193,7 @@ const Contact = () => {
                             <div className={styles.MessageContent}>
                                 <div className={styles.formInputTheme}>
                                     <label htmlFor="subject">subject</label>
-                                    <input name="subject" type="text" id="subject" placeholder="Subject" required className="dark:text-black"
+                                    <input name="subject" type="text" id="subject" placeholder="Subject" required class="dark:text-black"
                                     // style={errors.subject ? { border: "solid 1.5px #ed4337" } : null} {...register("subject", { required: true })}
                                     />
                                     {/* {errors.subject?.type === "required" && <p>Your message needs a subject.</p>} */}
@@ -201,7 +201,7 @@ const Contact = () => {
                                 <div className={styles.tArea}
                                 >
                                     <label htmlFor="message">message</label>
-                                    <textarea name="message" id="message" rows="5" cols="1" required className="dark:text-black"
+                                    <textarea name="message" id="message" rows="5" cols="1" required class="dark:text-black"
                                     // style={errors.message ? { border: "solid 1.5px #ed4337" } : null}  {...register("message", { required: true, minLength: 5, maxLength: 1000 })}
                                     >
                                     </textarea>
