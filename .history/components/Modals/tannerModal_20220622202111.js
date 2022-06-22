@@ -43,7 +43,7 @@ const TannerModal = ( {showTannerModal, setShowTannerModal} ) => {
         exit: ({direction, width}) => ({ x: direction * -width }),
     }
     
-    let images = ["bg-[url('/tanner-big-1-hero.PNG')]", "bg-[url('/tanner-big-2-hero.PNG')]", "bg-[url('/tanner-big-3-hero.PNG')]", "bg-[url('/tanner-big-4-hero.PNG')]"]
+    let images = ["bg-[url('/tanner-big-1-hero.PNG')]", "bg-[url('/snap-hero.PNG')]", "bg-[url('/calc-hero.PNG')]"]
     let colors = ["bg-red-500", "bg-blue-500", "bg-green-500", "bg-yellow-500"]
 
     return (
@@ -86,7 +86,7 @@ const TannerModal = ( {showTannerModal, setShowTannerModal} ) => {
 
                             <div ref={ref}  className="self-center flex items-center justify-center overflow-hidden bg-black/50 h-full w-full relative" >
                                 <AnimatePresence custom={{direction, width}}>
-                                    <motion.div className={`w-[1400px] h-[900px] ${images[Math.abs(count) % 4]} absolute bg-cover justify-center text-white cursor-default`}
+                                    <motion.div className={`w-[1400px] h-[900px] ${images[Math.abs(count) % 3]} absolute bg-cover justify-center text-white cursor-default`}
                                         key={count}
                                         variants={variants}
                                         initial="enter"

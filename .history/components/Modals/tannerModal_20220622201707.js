@@ -43,7 +43,7 @@ const TannerModal = ( {showTannerModal, setShowTannerModal} ) => {
         exit: ({direction, width}) => ({ x: direction * -width }),
     }
     
-    let images = ["bg-[url('/tanner-big-1-hero.PNG')]", "bg-[url('/tanner-big-2-hero.PNG')]", "bg-[url('/tanner-big-3-hero.PNG')]", "bg-[url('/tanner-big-4-hero.PNG')]"]
+    let images = ["bg-[url('/tanner-big-1-hero.PNG')]", "bg-[url('/snap-hero.PNG')]", "bg-[url('/calc-hero.PNG')]"]
     let colors = ["bg-red-500", "bg-blue-500", "bg-green-500", "bg-yellow-500"]
 
     return (
@@ -57,7 +57,7 @@ const TannerModal = ( {showTannerModal, setShowTannerModal} ) => {
                 >
                     <motion.div
                         variants={modal}
-                        className="m-auto absolute top-0 left-0 bottom-0 right-0 w-[1500px] h-[900px] flex flex-col justify-center align-center bg-neutral-700"
+                        className="m-auto absolute top-0 left-0 bottom-0 right-0 w-[1500px] h-[1000px] flex flex-col justify-center align-center bg-slate-400"
                     >
                             <motion.div className={styles.closeBar}
                             >
@@ -71,13 +71,13 @@ const TannerModal = ( {showTannerModal, setShowTannerModal} ) => {
                             </motion.div>
 
                             <div className="w-[25%] flex items-center justify-between">
-                                <div className="absolute top-0 m-auto left-[-4rem] bottom-0 w-fit h-fit flex justify-center items-center font-bold text-[3rem] transition-all duration-150 ease-in-out active:transform active:scale-50 cursor-pointer 
+                                <div className="absolute top-0 m-auto left-[-4rem] bottom-0 rounded-xl w-fit h-fit flex justify-center items-center font-bold text-[3rem] transition-all duration-150 ease-in-out active:transform active:scale-50 cursor-pointer 
                                 text-white hover:text-black hover:bg-white" onClick={() => setCount(count - 1)
                                 }
                                 >
                                    <Icon icon="uil:angle-left"></Icon>
                                 </div>
-                                <div className="absolute top-0 m-auto right-[-4rem] bottom-0 w-fit h-fit flex justify-center items-center font-bold text-[3rem] transition-all duration-150 ease-in-out active:transform active:scale-50 cursor-pointer 
+                                <div className="absolute top-0 m-auto right-[-4rem] bottom-0 rounded-xl w-fit h-fit flex justify-center items-center font-bold text-[3rem] transition-all duration-150 ease-in-out active:transform active:scale-50 cursor-pointer 
                                 text-white hover:text-black hover:bg-white" onClick={() => setCount(count + 1)
                                }>
                                      <Icon icon="uil:angle-right"></Icon>
@@ -86,7 +86,7 @@ const TannerModal = ( {showTannerModal, setShowTannerModal} ) => {
 
                             <div ref={ref}  className="self-center flex items-center justify-center overflow-hidden bg-black/50 h-full w-full relative" >
                                 <AnimatePresence custom={{direction, width}}>
-                                    <motion.div className={`w-[1400px] h-[900px] ${images[Math.abs(count) % 4]} absolute bg-cover justify-center text-white cursor-default`}
+                                    <motion.div className={`w-[1400px] h-[900px] ${images[Math.abs(count) % 3]} absolute bg-cover justify-center text-white cursor-default`}
                                         key={count}
                                         variants={variants}
                                         initial="enter"
