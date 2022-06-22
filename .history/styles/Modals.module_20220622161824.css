@@ -1,0 +1,340 @@
+.closeBar {
+    padding: 0.5em;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: -3.5rem;
+    height: 40px;
+    width: 200px;
+    cursor: default;
+}
+
+.closeBtn {
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 150ms ease;
+  position: relative;
+}
+
+.closeBtn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    width: 0%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-weight: 700;
+  
+    transition: all 150ms ease;
+    z-index: -1;
+  }
+  .closeBtn:hover {
+    color: white;
+  }
+  .closeBtn:hover::after {
+    width: 100%;
+  }
+
+  /* -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --  */
+
+
+.snapModal {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+    width: 800px;
+    height: 400px;
+    background: url('/snap-hero.PNG');
+    background-size: cover;
+    box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
+
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 100%;
+    padding: 2rem;
+    text-align: left;
+}
+.snapModal h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
+    font-size: 4rem;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  /* .snapModal h1 svg {
+    position: absolute;
+    top: 2.25rem;
+    right: -2.25rem;
+    width: 26px;
+    height: 26px;
+    fill: black;
+    stroke: black;
+
+  }
+  .snapModal h1 svg .rectBehind {
+    fill: none;
+  }
+  .snapModal h1 svg circle {
+    stroke: white;
+  }
+.snapModal p {
+    font-size: 1.3rem;
+    font-weight: 500;
+} */
+
+  /* -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --  */
+
+.apparellModal {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+
+  width: 800px;
+  height: 400px;
+  background: url('/apparel-hero.PNG');
+  background-size: cover;
+  box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
+
+  display: grid;
+  grid-template-columns: 45%;
+  grid-template-rows: 100%;
+  padding: 2rem;
+  text-align: left;
+}
+/* .apparellModal h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.apparellModal p {
+  font-size: 1.3rem;
+  font-weight: 500;
+} */
+
+  /* -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --  */
+
+  .blogModalCont {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  
+    width: 800px;
+    height: 900px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .blogModalCont .closeBar {
+    top: -2rem;
+  }
+  .blogModal {
+    width: 800px;
+    height: 400px;
+    background: url('/blog-hero.PNG');
+    background-size: cover;
+    box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
+  
+    display: grid;
+    grid-template-columns: 45%;
+    grid-template-rows: 100%;
+    padding: 2rem;
+    text-align: left;
+  }
+  .blogModalTwo {
+    width: 800px;
+    height: 400px;
+    background: url('/blog-mobile-hero.PNG');
+    background-size: cover;
+    box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
+  
+    display: grid;
+    grid-template-columns: 45%;
+    grid-template-rows: 100%;
+    padding: 2rem;
+    text-align: left;
+  }
+  .blogModalTwo h1 {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 2.5rem;
+  }
+  .bfBlogLogo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: black;
+    color: white;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 0.25rem;
+  
+  }
+  .bfBlogLogo2 {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+  
+    transition: all 500ms ease;
+  }
+  
+  .bfBlog:hover .bfBlogLogo{
+    background: black;
+    color: white;
+  }
+  
+  .bfBlog:hover .bfBlogLogo2{
+    color: black;
+  }
+  .blogModalTwo p {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  
+
+/* -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --  */
+
+.calcModal {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+
+  width: 800px;
+  height: 400px;
+  background: url('/calc-hero.PNG');
+  background-size: cover;
+  box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
+
+  display: grid;
+  grid-template-columns: 55%;
+  grid-template-rows: 100%;
+  padding: 2rem;
+  text-align: left;
+}
+.calcModal h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+
+}
+.calcModal p {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --  */
+
+
+.blogModalCont {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+
+  width: 800px;
+  height: 900px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.blogModalCont .closeBar {
+  top: -2rem;
+}
+.blogModal {
+  width: 800px;
+  height: 400px;
+  background: url('/blog-hero.PNG');
+  background-size: cover;
+  box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
+
+  display: grid;
+  grid-template-columns: 45%;
+  grid-template-rows: 100%;
+  padding: 2rem;
+  text-align: left;
+}
+.blogModalTwo {
+  width: 800px;
+  height: 400px;
+  background: url('/blog-mobile-hero.PNG');
+  background-size: cover;
+  box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
+
+  display: grid;
+  grid-template-columns: 45%;
+  grid-template-rows: 100%;
+  padding: 2rem;
+  text-align: left;
+}
+.blogModalTwo h1 {
+  display: flex;
+  gap: .5rem;
+  margin-bottom: 2.5rem;
+}
+.bfBlogLogo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: black;
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0 0.25rem;
+
+}
+.bfBlogLogo2 {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+
+  transition: all 500ms ease;
+}
+
+.bfBlog:hover .bfBlogLogo{
+  background: black;
+  color: white;
+}
+
+.bfBlog:hover .bfBlogLogo2{
+  color: black;
+}
+.blogModalTwo p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+
+/* -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --  */
