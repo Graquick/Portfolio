@@ -58,7 +58,7 @@
 
     width: 800px;
     height: 400px;
-    background: url('/snap-hero.PNG');
+    background: url('/static/img/snap-hero.PNG');
     background-size: cover;
     box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
 
