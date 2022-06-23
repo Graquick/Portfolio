@@ -159,6 +159,7 @@ const carousel = useRef();
       <Header variants={pageNotLoad} />
 
       {/* ModalS */}
+      <Gallery1Modal showG1Modal={showG1Modal} setShowG1Modal={setShowG1Modal} />
       <SnapModal showModal={showModal} setShowModal={setShowModal} />
       <ApparellModal showCModal={showCModal} setShowCModal={setShowCModal} />
       <BfBlogModal showJModal={showJModal} setShowJModal={setShowJModal} />

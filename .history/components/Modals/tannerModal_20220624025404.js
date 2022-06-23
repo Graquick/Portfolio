@@ -75,7 +75,7 @@ const TannerModal = ( {showTannerModal, setShowTannerModal} ) => {
                                 text-white hover:text-black hover:bg-white" onClick={() => setCount(count - 1)
                                 }
                                 >
-                                   <Icon icon="bx:chevron-left"></Icon>
+                                   <Icon icon="box:chevron-left"></Icon>
                                 </div>
                                 <div className="absolute top-0 m-auto right-[-4rem] bottom-0 w-fit h-fit flex justify-center items-center font-bold text-[3rem] transition-all duration-150 ease-in-out active:transform active:scale-50 cursor-pointer 
                                 text-white hover:text-black hover:bg-white" onClick={() => setCount(count + 1)

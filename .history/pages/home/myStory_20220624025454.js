@@ -8,6 +8,7 @@ import { Icon } from '@iconify/react';
 import styles from '../../styles/myStory.module.css';
 import stylesCarousel from '../../styles/Carousel.module.css';
 
+import Gallery1Modal from '../../components/Modals/Gallery1Modal';
 import SnapModal from '../../components/Modals/SnapModal';
 import ApparellModal from '../../components/Modals/ApparellModal';
 import BfBlogModal from '../../components/Modals/BfBlogModal';
@@ -133,7 +134,7 @@ const carousel = useRef();
   ]
 
   const designModalContent = [
-    { id: 1, setShowTrue: () => setShowTannerModal(true), title: <div className="w-64 h-64 bg-no-repeat bg-cover transition-all duration-300 ease-in-out cursor-pointer bg-[url('/tanner-hero.PNG')]"></div>, setShowFalse: () => setShowTannerModal(false), modalType: <TannerModal /> },
+    { id: 1, setShowTrue: () => setShowTannerModal(true), title: <div className="w-64 h-64 bg-no-repeat bg-cover transition-all duration-300 ease-in-out cursor-pointer bg-[url('/sratanner-hero.PNG')]"></div>, setShowFalse: () => setShowTannerModal(false), modalType: <TannerModal /> },
 
     { id: 2, setShowTrue: () => setShowSnapMyModal(true), title: <div className="w-64 h-64 bg-no-repeat bg-cover transition-all duration-300 ease-in-out cursor-pointer bg-[url('/snap-my-hero.PNG')]"></div>, setShowFalse: () => setShowSnapMyModal(false), modalType: <SnapMyModal /> },
 
@@ -159,6 +160,7 @@ const carousel = useRef();
       <Header variants={pageNotLoad} />
 
       {/* ModalS */}
+      <Gallery1Modal showG1Modal={showG1Modal} setShowG1Modal={setShowG1Modal} />
       <SnapModal showModal={showModal} setShowModal={setShowModal} />
       <ApparellModal showCModal={showCModal} setShowCModal={setShowCModal} />
       <BfBlogModal showJModal={showJModal} setShowJModal={setShowJModal} />

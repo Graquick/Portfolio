@@ -133,13 +133,13 @@ const carousel = useRef();
   ]
 
   const designModalContent = [
-    { id: 1, setShowTrue: () => setShowTannerModal(true), title: <div className="w-64 h-64 bg-no-repeat bg-cover transition-all duration-300 ease-in-out cursor-pointer bg-[url('/tanner-hero.PNG')]"></div>, setShowFalse: () => setShowTannerModal(false), modalType: <TannerModal /> },
+    { id: 1, setShowTrue: () => setShowTannerModal(true), title: <div className="w-64 h-64 bg-no-repeat bg-cover transition-all duration-300 ease-in-out cursor-pointer bg-[url('/static/img/tanner-hero.PNG')]"></div>, setShowFalse: () => setShowTannerModal(false), modalType: <TannerModal /> },
 
-    { id: 2, setShowTrue: () => setShowSnapMyModal(true), title: <div className="w-64 h-64 bg-no-repeat bg-cover transition-all duration-300 ease-in-out cursor-pointer bg-[url('/snap-my-hero.PNG')]"></div>, setShowFalse: () => setShowSnapMyModal(false), modalType: <SnapMyModal /> },
+    { id: 2, setShowTrue: () => setShowSnapMyModal(true), title: <div className="w-64 h-64 bg-no-repeat bg-cover transition-all duration-300 ease-in-out cursor-pointer bg-[url('/static/img/snap-my-hero.PNG')]"></div>, setShowFalse: () => setShowSnapMyModal(false), modalType: <SnapMyModal /> },
 
-    { id: 3, setShowTrue: () => setShowApparelMyModal(true), title: <div className="w-64 h-64 bg-no-repeat bg-cover transition-all duration-300 ease-in-out cursor-pointer bg-[url('/apparel-my-hero.PNG')]"></div>, setShowFalse: () => setShowApparelMyModal(false), modalType: <ApparelMyModal /> },
+    { id: 3, setShowTrue: () => setShowApparelMyModal(true), title: <div className="w-64 h-64 bg-no-repeat bg-cover transition-all duration-300 ease-in-out cursor-pointer bg-[url('/static/img/apparel-my-hero.PNG')]"></div>, setShowFalse: () => setShowApparelMyModal(false), modalType: <ApparelMyModal /> },
 
-    { id: 4, setShowTrue: () => setShowSteppModal(true), title: <div className="w-64 h-64 bg-no-repeat bg-cover transition-all duration-300 ease-in-out cursor-pointer bg-[url('/stepp-hero.PNG')]"></div>, setShowFalse: () => setShowSteppModal(false), modalType: <SteppModal /> },
+    { id: 4, setShowTrue: () => setShowSteppModal(true), title: <div className="w-64 h-64 bg-no-repeat bg-cover transition-all duration-300 ease-in-out cursor-pointer bg-[url('/static/img/stepp-hero.PNG')]"></div>, setShowFalse: () => setShowSteppModal(false), modalType: <SteppModal /> },
   ]
 
   const extraModalContent = [
@@ -159,6 +159,7 @@ const carousel = useRef();
       <Header variants={pageNotLoad} />
 
       {/* ModalS */}
+      <Gallery1Modal showG1Modal={showG1Modal} setShowG1Modal={setShowG1Modal} />
       <SnapModal showModal={showModal} setShowModal={setShowModal} />
       <ApparellModal showCModal={showCModal} setShowCModal={setShowCModal} />
       <BfBlogModal showJModal={showJModal} setShowJModal={setShowJModal} />

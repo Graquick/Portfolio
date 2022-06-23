@@ -43,7 +43,7 @@ const TannerModal = ( {showTannerModal, setShowTannerModal} ) => {
         exit: ({direction, width}) => ({ x: direction * -width }),
     }
     
-    let images = ["bg-[url('/tanner-big-1-hero.PNG')]", "bg-[url('/tanner-big-2-hero.PNG')]", "bg-[url('/tanner-big-3-hero.PNG')]", "bg-[url('/tanner-big-4-hero.PNG')]"]
+    let images = ["bg-[url('/static/img/tanner-big-1-hero.PNG')]", "bg-[url('/static/img/tanner-big-2-hero.PNG')]", "bg-[url('/static/img/tanner-big-3-hero.PNG')]", "bg-[url('/static/img/tanner-big-4-hero.PNG')]"]
     let colors = ["bg-red-500", "bg-blue-500", "bg-green-500", "bg-yellow-500"]
 
     return (
