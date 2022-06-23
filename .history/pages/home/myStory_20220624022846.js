@@ -8,6 +8,7 @@ import { Icon } from '@iconify/react';
 import styles from '../../styles/myStory.module.css';
 import stylesCarousel from '../../styles/Carousel.module.css';
 
+import Gallery1Modal from '../../components/Modals/Gallery1Modal';
 import SnapModal from '../../components/Modals/SnapModal';
 import ApparellModal from '../../components/Modals/ApparellModal';
 import BfBlogModal from '../../components/Modals/BfBlogModal';
@@ -159,6 +160,7 @@ const carousel = useRef();
       <Header variants={pageNotLoad} />
 
       {/* ModalS */}
+      <Gallery1Modal showG1Modal={showG1Modal} setShowG1Modal={setShowG1Modal} />
       <SnapModal showModal={showModal} setShowModal={setShowModal} />
       <ApparellModal showCModal={showCModal} setShowCModal={setShowCModal} />
       <BfBlogModal showJModal={showJModal} setShowJModal={setShowJModal} />
