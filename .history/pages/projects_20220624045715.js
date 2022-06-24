@@ -75,7 +75,7 @@ const About = () => {
           strokeWidth="2.4"
         />
         <circle cx={13} cy={7} r="2.5" className="stroke-white fill-black dark:stroke-black/50 dark:fill-white"/>
-      </svg>snap</div>, desc: <p>Snap tested my ability to create dropdown navigation menus, a common pattern on larger sites. It also provided some nice basic layout challenges.<br/><br/> All the design was done by Figma. I developed the final product using Next.js and Vercel.</p>, src: 'snap-projects-mobile-hero', srcdark: 'snap-projects-mobile-hero-dark', href: 'https://brimasnap.vercel.app/', hrefp: 'live site'},
+      </svg>snap</div>, desc: <p>Snap tested my ability to create dropdown navigation menus, a common pattern on larger sites. It also provided some nice basic layout challenges.<br/><br/> All the design was done by Figma. I developed the final product using Next.js and Vercel.</p>, src: 'snap-projects-mobile-hero', srcdark: 'snap-projects-mobile-hero-dark', href: '/brimasnap.vercel.app', hrefp: 'live site'},
 
         { id: 2, title: <div className="font-roboto text-[4rem] font-light text-black cursor-default transition-all duration-150 ease-in-out relative group dark:text-white">.apparell</div>, desc: <p>In this project, I built a beautiful product page. My JS skills were put to the test with a lightbox product gallery and cart functionality! <br/><br/> All the design was done by Figma. I developed the final product using Next.js and Vercel. </p>, src: 'apparel-projects-hero', srcdark: 'apparel-projects-hero-dark', href: '/', hrefp: 'live site'},
 
