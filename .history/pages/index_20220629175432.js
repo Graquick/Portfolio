@@ -91,9 +91,9 @@ const pageNotLoad = {
 const [width, setWidth] = useState(0);
 const carousel = useRef();
 
-   useEffect(() => {
-       setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, [])
+//   useEffect(() => {
+//       setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+//  }, [])
 
 const modalContent = [
   { id: 1, setShowTrue: () => setShowModal(true), title: <div className="font-[Arial, Helvetica, sans-serif] text-[4rem] font-bold text-gray-200 cursor-pointer transition-all duration-150 ease-in-out relative hover:text-black group dark:text-zinc-600 dark:hover:text-zinc-300">  <svg
