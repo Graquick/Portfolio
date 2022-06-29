@@ -22,9 +22,13 @@ import ApparellModal from '../components/Modals/ApparellModal';
 import BfBlogModal from '../components/Modals/BfBlogModal';
 import CalcModal from "../components/Modals/CalcModal";
 
+useEffect(() => {
+  setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+}, [])
+
 export default function Home() {
   
-  // const mounted = useMounted()
+  const mounted = useMounted()
   const [width, setWidth] = useState(0);
   const { systemTheme, theme, setTheme } = useTheme();
 
@@ -39,9 +43,7 @@ export default function Home() {
 
   const carousel = useRef();
 
-  useEffect(() => {
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, [])
+
   
   //  useEffect(() => {
   //    setTimeout(() => {
@@ -134,7 +136,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
 ]
 
 
-  return (
+  return mounted && (
     <>
       <div className="px-5 py-0 transition duration-500 bg-gray-200 dark:bg-neutral-800" >
         <Head>

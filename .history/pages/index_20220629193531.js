@@ -24,24 +24,13 @@ import CalcModal from "../components/Modals/CalcModal";
 
 export default function Home() {
   
-  // const mounted = useMounted()
-  const [width, setWidth] = useState(0);
-  const { systemTheme, theme, setTheme } = useTheme();
-
-  const currentTheme = theme === "system" ? systemTheme : theme;
-
+  const mounted = useMounted()
 
   const [showModal, setShowModal] = useState(false);
   const [showCModal, setShowCModal] = useState(false);
   const [showJModal, setShowJModal] = useState(false);
   const [showRModal, setShowRModal] = useState(false);
   const [showNModal, setShowNModal] = useState(false);
-
-  const carousel = useRef();
-
-  useEffect(() => {
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, [])
   
   //  useEffect(() => {
   //    setTimeout(() => {
@@ -99,6 +88,11 @@ const pageNotLoad = {
 };
 
 
+const [width, setWidth] = useState(0);
+const carousel = useRef();
+
+
+
 const modalContent = [
   { id: 1, setShowTrue: () => setShowModal(true), title: <div className="font-[Arial, Helvetica, sans-serif] text-[4rem] font-bold text-gray-200 cursor-pointer transition-all duration-150 ease-in-out relative hover:text-black group dark:text-zinc-600 dark:hover:text-zinc-300">  <svg
   className="absolute top-[2.5rem] -right-8 w-[26px] h-[26px] transition-all duration-500 ease-in-out group-hover:fill-black group-hover:stroke-black "
@@ -133,8 +127,11 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
   { id: 4, setShowTrue: () => setShowRModal(true), title: <div className="font-play text-[2.5rem] font-[600] relative text-gray-200 cursor-pointer capitalize transition-[color] duration-color-500 transition-[transform] duration-transform-150 ease-in-out hover:text-black dark:text-zinc-600 dark:hover:text-zinc-300">Calco,inc.</div>, setShowFalse: () => setShowRModal(false), modalType: <CalcModal /> },
 ]
 
+  const { systemTheme, theme, setTheme } = useTheme();
 
-  return (
+  const currentTheme = theme === "system" ? systemTheme : theme;
+
+  return mounted && (
     <>
       <div className="px-5 py-0 transition duration-500 bg-gray-200 dark:bg-neutral-800" >
         <Head>

@@ -14,7 +14,7 @@ import Footer from '../components/footer';
 
 
 const Contact = () => {
-  // const mounted = useMounted()
+  const mounted = useMounted()
 
   const router = useRouter();
 

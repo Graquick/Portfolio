@@ -11,7 +11,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 
 const About = () => {
-  // const mounted = useMounted()
+  const mounted = useMounted()
 
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;

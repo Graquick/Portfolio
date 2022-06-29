@@ -24,11 +24,8 @@ import CalcModal from "../components/Modals/CalcModal";
 
 export default function Home() {
   
-  // const mounted = useMounted()
+  const mounted = useMounted()
   const [width, setWidth] = useState(0);
-  const { systemTheme, theme, setTheme } = useTheme();
-
-  const currentTheme = theme === "system" ? systemTheme : theme;
 
 
   const [showModal, setShowModal] = useState(false);
@@ -36,12 +33,6 @@ export default function Home() {
   const [showJModal, setShowJModal] = useState(false);
   const [showRModal, setShowRModal] = useState(false);
   const [showNModal, setShowNModal] = useState(false);
-
-  const carousel = useRef();
-
-  useEffect(() => {
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, [])
   
   //  useEffect(() => {
   //    setTimeout(() => {
@@ -133,8 +124,11 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
   { id: 4, setShowTrue: () => setShowRModal(true), title: <div className="font-play text-[2.5rem] font-[600] relative text-gray-200 cursor-pointer capitalize transition-[color] duration-color-500 transition-[transform] duration-transform-150 ease-in-out hover:text-black dark:text-zinc-600 dark:hover:text-zinc-300">Calco,inc.</div>, setShowFalse: () => setShowRModal(false), modalType: <CalcModal /> },
 ]
 
+  const { systemTheme, theme, setTheme } = useTheme();
 
-  return (
+  const currentTheme = theme === "system" ? systemTheme : theme;
+
+  return mounted && (
     <>
       <div className="px-5 py-0 transition duration-500 bg-gray-200 dark:bg-neutral-800" >
         <Head>

@@ -24,7 +24,7 @@ import Header from '../../components/header';
 import Carousel from '../../components/carousel';
 
 export default function MyStory() {
-  // const mounted = useMounted()
+  const mounted = useMounted()
   const [showG1Modal, setShowG1Modal] = useState(false);
 
   const [showModal, setShowModal] = useState(false);
@@ -151,7 +151,7 @@ const carousel = useRef();
     {id: 3, title: <div className=" w-fit h-fit text-[2rem] text-gray-200 dark:text-gray-600 cursor-default uppercase">Coming soon</div>},
   ]
 
-  return (
+  return mounted && (
     <>
       <div className="px-5 py-0 transition duration-500 bg-gray-200 dark:bg-neutral-800">
         <Head>

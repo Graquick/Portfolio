@@ -24,7 +24,7 @@ import CalcModal from "../components/Modals/CalcModal";
 
 export default function Home() {
   
-  // const mounted = useMounted()
+  const mounted = useMounted()
   const [width, setWidth] = useState(0);
   const { systemTheme, theme, setTheme } = useTheme();
 
@@ -134,7 +134,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
 ]
 
 
-  return (
+  return mounted && (
     <>
       <div className="px-5 py-0 transition duration-500 bg-gray-200 dark:bg-neutral-800" >
         <Head>
