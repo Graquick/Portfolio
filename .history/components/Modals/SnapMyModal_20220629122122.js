@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Icon } from '@iconify/react';
 import styles from '../../styles/MySite.Modals.module.css';
 
-const SteppModal = ( {showSteppModal, setShowSteppModal} ) => {
+const SnapMyModal = ( {showSnapMyModal, setShowSnapMyModal} ) => {
 
     let [count, setCount] = useState(0)
     let [ref, {width}] = useMeasure()
@@ -43,12 +43,12 @@ const SteppModal = ( {showSteppModal, setShowSteppModal} ) => {
         exit: ({direction, width}) => ({ x: direction * -width }),
     }
     
-    let images = ["bg-[url('/stepp-big-1-hero.PNG')]", "bg-[url('/stepp-big-2-hero.PNG')]"]
+    let images = ["bg-[url('/snap-big-1-hero.PNG')]", "bg-[url('//img/snap-big-1-hero-dark.PNG')]", "bg-[url('/static/img/snap-big-mobile-hero.PNG')]"]
     let colors = ["bg-red-500", "bg-blue-500", "bg-green-500", "bg-yellow-500"]
 
     return (
         <AnimatePresence exitBeforeEnter>
-            { showSteppModal && (
+            { showSnapMyModal && (
                 <motion.div className="backdrop"
                     variants={backDrop}
                     initial="hidden"
@@ -63,7 +63,7 @@ const SteppModal = ( {showSteppModal, setShowSteppModal} ) => {
                             >
                                 <Icon icon="clarity:window-min-line" style={{ color: "#a8a8a8" }}/>
                                 <Icon icon="mdi:window-restore" style={{ color: "#a8a8a8" }}/>
-                                <motion.div className={styles.closeBtn} onClick={() => {setShowSteppModal(false)}}
+                                <motion.div className={styles.closeBtn} onClick={() => {setShowSnapMyModal(false)}}
                                     whileTap={{ scale: 0.5, transition: { duration: .1 } }}
                                 >
                                     <Icon icon="eva:close-fill"/>
@@ -86,7 +86,7 @@ const SteppModal = ( {showSteppModal, setShowSteppModal} ) => {
 
                             <div ref={ref}  className="self-center flex items-center justify-center overflow-hidden bg-black/50 h-full w-full relative" >
                                 <AnimatePresence custom={{direction, width}}>
-                                    <motion.div className={`w-[1400px] h-[900px] ${images[Math.abs(count) % 2]} absolute bg-cover justify-center text-white cursor-default`}
+                                    <motion.div className={`w-[1400px] h-[900px] ${images[Math.abs(count) % 3]} absolute bg-cover justify-center text-white cursor-default`}
                                         key={count}
                                         variants={variants}
                                         initial="enter"
@@ -106,4 +106,4 @@ const SteppModal = ( {showSteppModal, setShowSteppModal} ) => {
      );
 }
 
-export default SteppModal;
+export default SnapMyModal;

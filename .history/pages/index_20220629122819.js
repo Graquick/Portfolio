@@ -133,7 +133,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
 
   const currentTheme = theme === "system" ? systemTheme : theme;
 
-  return mounted && (
+  return (
     <div className="px-5 py-0 transition duration-500 bg-gray-200 dark:bg-neutral-800" >
       <Head>
         <title>NEW! Home - Brima Freeman</title>

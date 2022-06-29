@@ -43,7 +43,7 @@ const SteppModal = ( {showSteppModal, setShowSteppModal} ) => {
         exit: ({direction, width}) => ({ x: direction * -width }),
     }
     
-    let images = ["bg-[url('/stepp-big-1-hero.PNG')]", "bg-[url('/stepp-big-2-hero.PNG')]"]
+    let images = ["bg-[url('/stepp-big-1-hero.PNG')]", "bg-[url('/static/img/stepp-big-2-hero.PNG')]"]
     let colors = ["bg-red-500", "bg-blue-500", "bg-green-500", "bg-yellow-500"]
 
     return (

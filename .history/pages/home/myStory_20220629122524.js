@@ -17,7 +17,7 @@ import SnapMyModal from "../../components/Modals/SnapMyModal";
 import ApparelMyModal from "../../components/Modals/ApparelMyModal";
 import SteppModal from "../../components/Modals/SteppModal";
 
-import useMounted from '../../components/useMounted.js'
+import useMounted from '../components/useMounted.js'
 
 import Footer from '../../components/footer';
 import Header from '../../components/header';
@@ -151,7 +151,7 @@ const carousel = useRef();
     {id: 3, title: <div className=" w-fit h-fit text-[2rem] text-gray-200 dark:text-gray-600 cursor-default uppercase">Coming soon</div>},
   ]
 
-  return mounted && (
+  return (
     <div className="px-5 py-0 transition duration-500 bg-gray-200 dark:bg-neutral-800">
       <Head>
         <title>My Story - Brima Freeman</title>

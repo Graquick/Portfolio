@@ -6,12 +6,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useTheme } from 'next-themes'
 import styles from '../styles/Projects.module.css'
 
-import useMounted from '../components/useMounted.js'
+import useMounted from '../../components/useMounted.js'
 import Header from '../components/header';
 import Footer from '../components/footer';
 
 const About = () => {
-  const mounted = useMounted()
 
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
@@ -132,7 +131,7 @@ const About = () => {
         }
       };
 
-    return mounted && ( 
+    return ( 
 <div className="px-5 py-0 transition duration-500 bg-gray-200 dark:bg-neutral-800">
       <Head>
         <title>Projects - Brima Freeman</title>

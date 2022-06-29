@@ -8,13 +8,12 @@ import { Icon } from '@iconify/react'
 import styles from '../styles/Contact.module.css'
 import { useTheme } from 'next-themes';
 
-import useMounted from '../components/useMounted.js'
+import useMounted from '../../components/useMounted.js'
 import Header from '../components/header'
 import Footer from '../components/footer';
 
 
 const Contact = () => {
-  const mounted = useMounted()
 
   const router = useRouter();
 
@@ -114,7 +113,7 @@ const Contact = () => {
           { id: 3, title: "Email:", pholder: "bimu.freeman@outlook.com", icon: "ic:round-email"}
         ]
 
-    return mounted && ( 
+    return ( 
         <div className="px-5 py-0 transition duration-500 bg-gray-200 dark:bg-neutral-800">
             <Head>
                 <title>Contact - Brima Freeman</title>

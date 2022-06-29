@@ -114,7 +114,7 @@ const Contact = () => {
           { id: 3, title: "Email:", pholder: "bimu.freeman@outlook.com", icon: "ic:round-email"}
         ]
 
-    return mounted && ( 
+    return ( 
         <div className="px-5 py-0 transition duration-500 bg-gray-200 dark:bg-neutral-800">
             <Head>
                 <title>Contact - Brima Freeman</title>

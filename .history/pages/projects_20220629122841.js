@@ -132,7 +132,7 @@ const About = () => {
         }
       };
 
-    return mounted && ( 
+    return mounted  ( 
 <div className="px-5 py-0 transition duration-500 bg-gray-200 dark:bg-neutral-800">
       <Head>
         <title>Projects - Brima Freeman</title>

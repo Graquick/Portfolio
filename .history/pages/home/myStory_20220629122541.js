@@ -17,7 +17,7 @@ import SnapMyModal from "../../components/Modals/SnapMyModal";
 import ApparelMyModal from "../../components/Modals/ApparelMyModal";
 import SteppModal from "../../components/Modals/SteppModal";
 
-import useMounted from '../../components/useMounted.js'
+import useMounted from '../components/useMounted.js'
 
 import Footer from '../../components/footer';
 import Header from '../../components/header';

@@ -12,7 +12,7 @@ import stylesHeader from '../styles/Header.module.css'
 import { useTheme } from 'next-themes';
 
 import Header from '../components/header';
-import useMounted from '../components/useMounted.js'
+import useMounted from '../../components/useMounted.js'
 import Footer from '../components/footer';
 import Carousel from '../components/carousel';
 import TextAnimation from '../components/animations/TextAnimation';
@@ -23,7 +23,7 @@ import BfBlogModal from '../components/Modals/BfBlogModal';
 import CalcModal from "../components/Modals/CalcModal";
 
 export default function Home() {
-  const mounted = useMounted()
+  
 
 
   const [showModal, setShowModal] = useState(false);
@@ -133,7 +133,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
 
   const currentTheme = theme === "system" ? systemTheme : theme;
 
-  return mounted && (
+  return (
     <div className="px-5 py-0 transition duration-500 bg-gray-200 dark:bg-neutral-800" >
       <Head>
         <title>NEW! Home - Brima Freeman</title>
