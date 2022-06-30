@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
 
     timeoutRef.current = setTimeout(() => {
       window.scrollTo(0, 0);
-    }, 10);
+    }, 100);
 
     return () => {
       clearTimer();
