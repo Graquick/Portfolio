@@ -12,21 +12,17 @@ function MyApp({ Component, pageProps }) {
     []
   );
 
-  // useEffect(() => {
-  //   if (timeoutRef.current) clearTimer();
-
-  //   timeoutRef.current = setTimeout(() => {
-  //     window.scrollTo(0, 0);
-  //   }, 10);
-
-  //   return () => {
-  //     clearTimer();
-  //   };
-  // }, [clearTimer]);
-
   useEffect(() => {
-    window.history.scrollRestoration = 'manual'
-  }, []);
+    if (timeoutRef.current) clearTimer();
+
+    timeoutRef.current = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 10);
+
+    return () => {
+      clearTimer();
+    };
+  }, [clearTimer]);
   
 
   return (

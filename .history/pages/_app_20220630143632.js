@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion'
 import { ThemeProvider } from 'next-themes'
 import { useRouter } from 'next/router'
@@ -12,21 +12,17 @@ function MyApp({ Component, pageProps }) {
     []
   );
 
-  // useEffect(() => {
-  //   if (timeoutRef.current) clearTimer();
-
-  //   timeoutRef.current = setTimeout(() => {
-  //     window.scrollTo(0, 0);
-  //   }, 10);
-
-  //   return () => {
-  //     clearTimer();
-  //   };
-  // }, [clearTimer]);
-
   useEffect(() => {
-    window.history.scrollRestoration = 'manual'
-  }, []);
+    if (timeoutRef.current) clearTimer();
+
+    timeoutRef.current = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 10);
+
+    return () => {
+      clearTimer();
+    };
+  }, [clearTimer]);
   
 
   return (
