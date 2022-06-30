@@ -185,7 +185,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                 </motion.div>
 
                 <div className="lg:order-2">
-                      <div className="h-fit w-fit text-[1.2rem] font-semibold text-gray-400 uppercase flex items-center justify-center dark:text-gray-500 lg:text-[.8rem]">
+                      <div className="h-fit w-fit text-[1.2rem] font-semibold text-gray-400 uppercase flex items-center justify-center dark:text-gray-500 lg:text-[.9rem]">
                         selected projects
                       </div>
 
