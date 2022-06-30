@@ -94,11 +94,11 @@ a {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  overflow: hidden;
-  background: red;
-  margin: 5rem 0;
 }
 
+column-gap: 6rem;
+padding: 1rem;
+overflow: hidden;
 
 @media (max-width: 1440px) {
   .grid {
@@ -115,7 +115,7 @@ a {
 @media (max-width: 768px) {
   .grid {
     width: 375px;
-    height: 1200px;
+    height: 1500px;
     gap: 0;
     grid-template-columns: 100%;
     grid-template-rows: 45% 45%;

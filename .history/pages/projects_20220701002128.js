@@ -154,10 +154,10 @@ const About = () => {
                                 key={tags.id}
                                 initial="offscreen"
                                 whileInView="onscreen"
-                                viewport={{ once: true, amount: .2 }}
+                                viewport={{ once: true, amount: .5 }}
                             >
 
-                                <motion.div className={i % 2 === 0 ? "flex flex-col p-8 mb-8 text-left shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50 w-full h-[625px] xl:h-[500px]" : "order-2 flex flex-col p-8 mb-8 text-left shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50 w-full h-[625px] xl:h-[500px] lg:order-1"}
+                                <motion.div className={i % 2 === 0 ? "flex flex-col p-8 mb-8 text-left shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50 w-full h-[625px] xl:h-[520px]" : "order-2 flex flex-col p-8 mb-8 text-left shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50 w-full h-[625px] xl:h-[520px]"}
                                     variants={gridVariants}
                                 >
                                     <motion.div 
