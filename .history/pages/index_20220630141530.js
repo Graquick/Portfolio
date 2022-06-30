@@ -164,7 +164,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                   initial="hidden"
                   animate="visible"
                 >
-                  <h1 className="font-medium text-[5rem] mb-4 dark:text-gray-200 2xl:text-[4rem] xl:text-[3rem] lg:text-[2.4rem]">Web Developer</h1>
+                  <h1 className="font-medium text-[5rem] mb-4 dark:text-gray-200 2xl:text-[4rem] xl:text-[3rem] lg:text-[2.5rem]">Web Developer</h1>
                   <p className="text-[3rem] mb-8 dark:text-gray-200 2xl:text-[2rem] xl:text-[1.75rem] xl:mb-[1.5rem]">Brima Freeman</p>
                   <motion.div className="w-[fit-content] text-[1.65rem] p-3 uppercase relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:bg-black after:w-[0%] after:h-[2px] after:flex after:items-end after:justify-end after:transition-all after:duration-150 hover:after:w-full dark:text-gray-200 dark:after:bg-gray-200 2xl:p-0 2xl:text-[1.4rem] 2xl:after:-bottom-2 xl:text-[1.2rem] xl:after:h-[1.5px]"
                           whileHover={{ x: 10, transition: { duration: .1 }}}
