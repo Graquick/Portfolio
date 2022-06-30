@@ -156,7 +156,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
               <motion.div className={styles.grid}
               >
                 
-                <motion.div id="/" className="h-[95%] flex flex-col p-8 text-left shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50" 
+                <motion.div id="" className="h-[95%] flex flex-col p-8 text-left shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50" 
                   // className={styles.helloCard}
                   variants={gridVariants}
                   initial="hidden"

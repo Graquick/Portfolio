@@ -76,7 +76,7 @@ export default function Header(props) {
     return (
 
     <header // className={`${show ? "shadow-sm backdrop-blur-lg sticky transition duration-500 top-0 z-10 flex justify-between w-[90%] h-24 px-8 py-4 m-auto max-w-[1400px] bg-white/90 dark:bg-black/80" : "shadow-sm backdrop-blur-lg sticky transition duration-150 top-0 z-10 flex justify-between w-[90%] h-24 px-8 py-4 m-auto max-w-[1400px] bg-white/90 dark:bg-black/80 opacity-0"}`}
-    className="shadow-sm backdrop-blur-lg sticky transition duration-500 top-0 z-10 flex justify-between w-[90%] h-24 px-8 py-4 m-auto max-w-[1400px] bg-white/90 dark:bg-black/80"
+    className="shadow-sm backdrop-blur-lg sticky transition duration-500 top-0 z-10 flex justify-between w-[90%] h-24 px-8 py-4 m-auto max-w-[1400px] bg-white/90 dark:bg-black/80 x"
          // className={styles.header}
     >
         <AnimatePresence>

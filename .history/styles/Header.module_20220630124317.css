@@ -40,12 +40,7 @@
     width: 50%;
 }
 
-@media (max-width: 1024px) {
-    .middle {
-        display: none;
-        visibility: invisible;
-    }
-}
+@media ()
 
 .links {
     display: flex;
