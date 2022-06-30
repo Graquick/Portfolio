@@ -23,7 +23,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 
@@ -36,7 +35,6 @@
   grid-template-rows: 55% 45%;
   column-gap: 6rem;
   padding: 1rem;
-  overflow: hidden;
 }
 
 @media (max-width: 1440px) {
