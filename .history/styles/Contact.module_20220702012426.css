@@ -64,7 +64,6 @@
     .grid {
       width: 355px;
       height: 1000px;
-      grid-template-rows: 38% 50%;
     }
   }
 
@@ -149,15 +148,14 @@
 }
 
 .formContent {
-    height: 90%;
-    padding: .75rem;
+    height: 80%;
+    padding: .5rem;
     display: grid;
     grid-template-rows: 1fr 4fr;
 }
 
 .formNameContent {
     display: flex;
-    width: 330px;
     justify-content: space-between;
 }
 
@@ -209,7 +207,7 @@
     display: flex;
     flex-direction: column;
     height: 75%;
-    width: 100%;
+    width: 80%;
     position: relative;
 }
 

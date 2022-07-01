@@ -149,7 +149,7 @@
 }
 
 .formContent {
-    height: 90%;
+    height: 100%;
     padding: .75rem;
     display: grid;
     grid-template-rows: 1fr 4fr;

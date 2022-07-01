@@ -139,7 +139,7 @@ const Contact = () => {
                 </p>
 
                 <motion.div className={styles.grid} variants={gridVariants}>
-                    <div className="flex flex-col justify-center px-12 py-4 text-left no-underline shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50">
+                    <div className="flex flex-col justify-center px-12 py-4 text-left no-underline shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50 lg:p-0">
                         <h1 className="text-[2.5rem]">Let&apos;s get in touch</h1>
                         <p className="font-medium text-[1.125rem]">I&apos;m looking forward to working on a new project with you.</p>
 
@@ -167,7 +167,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <form className="pt-4 pb-8 pl-12 pr-12 text-left no-underline shadow-md text-inherit bg-white/80 backdrop-blur-sm dark:bg-black/50 2xl:py-4 2xl:px-4 lg:p-0"
+                    <form className="pt-4 pb-8 pl-12 pr-12 text-left no-underline shadow-md text-inherit bg-white/80 backdrop-blur-sm dark:bg-black/50"
                       // className={styles.cardI}
                     action="/success" id="form" name="contact" method="POST" data-netlify="true">
                         <input type="hidden" name="form-name" value="contact" />

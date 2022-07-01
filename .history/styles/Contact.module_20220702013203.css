@@ -64,7 +64,6 @@
     .grid {
       width: 355px;
       height: 1000px;
-      grid-template-rows: 38% 50%;
     }
   }
 
@@ -149,15 +148,21 @@
 }
 
 .formContent {
-    height: 90%;
+    height: 80%;
+    width: 100%;
     padding: .75rem;
     display: grid;
     grid-template-rows: 1fr 4fr;
 }
 
+@media (max-width: 768px) {
+    .formContent {
+
+    }
+}
+
 .formNameContent {
     display: flex;
-    width: 330px;
     justify-content: space-between;
 }
 
