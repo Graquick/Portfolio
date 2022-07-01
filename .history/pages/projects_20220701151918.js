@@ -158,14 +158,14 @@ const About = () => {
                                 viewport={{ once: true, amount: .2 }}
                             >
 
-                                <motion.div className={i % 2 === 0 ? "flex flex-col items-center p-8 pt-[1.4rem] mb-8 text-left shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50 w-full h-[650px] xl:h-[485px] xl:p-[1.5rem]" : "order-2 flex flex-col p-8 mb-8 text-left shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50 w-full h-[650px] xl:h-[485px] xl:p-[1.5rem] lg:order-1"}
+                                <motion.div className={i % 2 === 0 ? "flex flex-col p-8 pt-[1.4rem] mb-8 text-left shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50 w-full h-[650px] xl:h-[485px] xl:p-[1.5rem]" : "order-2 flex flex-col p-8 mb-8 text-left shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50 w-full h-[650px] xl:h-[485px] xl:p-[1.5rem] lg:order-1"}
                                     variants={gridVariants}
                                 >
-                                    <motion.div className="lg:w-[85%]"
+                                    <motion.div 
                                         variants={gridVariants}
                                     >
                                         <h1 className="mb-4 w-fit">{tags.title}</h1>
-                                        <p className="mb-8 text-[1.425rem] leading-relaxed">{tags.desc}</p>
+                                        <p className="mb-8 text-[1.425rem] leading-relaxed lg:text-[.1rem]">{tags.desc}</p>
                                     </motion.div>
 
                                     <motion.div className="text-[1.5rem] uppercase h-[60px] w-[fit-content] p-2 relative bottom-0 left-0 after:content-[''] after:absolute after:bottom-0 after:left-0 after:bg-black after:w-[0%] after:h-[2px] after:flex after:justify-end after:items-end after:transition-all after:duration-150 after:ease-in-out hover:after:w-full dark:text-gray-200 dark:after:bg-gray-200 xl:bottom-1"

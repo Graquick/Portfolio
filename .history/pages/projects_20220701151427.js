@@ -158,10 +158,10 @@ const About = () => {
                                 viewport={{ once: true, amount: .2 }}
                             >
 
-                                <motion.div className={i % 2 === 0 ? "flex flex-col items-center p-8 pt-[1.4rem] mb-8 text-left shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50 w-full h-[650px] xl:h-[485px] xl:p-[1.5rem]" : "order-2 flex flex-col p-8 mb-8 text-left shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50 w-full h-[650px] xl:h-[485px] xl:p-[1.5rem] lg:order-1"}
+                                <motion.div className={i % 2 === 0 ? "flex flex-col p-8 pt-[1.4rem] mb-8 text-justify shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50 w-full h-[650px] xl:h-[485px] xl:p-[1.5rem]" : "order-2 flex flex-col p-8 mb-8 text-justify shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50 w-full h-[650px] xl:h-[485px] xl:p-[1.5rem] lg:order-1 lg:text-[115rem]"}
                                     variants={gridVariants}
                                 >
-                                    <motion.div className="lg:w-[85%]"
+                                    <motion.div 
                                         variants={gridVariants}
                                     >
                                         <h1 className="mb-4 w-fit">{tags.title}</h1>
