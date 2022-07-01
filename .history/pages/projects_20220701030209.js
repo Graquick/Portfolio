@@ -168,7 +168,7 @@ const About = () => {
                                         <p className="mb-8 text-[1.425rem] leading-relaxed">{tags.desc}</p>
                                     </motion.div>
 
-                                    <motion.div className="text-[1.5rem] uppercase h-[60px] w-[fit-content] p-2 relative bottom-[5rem] left-48 after:content-[''] after:absolute after:bottom-0 after:left-0 after:bg-black after:w-[0%] after:h-[2px] after:flex after:justify-end after:items-end after:transition-all after:duration-150 after:ease-in-out hover:after:w-full dark:text-gray-200 dark:after:bg-gray-200 xl:bottom-[4.5rem] xl:left-36"
+                                    <motion.div className="text-[1.5rem] uppercase h-[60px] w-[fit-content] p-2 relative bottom-[5rem] left-48 after:content-[''] after:absolute after:bottom-0 after:left-0 after:bg-black after:w-[0%] after:h-[2px] after:flex after:justify-end after:items-end after:transition-all after:duration-150 after:ease-in-out hover:after:w-full dark:text-gray-200 dark:after:bg-gray-200 xl:bottom-[4.6rem]"
                                         variants={gridVariants}
                                         whileHover={{ x: 10, transition: { duration: .1 }}}
                                         whileTap={{ scale: 0.9 }}
