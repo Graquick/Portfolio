@@ -136,7 +136,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
 
 
   return (
-      <div className="px-5 transition duration-500 bg-gray-200 pt-28 dark:bg-neutral-800 lg:px-0" >
+      <div className="px-5 pt-20 overflow-hidden bg-gray-200 dark:bg-neutral-800" >
         
         <Head>
           <title>Home - Brima Freeman</title>
@@ -184,7 +184,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                     objectFit={"cover"}
                     blurDataURL="/code.jpg"
                     placeholder="blur"
-                    priority  
+                    
                   />
                 </motion.div>
 

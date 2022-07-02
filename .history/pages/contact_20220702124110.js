@@ -142,7 +142,7 @@ const Contact = () => {
                         <h1 className="text-[2.5rem] 2xl:w-[85%] lg:text-[1.25rem]">Let&apos;s get in touch</h1>
                         <p className="font-medium text-[1.125rem] 2xl:w-[85%] xl:text-[1.5rem] lg:text-[1rem]">I&apos;m looking forward to working on a new project with you.</p>
 
-                        <div className="h-[65%] p-0 flex flex-col 2xl:w-[85%] lg:w-[90%]"
+                        <div className="h-[65%] p-0 flex flex-col 2xl:w-[85%]"
                           // className={styles.cardIconCont}
                         
                         >
@@ -159,7 +159,7 @@ const Contact = () => {
                                     
                                     <div className={styles.cardIconText}>
                                         <h3 className="opacity-50 lg:text-[1rem]">{cards.title}</h3>
-                                        <p className="text-[1.5rem] font-light font-roboto 2xl:text-[1.25rem] xl:text-[1.5rem] lg:text-[1.125rem]">{cards.pholder}</p>
+                                        <p className="text-[1.5rem] font-light font-roboto 2xl:text-[1.25rem] xl:text-[1.5rem] lg:text-[1.25rem]">{cards.pholder}</p>
                                     </div>
                                 </div>
                             ))}

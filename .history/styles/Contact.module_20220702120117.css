@@ -63,8 +63,7 @@
   @media (max-width: 768px) {
     .grid {
       width: 355px;
-      height: 900px;
-      row-gap: 2.5rem;
+      height: 1000px;
       grid-template-rows: 38% 50%;
     }
   }
@@ -103,11 +102,9 @@
 
 .cardIconsParent {
     height: 80%;
-    width: 100%;
     display: flex;
     align-items: center;
 }
-
 
 .cardIcon {
     width: 50px;
@@ -160,16 +157,9 @@
 
 .formNameContent {
     display: flex;
-    width: 100%;
+    background: blue;
+    width: 330px;
     justify-content: space-between;
-}
-
-@media (max-width: 768px) {
-    .formNameContent {
-        width: 320px;
-        margin: 1rem 0;
-        justify-self: center;
-    }
 }
 
 .formNameContent div {

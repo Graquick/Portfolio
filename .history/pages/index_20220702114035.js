@@ -136,7 +136,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
 
 
   return (
-      <div className="px-5 transition duration-500 bg-gray-200 pt-28 dark:bg-neutral-800 lg:px-0" >
+      <div className="px-5 pt-20 overflow-hidden bg-gray-200 dark:bg-neutral-800" >
         
         <Head>
           <title>Home - Brima Freeman</title>
@@ -178,14 +178,12 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
 
                 <motion.div className={styles.imgCard} variants={gridVariants}
                 >
-                  <Image src="/myprofile.jpg"
+                  <Image src="/me.jpg"
                     alt="Picture of the author - Brima Freeman"
                     width={140} height={210} layout="responsive"
                     objectFit={"cover"}
                     blurDataURL="/code.jpg"
-                    placeholder="blur"
-                    priority  
-                  />
+                    placeholder="blur"/>
                 </motion.div>
 
                 <div className="lg:order-2">

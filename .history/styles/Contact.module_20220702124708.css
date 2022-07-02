@@ -168,7 +168,7 @@
     .formNameContent {
         width: 320px;
         margin: 1rem 0;
-        justify-self: center;
+        align-self: center;
     }
 }
 

@@ -58,7 +58,7 @@
 @media (max-width: 768px) {
   .grid {
     width: 375px;
-    height: 1100px;
+    height: 1200px;
     row-gap: 0;
     column-gap: 0;
     grid-template-columns: 100%;
@@ -174,10 +174,9 @@
 
 .imgCard {
   grid-row-start: span 3;
-  border-radius: 5px;
   overflow: hidden;
   z-index: 5;
-  box-shadow: 1px 1px 4px #e0e0e0;
+  box-shadow: 1px 1px 4px ;
 }
 
 .imgCard img {
@@ -194,8 +193,6 @@
 
 @media (max-width: 768px) {
   .imgCard {
-    background: red;
-    height: 515px;
     order: 3;
     grid-row-start: 3;
     grid-column-start: 1;

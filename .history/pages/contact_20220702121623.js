@@ -138,18 +138,18 @@ const Contact = () => {
                 </p>
 
                 <motion.div className={styles.grid} variants={gridVariants}>
-                    <div className="flex flex-col justify-around px-12 py-4 text-left no-underline shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50 2xl:px-4 2xl:items-center xl:p-12 lg:p-4">
-                        <h1 className="text-[2.5rem] 2xl:w-[85%] lg:text-[1.25rem]">Let&apos;s get in touch</h1>
-                        <p className="font-medium text-[1.125rem] 2xl:w-[85%] xl:text-[1.5rem] lg:text-[1rem]">I&apos;m looking forward to working on a new project with you.</p>
+                    <div className="flex flex-col items-center px-12 py-4 text-left no-underline shadow-md bg-white/80 backdrop-blur-sm dark:bg-black/50 2xl:px-4">
+                        <h1 className="text-[2.5rem]">Let&apos;s get in touch</h1>
+                        <p className="font-medium text-[1.125rem]">I&apos;m looking forward to working on a new project with you.</p>
 
-                        <div className="h-[65%] p-0 flex flex-col 2xl:w-[85%] lg:w-[90%]"
+                        <div className="h-[65%] p-0 flex flex-col 2xl:bg-blue-400 2xl:w-[85%]"
                           // className={styles.cardIconCont}
                         
                         >
                             {cardIconsParent.map((cards, i) => (
                                 <div className={styles.cardIconsParent}
                                     key={cards.id}>
-                                    <div className="w-[50px] h-[50px] rounded-full mr-8 bg-black flex justify-center items-center text-[1.5rem] dark:bg-white lg:w-[30px] lg:h-[30px] lg:text-[.75rem]"
+                                    <div className="w-[50px] h-[50px] rounded-full mr-8 bg-black flex justify-center items-center text-[1.5rem] dark:bg-white"
                                       // className={styles.cardIcon}
                                     >
                                         <Icon className="text-white transition-all duration-150 ease-in-out dark:text-black"
@@ -158,8 +158,8 @@ const Contact = () => {
                                     </div>
                                     
                                     <div className={styles.cardIconText}>
-                                        <h3 className="opacity-50 lg:text-[1rem]">{cards.title}</h3>
-                                        <p className="text-[1.5rem] font-light font-roboto 2xl:text-[1.25rem] xl:text-[1.5rem] lg:text-[1.125rem]">{cards.pholder}</p>
+                                        <h3 className="opacity-50">{cards.title}</h3>
+                                        <p className="text-[1.5rem] font-light font-roboto">{cards.pholder}</p>
                                     </div>
                                 </div>
                             ))}
