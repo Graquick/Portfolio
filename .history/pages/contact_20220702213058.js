@@ -219,6 +219,7 @@ const Contact = () => {
                           whileTap={{ scale: 0.9 }}
                         >
                             <input type="submit" value="send message" className="uppercase cursor-pointer"/>
+                          </Link>
                         </motion.div>
 
                     </form>
