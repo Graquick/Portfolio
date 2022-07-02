@@ -176,7 +176,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                   </motion.div>
                 </motion.div>
 
-                <motion.div className="row-span-3 shadow-md overflow-hidden rounded-md z-5 xl:order-3 xl:row-start-span-2 xl:col-start-span-2 lg:h-[515px] lg:order-3 lg:row-start-3 col-start-1" variants={gridVariants}
+                <motion.div className="row-span-3 overflow-hidden bg-blue-500 rounded-md z-5 xl:order-3 xl:row-start lg:h-[515px] lg:order-3 lg:row-start-3 col-start-1" variants={gridVariants}
                 >
                   <Image src="/myprofile.jpg"
                     alt="Picture of the author - Brima Freeman"
