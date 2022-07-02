@@ -168,15 +168,14 @@ const Contact = () => {
 
                     <form className="px-8 py-8 text-left no-underline shadow-md text-inherit bg-white/80 backdrop-blur-sm dark:bg-black/50 2xl:py-4 2xl:px-4 lg:p-0"
                       // className={styles.cardI}
-                    action="/success" id="form" name="contact" method="POST" // data-netlify="true"
-                    >
+                    action="/success" id="form" name="contact" method="POST" data-netlify="true">
                         <input type="hidden" name="form-name" value="contact" />
 
                         <div className={styles.formContent}>
                             <div className={styles.formNameContent}>
                                 <div className={styles.formInputTheme}>
                                     <label htmlFor="name">full name</label>
-                                    <input name="name" type="text" id="name" placeholder="Name" required className="dark:text-black"
+                                    <input name="name" type="text" id="name" placeholder="Name" required className="dark:text-blackr"
                                     // style={errors.fullname ? { border: "solid 1.5px #ed4337" } : null} {...register("fullname", { required: true, minLength: 5 })}
                                     />
                                     {/* {errors.fullname?.type === "required" && <p>Please enter your full name.</p>}
