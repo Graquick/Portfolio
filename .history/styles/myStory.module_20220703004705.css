@@ -6,17 +6,17 @@
 
 .main {
   min-height: 100vh;
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
+  gap: 40rem;
   align-items: center;
 }
 
 .myStory {
   background: green;
-  width: 1400px;
-  height: 1500px;
+  width: 1400px
+  height: 2200px;
   display: grid;
   row-gap: 2rem;
   grid-template-columns: 1fr 1fr;

@@ -119,6 +119,7 @@ a {
 }
 @media (max-width: 768px) {
   .grid {
+    background: red;
     width: 355px;
     height: 1100px;
     gap: auto;

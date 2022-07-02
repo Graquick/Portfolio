@@ -189,7 +189,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                 </motion.div>
 
                 <div className="lg:order-2">
-                      <div className="h-fit mb-1 w-fit text-[1.2rem] font-semibold text-gray-400 uppercase flex items-center justify-center dark:text-gray-500 xl:text-[1rem] lg:text-[.8rem]">
+                      <div className="h-fit mb-2 w-fit text-[1.2rem] font-semibold text-gray-400 uppercase flex items-center justify-center dark:text-gray-500 xl:text-[1rem] lg:text-[.8rem]">
                         selected projects
                       </div>
 

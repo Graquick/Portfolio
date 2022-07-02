@@ -136,7 +136,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
 
 
   return (
-      <div className="px-5 transition duration-500 bg-gray-200 dark:bg-neutral-800 lg:px-0" >
+      <div className="px-5 transition duration-500 bg-gray-200 pt-28 dark:bg-neutral-800 lg:px-0" >
         
         <Head>
           <title>Home - Brima Freeman</title>
@@ -176,7 +176,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                   </motion.div>
                 </motion.div>
 
-                <motion.div className={styles.imgCard} variants={gridVariants}
+                <motion.div className={styles.img} variants={gridVariants}
                 >
                   <Image src="/myprofile.jpg"
                     alt="Picture of the author - Brima Freeman"
@@ -189,7 +189,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                 </motion.div>
 
                 <div className="lg:order-2">
-                      <div className="h-fit mb-1 w-fit text-[1.2rem] font-semibold text-gray-400 uppercase flex items-center justify-center dark:text-gray-500 xl:text-[1rem] lg:text-[.8rem]">
+                      <div className="h-fit w-fit text-[1.2rem] font-semibold text-gray-400 uppercase flex items-center justify-center dark:text-gray-500 xl:text-[1rem] lg:text-[.8rem]">
                         selected projects
                       </div>
 

@@ -6,7 +6,7 @@
 
 .main {
   min-height: 100vh;
-  margin-top: 10rem;
+  pa-top: 10rem;
   margin-bottom: 5rem;
   display: flex;
   flex-direction: column;

@@ -35,9 +35,7 @@
   grid-template-columns: 45% 45%;
   grid-template-rows: 55% 45%;
   column-gap: 6rem;
-  row-gap: 1.5rem;
   padding: 1rem;
-  margin-top: 4rem;
   overflow: hidden;
 }
 
@@ -179,6 +177,7 @@
   border-radius: 5px;
   overflow: hidden;
   z-index: 5;
+    background: blue;
 }
 
 .imgCard img {
@@ -195,7 +194,7 @@
 
 @media (max-width: 768px) {
   .imgCard {
-    height: 510px;
+    height: 515px;
     order: 3;
     grid-row-start: 3;
     grid-column-start: 1;

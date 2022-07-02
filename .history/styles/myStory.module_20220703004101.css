@@ -6,42 +6,24 @@
 
 .main {
   min-height: 100vh;
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
+  gap: 40rem;
   align-items: center;
 }
 
 .myStory {
   background: green;
-  width: 1400px;
-  height: 1500px;
+  max-width: 1400px;
+  width: 50%;
+  height: 2200px;
   display: grid;
   row-gap: 2rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 22% 15% 25% 25% 10%;
   
   position: relative;
-}
-
-@media (max-width: 1440px) {
-  .myStory {
-    width: 1000px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .myStory {
-    width: 750px;
-    height: 550px;
-  }
-}
-@media (max-width: 768px) {
-  .myStory {
-    width: 355px;
-    height: 1100px;
-  }
 }
 
 /* .grid::after {

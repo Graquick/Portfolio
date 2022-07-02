@@ -35,9 +35,7 @@
   grid-template-columns: 45% 45%;
   grid-template-rows: 55% 45%;
   column-gap: 6rem;
-  row-gap: 1.5rem;
-  padding: 1rem;
-  margin-top: 4rem;
+  padding: 3rem 1rem;
   overflow: hidden;
 }
 
