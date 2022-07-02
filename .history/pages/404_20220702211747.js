@@ -40,7 +40,7 @@ const notFound = () => {
   }
 
     return (
-      <div className="px-5 py-0 transition duration-500 bg-gray-200 dark:bg-neutral-800">
+      <div>
         <motion.div className={styles.container}
         >
           <Head>

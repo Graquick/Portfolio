@@ -83,13 +83,6 @@
     .description {
       font-size: 1.25rem;
     }
-
-    .btn {
-      margin-top: 1.5rem;
-      width: 150px;
-      height: 37.5px;
-      font-size: .9375rem;
-    }
   }
 
   @media (max-width: 560px) {
@@ -102,22 +95,12 @@
     }
   }
 
-  @media (max-width: 410px) {
+  @media (max-width: 4100px) {
+    .container {
+      padding: 0;
+    }
+
     .title {
-      font-size: 1.75rem;
-    }
-
-    .description {
-      font-size: 1.125rem;
-    }
-  }
-
-  @media (max-width: 350px) {
-    .title {
-      font-size: 1.5rem;
-    }
-
-    .description {
-      font-size: 1rem;
+      font-size: 2rem;
     }
   }

@@ -133,7 +133,7 @@ const Contact = () => {
                     Contact
                 </h1>
 
-                <p className="mx-0 mt-4 mb-8 leading-normal text-center cursor-default text-[1.5rem] xl:text-[1.3rem] lg:w-[350px]">
+                <p className="mx-0 mt-4 mb-12 leading-normal text-center cursor-default text-[1.3rem] lg:w-[]">
                     Start by filling in the form, and I will get back to you as soon as possible.
                 </p>
 

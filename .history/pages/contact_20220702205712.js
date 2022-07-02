@@ -133,7 +133,7 @@ const Contact = () => {
                     Contact
                 </h1>
 
-                <p className="mx-0 mt-4 mb-8 leading-normal text-center cursor-default text-[1.5rem] xl:text-[1.3rem] lg:w-[350px]">
+                <p className="mx-0 mt-4 mb-12 leading-normal text-center cursor-default text-[1.5rem]">
                     Start by filling in the form, and I will get back to you as soon as possible.
                 </p>
 
@@ -214,7 +214,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <motion.div className="cursor-pointer ml-8 w-[fit-content] text-[1.5rem] p-3 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:bg-black after:w-[0%] after:h-[2px] after:flex after:items-end after:justify-end after:transition-all after:duration-150 hover:after:w-full dark:text-gray-200 dark:after:bg-gray-200 2xl:p-0 2xl:text-[1.3rem] 2xl:after:-bottom-2 xl:text-[1.2rem] xl:after:h-[1.5px] lg:text-[1rem]"
+                        <motion.div className="cursor-pointer w-[fit-content] text-[1.65rem] p-3 uppercase relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:bg-black after:w-[0%] after:h-[2px] after:flex after:items-end after:justify-end after:transition-all after:duration-150 hover:after:w-full dark:text-gray-200 dark:after:bg-gray-200 2xl:p-0 2xl:text-[1.3rem] 2xl:after:-bottom-2 xl:text-[1.2rem] xl:after:h-[1.5px]"
                           whileHover={{ x: 10, transition: { duration: .1 }}}
                           whileTap={{ scale: 0.9 }}
                         >
