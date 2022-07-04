@@ -215,7 +215,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <motion.div className="cursor-pointer ml-8 w-[13rem] h-[3rem] text-[1.5rem] p-3 relative flex items-center justify-center border-2 border-black text-black hover:border-green-500 hover:bg-green-500 hover:text-white rounded  dark:text-white dark:border-white dark:hover:border-green-500 2xl:p-0 2xl:text-[1.3rem] 2xl:after:-bottom-2 xl:text-[1.2rem] xl:after:h-[1.5px] lg:text-[1rem] lg:h-[2rem] lg:w-[10rem]"
+                        <motion.div className="cursor-pointer ml-8 w-[13rem] h-[3rem] text-[1.5rem] p-3 relative flex items-center justify-center bg-green-400 text-white rounded  border-2 border-black text-black hover:border-green-500 hover:bg-green-500 hover:text-white rounded  dark:text-white dark:border-white dark:hover:border-green-500 2xl:p-0 2xl:text-[1.3rem] 2xl:after:-bottom-2 xl:text-[1.2rem] xl:after:h-[1.5px] lg:text-[1rem] lg:h-[2rem] lg:w-[10rem]"
                           whileHover={{ x: 10, transition: { duration: .1 }}}
                           whileTap={{ scale: 0.9 }}
                         >

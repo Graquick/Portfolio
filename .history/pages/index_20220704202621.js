@@ -167,7 +167,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                   <h1 className="font-medium text-[5rem] mb-4 dark:text-gray-200 2xl:text-[3.75rem] 2xl:mb-2 xl:text-[2.75rem] xl:mb-1 lg:text-[2.5rem] lg:mb-2">Web Developer</h1>
                   <p className="text-[3rem] mb-8 dark:text-gray-200 2xl:text-[2rem] 2xl:mb-3 xl:text-[1.7rem] xl:mb-3 lg:mb-[1rem]">Brima Freeman</p>
 
-                  <motion.div className="cursor-pointer flex items-center justify-center rounded border-2 border-black text-black w-[50%] h-[20%] text-[1.65rem] uppercase relative hover:bg-green-500 hover:text-white hover:border-green-500 dark:text-white dark:border-white dark:hover:border-green-500 2xl:p-0 2xl:text-[1.3rem] 2xl:after:-bottom-2 xl:text-[1.2rem] xl:after:h-[1.5px]"
+                  <motion.div className="cursor-pointer flex items-center justify-center rounded border-2 border-black text-black w-[50%] h-[20%] text-[1.65rem] uppercase relative hover:bg-blue-400 hover:text-white hover:border-green-400 dark:text-black dark:bg-gray-200 2xl:p-0 2xl:text-[1.3rem] 2xl:after:-bottom-2 xl:text-[1.2rem] xl:after:h-[1.5px]"
                           whileHover={{ x: 10, transition: { duration: .1 }}}
                           whileTap={{ scale: 0.9 }}
                         >
