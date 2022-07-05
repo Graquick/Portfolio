@@ -182,7 +182,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                 viewport={{ once: true, amount: .8 }}
               >
 
-                <div className="items-center justify-center  w-full h-[80%] 2xl:h-[55%] xl:h-[75%]"
+                <div className="items-center justify-center  w-full h-[80%] 2xl:h-[55%] xl:h-[75%] lg:h-[50%]"
                   // INTRO
                 >
                   <motion.div className="w-full h-full backdrop-blur-sm lg:w-full bg-white/80 shadow dark:bg-neutral-700 dark:text-gray-200"
@@ -315,11 +315,11 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
               
                 <div className="flex w-[1400px] m-auto mb-4 col-span-2 row-span-1 h-fit 2xl:w-[1000px] xl:w-[750px] lg:w-[355px] cursor-pointer">
                   <Link href="/">
-                    <motion.div className="text-[1.25rem] uppercase h-[60px] w-[fit-content] p-2 relative flex items-center justify-center gap-4 dark:text-gray-200 dark:after:bg-gray-200 lg:text-[.75rem]"
+                    <motion.div className="text-[1.5rem] uppercase h-[60px] w-[fit-content] p-2 relative flex items-center justify-center gap-4 dark:text-gray-200 dark:after:bg-gray-200"
                           whileHover={{ x: 10, transition: { duration: .1 }}}
                           whileTap={{ scale: 0.5 }}
                       >
-                          <Icon icon="carbon:arrow-up-left" className="text-[1.5rem] rounded bg-neutral-800 text-white dark:bg-neutral-200 dark:text-black" /> Head Back Home
+                          <Icon icon="carbon:arrow-up-left" className="bg-neutral-800 text-white dark:bg-neutral-200 dark:text-black" /> Head Back Home
                     </motion.div>
                   </Link>
                 </div>

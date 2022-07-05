@@ -37,7 +37,7 @@
 @media (max-width: 768px) {
   .myStory {
     width: 355px;
-    height: 1400px;
+    row-gap: 1.5rem;
 
   }
 }

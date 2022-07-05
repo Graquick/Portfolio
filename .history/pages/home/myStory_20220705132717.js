@@ -182,15 +182,15 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                 viewport={{ once: true, amount: .8 }}
               >
 
-                <div className="items-center justify-center  w-full h-[80%] 2xl:h-[55%] xl:h-[75%]"
+                <div className="items-center justify-center  w-full h-full col-span-2 lg:col-span-1"
                   // INTRO
                 >
                   <motion.div className="w-full h-full backdrop-blur-sm lg:w-full bg-white/80 shadow dark:bg-neutral-700 dark:text-gray-200"
                     // className={styles.helloCard}
                   variants={gridVariants}>
-                    <p className="px-12 flex flex-col justify-center items-center text-[2.25rem] h-full leading-relaxed text-justify 2xl:text-[1.55rem] xl:text-[1.55rem] lg:text-[1.1rem] lg:hidden">I&apos;m Brima Freeman, a Frontend Developer and a UI/UX Designer based in Finland. I specialize in designing and developing websites and mobile applications. More specifically, I work with React and Next.js to build my projects. I use Figma, Canva, and Adobe products for designing.</p>
+                    <p className="px-12 flex flex-col justify-center items-center text-[2.25rem] h-full leading-relaxed text-justify 2xl:text-[1.55rem] xl:text-[1.55rem] lg:text-[1rem] lg:hidden">I&apos;m Brima Freeman, a Frontend Developer and a UI/UX Designer based in Finland. I specialize in designing and developing websites and mobile applications. More specifically, I work with React and Next.js to build my projects. I use Figma, Canva, and Adobe products for designing.</p>
 
-                    <p className="px-8 flex-col justify-center items-center text-[2.25rem] h-full leading-relaxed text-justify 2xl:text-[1.55rem] xl:text-[1.55rem] lg:text-[1.2rem] hidden lg:flex">I&apos;m a Frontend Developer and a UI/UX Designer based in Finland. I specialize in designing and developing websites and mobile applications.</p>
+                    <p className="px-8 flex-col justify-center items-center text-[2.25rem] h-full leading-relaxed text-justify 2xl:text-[1.55rem] xl:text-[1.55rem] lg:text-[1.3rem] hidden lg:flex">I&apos;m a Frontend Developer and a UI/UX Designer based in Finland. I specialize in designing and developing websites and mobile applications.</p>
                   </motion.div>
                 </div>
 
@@ -315,11 +315,11 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
               
                 <div className="flex w-[1400px] m-auto mb-4 col-span-2 row-span-1 h-fit 2xl:w-[1000px] xl:w-[750px] lg:w-[355px] cursor-pointer">
                   <Link href="/">
-                    <motion.div className="text-[1.25rem] uppercase h-[60px] w-[fit-content] p-2 relative flex items-center justify-center gap-4 dark:text-gray-200 dark:after:bg-gray-200 lg:text-[.75rem]"
+                    <motion.div className="text-[1.5rem] uppercase h-[60px] w-[fit-content] p-2 relative flex items-center justify-center gap-4 dark:text-gray-200 dark:after:bg-gray-200"
                           whileHover={{ x: 10, transition: { duration: .1 }}}
                           whileTap={{ scale: 0.5 }}
                       >
-                          <Icon icon="carbon:arrow-up-left" className="text-[1.5rem] rounded bg-neutral-800 text-white dark:bg-neutral-200 dark:text-black" /> Head Back Home
+                          <Icon icon="carbon:arrow-up-left" className="bg-neutral-800 text-white dark:bg-neutral-200 dark:text-black" /> Head Back Home
                     </motion.div>
                   </Link>
                 </div>

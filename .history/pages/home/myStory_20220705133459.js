@@ -319,7 +319,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                           whileHover={{ x: 10, transition: { duration: .1 }}}
                           whileTap={{ scale: 0.5 }}
                       >
-                          <Icon icon="carbon:arrow-up-left" className="text-[1.5rem] rounded bg-neutral-800 text-white dark:bg-neutral-200 dark:text-black" /> Head Back Home
+                          <Icon icon="carbon:arrow-up-left" className="text-[1.5rem] bg-neutral-800 text-white dark:bg-neutral-200 dark:text-black" /> Head Back Home
                     </motion.div>
                   </Link>
                 </div>
