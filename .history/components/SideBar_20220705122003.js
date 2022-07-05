@@ -93,7 +93,7 @@ function SideBar() {
                     <Icon icon={open ? "ei:close" : "clarity:bars-line"} />
                 </motion.div>
 
-                <motion.div className="bg-white h-[150px] w-[90%] absolute top-28 left-0 right-0 m-auto z-10 flex flex-col justify-center items-center text-black dark:bg-neutral-800 dark:text-white xl:h-[100px]"
+                <motion.div className="bg-white backdrop-blur-xl h-[150px] w-[90%] absolute top-28 left-0 right-0 m-auto z-10 flex flex-col justify-center items-center text-black dark:bg-neutral-800 dark:text-white xl:h-[100px]"
                     initial={false}
                     variants={variantsMenu}
                     animate={open ? "opened" : "closed"}
