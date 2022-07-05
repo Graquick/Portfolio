@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.myStory {
+  width: 1400px;
+  height: 2200px;
+  display: grid;
+  row-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 22% 22% 25% 25%;
+  overflow: hidden;
+  
+  position: relative;
+}
+
+@media (max-width: 1440px) {
+  .myStory {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .myStory {
+    width: 750px;
+    
+  height: 2200px;
+  }
+}
+@media (max-width: 768px) {
+  .myStory {
+    width: 375px;
+    height: 1600px;
+    row-gap: 1.5rem;
+    column-gap: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: 19% 19% 19% 19% 19%;
+
+  }
+}
+
+/* .grid::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 500px;
+  height: 900px;
+  background: rgb(255, 255, 255);
+  border: solid 2px black;
+  border-radius: 0.5rem;
+  z-index: -1;
+} */
+
+.myStory .helloCard {
+  background: white;
+  box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.267);
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  padding: 2rem;
+  cursor: default;
+  
+  margin-bottom: 2rem;
+  
+}
+.myStory .helloCard h1 {
+  font-weight: 500;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.myStory .helloCard p {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  line-height: 1.75;
+  text-align: justify;
+  font-weight: 500;
+}
+.myStory .helloCard span {
+  display: inline-block;
+  padding: 0 1rem;
+  border-radius: 0.25rem;
+  background: #7ec8e3;
+  box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 1.5rem;
+  transition: all 150ms ease;
+}
+.myStory .helloCard span:hover {
+  transform: translateY(-7px);
+}
+
+.subDiv {
+  width: fit-content;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #bfbfbf;
+  text-transform: uppercase;
+  grid-column-start: span 2;
+  grid-row-start: 2;
+}
+
+.modalCard {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.267);
+  cursor: grab;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  grid-column-start: span 2;
+
+  margin-top: .75rem;
+  position: relative;
+}
+.modalCard::before {
+  content: 'scrollable \1F91A';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 1.125rem;
+  width: 140px;
+  height: 30px;
+  padding: 0 0.5rem;
+  color: #000000;
+}
+
+/* -- --- -- -- --- --- --- -- -- --- --- --- -- -- --- --- --- -- -- --- - */
+
+
