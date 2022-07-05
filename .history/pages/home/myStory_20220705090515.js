@@ -146,9 +146,9 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
   ]
 
   const extraModalContent = [
-    {id: 1, title: <div className=" w-fit h-fit text-[2rem] text-gray-300 dark:text-zinc-400 cursor-default uppercase">Coming soon</div>},
-    {id: 2, title: <div className=" w-fit h-fit text-[2rem] text-gray-300 dark:text-zinc-400 cursor-default uppercase">Coming soon</div>},
-    {id: 3, title: <div className=" w-fit h-fit text-[2rem] text-gray-300 dark:text-zinc-400 cursor-default uppercase">Coming soon</div>},
+    {id: 1, title: <div className=" w-fit h-fit text-[2rem] text-gray-200 dark:text-zinc-400 cursor-default uppercase">Coming soon</div>},
+    {id: 2, title: <div className=" w-fit h-fit text-[2rem] text-gray-200 dark:text-zinc-400 cursor-default uppercase">Coming soon</div>},
+    {id: 3, title: <div className=" w-fit h-fit text-[2rem] text-gray-200 dark:text-zinc-400 cursor-default uppercase">Coming soon</div>},
   ]
 
   return (
@@ -321,7 +321,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                           whileHover={{ x: 10, transition: { duration: .1 }}}
                           whileTap={{ scale: 0.5 }}
                       >
-                          <Icon icon="carbon:arrow-up-left" className="bg-neutral-800 text-white dark:bg-neutral-200 dark:text-black" /> Head Back Home
+                          <Icon icon="carbon:arrow-up-left" className="bg-neutral-800 text-white dark:bg-neutral-200 text-black" /> Head Back Home
                     </motion.div>
                   </Link>
                 </div>
