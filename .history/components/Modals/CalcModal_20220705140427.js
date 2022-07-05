@@ -2,9 +2,9 @@ import * as React from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Icon } from '@iconify/react';
-import styles from '../../styles/GalleryModals.module.css';
+import styles from '../../styles/Modals.module.css';
 
-const GalleryItem1 = ( {showG1Modal, setShowG1Modal} ) => {
+const CalcModal = ( {showRModal, setShowRModal} ) => {
 
     const backDrop = {
         hidden: { opacity: 0 },
@@ -25,7 +25,7 @@ const GalleryItem1 = ( {showG1Modal, setShowG1Modal} ) => {
 
     return (
         <AnimatePresence exitBeforeEnter>
-            { showG1Modal && (
+            { showRModal && (
                 <motion.div className="backdrop"
                     variants={backDrop}
                     initial="hidden"
@@ -34,17 +34,18 @@ const GalleryItem1 = ( {showG1Modal, setShowG1Modal} ) => {
                 >
                     <motion.div
                         variants={modal}
-                        className={styles.Modal}
-                        styles={{ background: "blue", }}
+                        className={styles.calcModal}
                     >
                         <div>
-                            <h1>SetG1ShowModal</h1>
-                            <p>Check out the full description at my projects page.</p>
+                            <h1 className="font-play text-[2.3rem]  ">Calco, Inc.</h1>
+                            <p className="text-[1.3rem] font-medium text-white xl:text-[1.1rem]">Here&apos;s my cool calculator app with different colour themes. I had so much fun creating this one.</p>
+                            <br />
+                            <p className="text-[1.3rem] font-medium text-white xl:text-[1.1rem]">Check out the full description at my projects page.</p>
                             <motion.div className={styles.closeBar}
                             >
                                 <Icon icon="clarity:window-min-line" style={{ color: "#a8a8a8" }}/>
                                 <Icon icon="mdi:window-restore" style={{ color: "#a8a8a8" }}/>
-                                <motion.div className={styles.closeBtn} onClick={() => {setShowG1Modal(false)}}
+                                <motion.div className={styles.closeBtn} onClick={() => {setShowRModal(false)}}
                                     whileTap={{ scale: 0.5, transition: { duration: .1 } }}
                                 >
                                     <Icon icon="eva:close-fill"/>
@@ -58,4 +59,4 @@ const GalleryItem1 = ( {showG1Modal, setShowG1Modal} ) => {
      );
 }
  
-export default GalleryItem1;
+export default CalcModal;
