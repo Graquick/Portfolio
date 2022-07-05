@@ -98,8 +98,7 @@
 }
 
 @media (max-width: 1024px) {
-  .snapModal,
-  .apparellModal {
+  .snapModal {
     width: 340px;
     height: 450px;
     grid-template-columns: 100%;

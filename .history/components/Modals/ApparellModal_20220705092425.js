@@ -37,7 +37,7 @@ const ApparellModal = ( {showCModal, setShowCModal} ) => {
                         className={styles.apparellModal}
                     >
                         <div>
-                            <h1 className="relative mb-4 font-light text-black font-roboto text-[4rem] xl:text-[3rem]">.apparell</h1>
+                            <h1 className="relative mb-4 font-light text-black font-roboto text-[4rem]">.apparell</h1>
                             <p className="text-[1.3rem] font-medium text-black xl:text-[1.1rem]">A beautiful E-commerce website with functional properties (e.g. lightbox product gallery).</p>
                             <br />
                             <p className="text-[1.3rem] font-medium text-black xl:text-[1.1rem]">Check out the full description at my projects page.</p>

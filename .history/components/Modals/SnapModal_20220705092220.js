@@ -58,10 +58,9 @@ const SnapModal = ( {showModal, setShowModal} ) => {
                             />
                             <circle cx={13} cy={7} r="2.5" className="stroke-white"/>
                             </svg>snap</h1>
-
-                            <p className="text-[1.3rem] font-medium text-black xl:text-[1.1rem]">An intro section with a dropdown navigation. Includes dropdown navigation menus.</p>
+                            <p className="text-[1.3rem] font-medium text-black">An intro section with a dropdown navigation. Includes dropdown navigation menus.</p>
                             <br />
-                            <p className="text-[1.3rem] font-medium text-black xl:text-[1.1rem]">Check out the full description at my projects page.</p>
+                            <p className="text-[1.3rem] font-medium text-black">Check out the full description at my projects page.</p>
                             <motion.div className={styles.closeBar}
                             >
                                 <Icon icon="clarity:window-min-line" style={{ color: "#a8a8a8" }}/>

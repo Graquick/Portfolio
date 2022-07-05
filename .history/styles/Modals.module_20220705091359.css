@@ -77,6 +77,12 @@
     margin-bottom: 1rem;
   }
 
+  @media (max-width: 1024px) {
+    .snapModal {
+      width: 
+    }
+  }
+
   /* -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --  */
 
 .apparellModal {
@@ -96,21 +102,18 @@
   padding: 2rem;
   text-align: left;
 }
-
-@media (max-width: 1024px) {
-  .snapModal,
-  .apparellModal {
-    width: 340px;
-    height: 450px;
-    grid-template-columns: 100%;
-    grid-template-rows: 50%;
-  }
-
-  .snapModal h1 {
-    font-size: 3rem;
-
-  }
+/* .apparellModal h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  position: relative;
+  margin-bottom: 1rem;
 }
+.apparellModal p {
+  font-size: 1.3rem;
+  font-weight: 500;
+} */
+
   /* -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --   -- -- --  */
 
   .blogModalCont {
