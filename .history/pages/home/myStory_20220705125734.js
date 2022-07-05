@@ -203,33 +203,25 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                     frontend work
                   </div>
 
-                  <motion.div className="w-full overflow-hidden shadow-md bg-white/80 backdrop-blur-sm cursor-grab h-[85%] relative before:content-['scrollable_\1f91a'] before:absolute before:bottom-0 before:left-0 before:font-medium before:text-[1.125rem] before:w-[140px] before:h-[30px] before:py-0 before:px-2 before:text-gray-400 before:cursor-default dark:bg-neutral-700 dark:text-gray-200 col-span-2" 
-                    // className={styles.modalCard}
-                  variants={gridVariants}
-                    initial="hidden"
-                    animate="visible"        
-                  >
-                    <motion.div className={stylesCarousel.carousel} ref={carousel}>
-                      <motion.div className={stylesCarousel.innerCarousel}
-                      drag="x" dragConstraints={{ right: 0, left: -width }}
-                      >
-                        {frontEndModalContent.map((modal) => {
-                            return (
-                              <motion.div
-                              key={modal}
-                              onTap={modal.setShowTrue}
-                              >
-                                {modal.title}
-                                <AnimatePresence exitBeforeEnter onExitComplete={modal.setShowFalse}>
-                                  {modal.modalType}
-                                </AnimatePresence>
-                              </motion.div>
-                            )
-                          })}
-                      </motion.div>
-                    </motion.div>
-                    
-                  </motion.div>
+                  <motion.div className={stylesCarousel.carousel} ref={carousel}>
+                          <motion.div className={stylesCarousel.innerCarousel}
+                          drag="x" dragConstraints={{ right: 0, left: -width }}
+                          >
+                            {frontEndModalContent.map((modal) => {
+                                return (
+                                  <motion.div
+                                  key={modal}
+                                  onTap={modal.setShowTrue}
+                                  >
+                                    {modal.title}
+                                    <AnimatePresence exitBeforeEnter onExitComplete={modal.setShowFalse}>
+                                      {modal.modalType}
+                                    </AnimatePresence>
+                                  </motion.div>
+                                )
+                              })}
+                          </motion.div>
+                        </motion.div>
                 </div>
 
 

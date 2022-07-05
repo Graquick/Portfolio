@@ -194,7 +194,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                   </motion.div>
                 </div>
 
-                <div className="flex flex-col overflow-hidden h-full col-span-2 row-span-1"
+                <div className="flex flex-col w-full h-full col-span-2 row-span-1"
                   // FRONTEND WORK
                 >
                   <div className="h-[8.5%] w-fit text-[1.2rem] font-semibold text-gray-400 uppercase dark:text-gray-500  xl:text-[1rem] lg:text-[.8rem]"
