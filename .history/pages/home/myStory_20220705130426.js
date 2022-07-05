@@ -129,7 +129,7 @@ const carousel = useRef();
 setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
 
 
-  { id: 3, setShowTrue: () => setShowJModal(true), title: <div className=" w-[275px] flex justify-center gap-2 cursor-pointer transition-all duration-150 ease-in-out group"><div className="text-[1.5rem] font-bold uppercase bg-gray-200 text-white/70 w-16 h-16 flex items-end justify-end py-0 px-1 transition-all duration-500 ease-in-out dark:bg-zinc-500 dark:text-zinc-400 dark:group-hover:bg-zinc-300 dark:group-hover:text-zinc-500 group-hover:text-white group-hover:bg-black">bf</div><div className="text-[1.5rem] flex items-end justify-end font-bold uppercase text-gray-200 transition-all duration-500 ease-in-out dark:text-zinc-500 group-hover:text-black dark:group-hover:text-zinc-300">blog</div></div>, setShowFalse: () => setShowJModal(false), modalType: <BfBlogModal /> },
+  { id: 3, setShowTrue: () => setShowJModal(true), title: <div className="bg-white flex w-[275px] flex gap-2 cursor-pointer transition-all duration-150 ease-in-out group"><div className="text-[1.5rem] font-bold uppercase bg-gray-200 text-white/70 w-16 h-16 flex items-end justify-end py-0 px-1 transition-all duration-500 ease-in-out dark:bg-zinc-500 dark:text-zinc-400 dark:group-hover:bg-zinc-300 dark:group-hover:text-zinc-500 group-hover:text-white group-hover:bg-black">bf</div><div className="text-[1.5rem] flex items-end justify-end font-bold uppercase text-gray-200 transition-all duration-500 ease-in-out dark:text-zinc-500 group-hover:text-black dark:group-hover:text-zinc-300">blog</div></div>, setShowFalse: () => setShowJModal(false), modalType: <BfBlogModal /> },
 
 
   { id: 4, setShowTrue: () => setShowRModal(true), title: <div className="font-play text-[2.5rem] font-[600] relative text-gray-200 cursor-pointer capitalize transition-[color] duration-color-500 transition-[transform] duration-transform-150 ease-in-out hover:text-black dark:text-zinc-500 dark:hover:text-zinc-300 lg:text-[1.5rem] lg:relative lg:right-20">Calco,inc.</div>, setShowFalse: () => setShowRModal(false), modalType: <CalcModal /> },
@@ -197,37 +197,39 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                 <div className="flex flex-col w-full h-full col-span-2 row-span-1"
                   // FRONTEND WORK
                 >
-                      <div className="h-fit mb-1 w-fit text-[1.2rem] font-semibold text-gray-400 uppercase flex items-center justify-center dark:text-gray-500 xl:text-[1rem] lg:text-[.8rem]">
-                        selected projects
-                      </div>
+                  <div className="h-[8.5%] w-fit text-[1.2rem] font-semibold text-gray-400 uppercase dark:text-gray-500  xl:text-[1rem] lg:text-[.8rem]"
+                    // className={styles.subDiv}
+                  >
+                    frontend work
+                  </div>
 
-                      <motion.div className="w-full h-full overflow-hidden shadow-md bg-white/80 backdrop-blur-sm cursor-grab relative before:content-['scrollable_\1f91a'] before:absolute before:bottom-0 before:left-0 before:font-medium before:text-[1.125rem] before:w-[140px] before:h-[30px] before:py-0 before:px-2 before:text-gray-400 before:cursor-default dark:bg-neutral-700 dark:text-gray-200"
-                        // className={styles.modalCard}
-                        variants={gridVariants}
-                        initial="hidden"
-                        animate="visible"        
+                  <motion.div className="w-full overflow-hidden shadow-md bg-white/80 backdrop-blur-sm cursor-grab h-[85%] relative before:content-['scrollable_\1f91a'] before:absolute before:bottom-0 before:left-0 before:font-medium before:text-[1.125rem] before:w-[140px] before:h-[30px] before:py-0 before:px-2 before:text-gray-400 before:cursor-default dark:bg-neutral-700 dark:text-gray-200 col-span-2" 
+                    // className={styles.modalCard}
+                  variants={gridVariants}
+                    initial="hidden"
+                    animate="visible"        
+                  >
+                    <motion.div className={stylesCarousel.carousel} ref={carousel}>
+                      <motion.div className={stylesCarousel.innerCarousel}
+                      drag="x" dragConstraints={{ right: 0, left: -width }}
                       >
-                        <motion.div className={stylesCarousel.carousel} ref={carousel}>
-                          <motion.div className={stylesCarousel.innerCarousel}
-                          drag="x" dragConstraints={{ right: 0, left: -width }}
-                          >
-                            {frontEndModalContent.map((modal) => {
-                                return (
-                                  <motion.div
-                                  key={modal}
-                                  onTap={modal.setShowTrue}
-                                  >
-                                    {modal.title}
-                                    <AnimatePresence exitBeforeEnter onExitComplete={modal.setShowFalse}>
-                                      {modal.modalType}
-                                    </AnimatePresence>
-                                  </motion.div>
-                                )
-                              })}
-                          </motion.div>
-                        </motion.div>
-                        
+                        {frontEndModalContent.map((modal) => {
+                            return (
+                              <motion.div
+                              key={modal}
+                              onTap={modal.setShowTrue}
+                              >
+                                {modal.title}
+                                <AnimatePresence exitBeforeEnter onExitComplete={modal.setShowFalse}>
+                                  {modal.modalType}
+                                </AnimatePresence>
+                              </motion.div>
+                            )
+                          })}
                       </motion.div>
+                    </motion.div>
+                    
+                  </motion.div>
                 </div>
 
 

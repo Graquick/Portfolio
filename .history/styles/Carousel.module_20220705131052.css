@@ -15,6 +15,24 @@
     width: 1900px;
     padding: 0;
 } 
+@media (max-width: 1440px) {
+    .innerCarousel {
+        width: 2000px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+
+  }
+  @media (max-width: 768px) {
+    .innerCarousel {
+        width: 1
+    }
+  }
+
+.innerCarousel div:active {
+    transform: scale(.75);
+}
 
 
 .innerCarousel svg {

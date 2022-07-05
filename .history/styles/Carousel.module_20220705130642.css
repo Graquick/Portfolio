@@ -16,6 +16,16 @@
     padding: 0;
 } 
 
+@media (max-width: 768px) {
+    .innerCarousel {
+        width: 1500px;
+    }
+}
+
+.innerCarousel div:active {
+    transform: scale(.75);
+}
+
 
 .innerCarousel svg {
     stroke: #d7d7d7;

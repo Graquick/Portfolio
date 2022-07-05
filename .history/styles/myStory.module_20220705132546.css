@@ -20,6 +20,9 @@
   flex-direction: column;
   row-gap: 2rem;
   overflow: hidden;
+  
+  background: red;
+  
   position: relative;
 }
 

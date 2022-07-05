@@ -15,6 +15,24 @@
     width: 1900px;
     padding: 0;
 } 
+@media (max-width: 1440px) {
+    .myStory {
+      width: 1000px;
+      height: 1400px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+
+  }
+  @media (max-width: 768px) {
+
+    }
+  }
+
+.innerCarousel div:active {
+    transform: scale(.75);
+}
 
 
 .innerCarousel svg {

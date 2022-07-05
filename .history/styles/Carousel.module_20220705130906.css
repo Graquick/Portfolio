@@ -15,6 +15,12 @@
     width: 1900px;
     padding: 0;
 } 
+}
+
+
+.innerCarousel div:active {
+    transform: scale(.75);
+}
 
 
 .innerCarousel svg {

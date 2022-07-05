@@ -20,12 +20,16 @@
   flex-direction: column;
   row-gap: 2rem;
   overflow: hidden;
+  
+  background: red;
+  
   position: relative;
 }
 
 @media (max-width: 1440px) {
   .myStory {
     width: 1000px;
+    height: 1400px;
   }
 }
 

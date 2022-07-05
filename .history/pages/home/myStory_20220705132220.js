@@ -201,7 +201,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                         selected projects
                       </div>
 
-                      <motion.div className="w-full h-full overflow-hidden shadow-md bg-white/80 backdrop-blur-sm cursor-grab relative before:content-['scrollable_\1f91a'] before:absolute before:bottom-0 before:left-0 before:font-medium before:text-[1.125rem] before:w-[140px] before:h-[30px] before:py-0 before:px-2 before:text-gray-400 before:cursor-default dark:bg-neutral-700 dark:text-gray-200"
+                      <motion.div className="w-full overflow-hidden shadow-md bg-white/80 backdrop-blur-sm cursor-grab h-3/5 relative before:content-['scrollable_\1f91a'] before:absolute before:bottom-0 before:left-0 before:font-medium before:text-[1.125rem] before:w-[140px] before:h-[30px] before:py-0 before:px-2 before:text-gray-400 before:cursor-default dark:bg-neutral-700 dark:text-gray-200 lg:h-[90%] lg:w-[90%]"
                         // className={styles.modalCard}
                         variants={gridVariants}
                         initial="hidden"

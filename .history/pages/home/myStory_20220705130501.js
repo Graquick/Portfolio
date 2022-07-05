@@ -197,37 +197,39 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                 <div className="flex flex-col w-full h-full col-span-2 row-span-1"
                   // FRONTEND WORK
                 >
-                      <div className="h-fit mb-1 w-fit text-[1.2rem] font-semibold text-gray-400 uppercase flex items-center justify-center dark:text-gray-500 xl:text-[1rem] lg:text-[.8rem]">
-                        selected projects
-                      </div>
+                  <div className="h-[8.5%] w-fit text-[1.2rem] font-semibold text-gray-400 uppercase dark:text-gray-500  xl:text-[1rem] lg:text-[.8rem]"
+                    // className={styles.subDiv}
+                  >
+                    frontend work
+                  </div>
 
-                      <motion.div className="w-full h-full overflow-hidden shadow-md bg-white/80 backdrop-blur-sm cursor-grab relative before:content-['scrollable_\1f91a'] before:absolute before:bottom-0 before:left-0 before:font-medium before:text-[1.125rem] before:w-[140px] before:h-[30px] before:py-0 before:px-2 before:text-gray-400 before:cursor-default dark:bg-neutral-700 dark:text-gray-200"
-                        // className={styles.modalCard}
-                        variants={gridVariants}
-                        initial="hidden"
-                        animate="visible"        
+                  <motion.div className="w-full overflow-hidden shadow-md bg-white/80 backdrop-blur-sm cursor-grab h-[85%] relative before:content-['scrollable_\1f91a'] before:absolute before:bottom-0 before:left-0 before:font-medium before:text-[1.125rem] before:w-[140px] before:h-[30px] before:py-0 before:px-2 before:text-gray-400 before:cursor-default dark:bg-neutral-700 dark:text-gray-200 col-span-2" 
+                    // className={styles.modalCard}
+                  variants={gridVariants}
+                    initial="hidden"
+                    animate="visible"        
+                  >
+                    <motion.div className={stylesCarousel.carousel} ref={carousel}>
+                      <motion.div className={stylesCarousel.innerCarousel}
+                      drag="x" dragConstraints={{ right: 0, left: -width }}
                       >
-                        <motion.div className={stylesCarousel.carousel} ref={carousel}>
-                          <motion.div className={stylesCarousel.innerCarousel}
-                          drag="x" dragConstraints={{ right: 0, left: -width }}
-                          >
-                            {frontEndModalContent.map((modal) => {
-                                return (
-                                  <motion.div
-                                  key={modal}
-                                  onTap={modal.setShowTrue}
-                                  >
-                                    {modal.title}
-                                    <AnimatePresence exitBeforeEnter onExitComplete={modal.setShowFalse}>
-                                      {modal.modalType}
-                                    </AnimatePresence>
-                                  </motion.div>
-                                )
-                              })}
-                          </motion.div>
-                        </motion.div>
-                        
+                        {frontEndModalContent.map((modal) => {
+                            return (
+                              <motion.div
+                              key={modal}
+                              onTap={modal.setShowTrue}
+                              >
+                                {modal.title}
+                                <AnimatePresence exitBeforeEnter onExitComplete={modal.setShowFalse}>
+                                  {modal.modalType}
+                                </AnimatePresence>
+                              </motion.div>
+                            )
+                          })}
                       </motion.div>
+                    </motion.div>
+                    
+                  </motion.div>
                 </div>
 
 
