@@ -180,7 +180,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                   {/* INTRO */}
                   <motion.div className="w-full h-[22%] mb-24 2xl:mb-12 backdrop-blur-sm bg-white/80 shadow dark:bg-neutral-700 dark:text-gray-200"
                     // className={styles.helloCard}
-                  >
+                  variants={gridVariants}>
                     <p className="px-12 flex flex-col justify-center items-center text-[2.25rem] h-full leading-relaxed text-justify 2xl:text-[1.55rem] xl:text-[1.55rem] lg:text-[1.1rem] lg:hidden">I&apos;m Brima Freeman, a Frontend Developer and a UI/UX Designer based in Finland. I specialize in designing and developing websites and mobile applications. More specifically, I work with React and Next.js to build my projects. I use Figma, Canva, and Adobe products for designing.</p>
 
                     <p className="px-8 flex-col justify-center items-center text-[2.25rem] h-full leading-relaxed text-justify 2xl:text-[1.55rem] xl:text-[1.55rem] lg:text-[1.2rem] hidden lg:flex">I&apos;m a Frontend Developer and a UI/UX Designer based in Finland. I specialize in designing and developing websites and mobile applications.</p>
@@ -194,7 +194,10 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                       </div>
 
                       <motion.div className="w-full overflow-hidden shadow-md bg-white/80 backdrop-blur-sm cursor-grab h-full relative before:content-['scrollable_\1f91a'] before:absolute before:bottom-0 before:left-0 before:font-medium before:text-[1.125rem] before:w-[140px] before:h-[30px] before:py-0 before:px-2 before:text-gray-400 before:cursor-default dark:bg-neutral-700 dark:text-gray-200"
-                        // className={styles.modalCard}  
+                        // className={styles.modalCard}
+                        variants={gridVariants}
+                        initial="hidden"
+                        animate="visible"        
                       >
                         <motion.div className={stylesCarousel.carousel} ref={carousel}>
                           <motion.div className={stylesCarousel.innerCarousel}
