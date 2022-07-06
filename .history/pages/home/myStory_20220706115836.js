@@ -177,7 +177,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
           >
               <motion.div className={styles.myStory}
               >
-                  {/* INTRO */}
+                  // INTRO
                   <motion.div className="w-full h-[22%] mb-24 2xl:mb-12 backdrop-blur-sm bg-white/80 shadow dark:bg-neutral-700 dark:text-gray-200"
                     // className={styles.helloCard}
                   variants={gridVariants}>

@@ -186,10 +186,10 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                     <p className="px-8 flex-col justify-center items-center text-[2.25rem] h-full leading-relaxed text-justify 2xl:text-[1.55rem] xl:text-[1.55rem] lg:text-[1.2rem] hidden lg:flex">I&apos;m a Frontend Developer and a UI/UX Designer based in Finland. I specialize in designing and developing websites and mobile applications.</p>
                   </motion.div>
 
-                <div className="h-[22%] mb-32 2xl:mb-20"
+                <div className=""
                   // FRONTEND WORK
                 >
-                      <div className="h-fit mb-1 w-fit text-[1.2rem] font-semibold text-gray-400 uppercase flex items-center justify-center dark:text-gray-500 xl:text-[1rem] lg:text-[.8rem]">
+                      <div className="h-[22%] mb-32 2xl:mb-20 mb-1 w-fit text-[1.2rem] font-semibold text-gray-400 uppercase flex items-center justify-center dark:text-gray-500 xl:text-[1rem] lg:text-[.8rem]">
                         selected projects
                       </div>
 

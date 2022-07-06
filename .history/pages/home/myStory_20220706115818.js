@@ -177,7 +177,10 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
           >
               <motion.div className={styles.myStory}
               >
-                  {/* INTRO */}
+
+                <div className=""
+                  // INTRO
+                >
                   <motion.div className="w-full h-[22%] mb-24 2xl:mb-12 backdrop-blur-sm bg-white/80 shadow dark:bg-neutral-700 dark:text-gray-200"
                     // className={styles.helloCard}
                   variants={gridVariants}>
@@ -185,6 +188,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
 
                     <p className="px-8 flex-col justify-center items-center text-[2.25rem] h-full leading-relaxed text-justify 2xl:text-[1.55rem] xl:text-[1.55rem] lg:text-[1.2rem] hidden lg:flex">I&apos;m a Frontend Developer and a UI/UX Designer based in Finland. I specialize in designing and developing websites and mobile applications.</p>
                   </motion.div>
+                </div>
 
                 <div className="h-[22%] mb-32 2xl:mb-20"
                   // FRONTEND WORK
