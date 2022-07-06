@@ -182,7 +182,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                 viewport={{ once: true, amount: .8 }}
               >
 
-                <div className="h-[22%] mb-24 2xl:mb-12"
+                <div className="h-[22%] mb-24 2xl:mb-8"
                   // INTRO
                 >
                   <motion.div className="w-full h-full backdrop-blur-sm bg-white/80 shadow dark:bg-neutral-700 dark:text-gray-200"
@@ -194,7 +194,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                   </motion.div>
                 </div>
 
-                <div className="h-[22%] mb-32 2xl:mb-20"
+                <div className="h-[22%] mb-32 2xl:mb-8"
                   // FRONTEND WORK
                 >
                       <div className="h-fit mb-1 w-fit text-[1.2rem] font-semibold text-gray-400 uppercase flex items-center justify-center dark:text-gray-500 xl:text-[1rem] lg:text-[.8rem]">
@@ -233,10 +233,10 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
 
                 {/* ====== ====== ===== */}
 
-                <div className="h-[22%] mb-32 2xl:mb-20"
+                <div className="h-[22%] mb-32 2xl:mb-8"
                   // DESIGN WORK
                 >
-                      <div className="h-fit mb-1 w-fit text-[1.2rem] font-semibold text-gray-400 uppercase flex items-center justify-center dark:text-gray-500 xl:text-[1rem] lg:text-[.8rem]">
+                      <div className="h-full mb-1 w-fit text-[1.2rem] font-semibold text-gray-400 uppercase flex items-center justify-center dark:text-gray-500 xl:text-[1rem] lg:text-[.8rem]">
                         DESIGN WORK
                       </div>
 

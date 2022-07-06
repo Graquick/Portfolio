@@ -182,7 +182,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                 viewport={{ once: true, amount: .8 }}
               >
 
-                <div className="h-[22%] mb-24 2xl:mb-12"
+                <div className="h-[22%]"
                   // INTRO
                 >
                   <motion.div className="w-full h-full backdrop-blur-sm bg-white/80 shadow dark:bg-neutral-700 dark:text-gray-200"
@@ -194,14 +194,14 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                   </motion.div>
                 </div>
 
-                <div className="h-[22%] mb-32 2xl:mb-20"
+                <div className="h-[22%]"
                   // FRONTEND WORK
                 >
                       <div className="h-fit mb-1 w-fit text-[1.2rem] font-semibold text-gray-400 uppercase flex items-center justify-center dark:text-gray-500 xl:text-[1rem] lg:text-[.8rem]">
                         selected projects
                       </div>
 
-                      <motion.div className="w-full overflow-hidden shadow-md bg-white/80 backdrop-blur-sm cursor-grab h-full relative before:content-['scrollable_\1f91a'] before:absolute before:bottom-0 before:left-0 before:font-medium before:text-[1.125rem] before:w-[140px] before:h-[30px] before:py-0 before:px-2 before:text-gray-400 before:cursor-default dark:bg-neutral-700 dark:text-gray-200"
+                      <motion.div className="w-full overflow-hidden shadow-md bg-white/80 backdrop-blur-sm cursor-grab h-full relative before:content-['scrollable_\1f91a'] before:absolute before:bottom-0 before:left-0 before:font-medium before:text-[1.125rem] before:w-[140px] before:h-[30px] before:py-0 before:px-2 before:text-gray-400 before:cursor-default dark:bg-neutral-700 dark:text-gray-200 2xl:h-[65%] lg:h-[90%]"
                         // className={styles.modalCard}
                         variants={gridVariants}
                         initial="hidden"
@@ -233,14 +233,14 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
 
                 {/* ====== ====== ===== */}
 
-                <div className="h-[22%] mb-32 2xl:mb-20"
-                  // DESIGN WORK
+                <div className="h-[22%]"
+                  // FRONTEND WORK
                 >
                       <div className="h-fit mb-1 w-fit text-[1.2rem] font-semibold text-gray-400 uppercase flex items-center justify-center dark:text-gray-500 xl:text-[1rem] lg:text-[.8rem]">
-                        DESIGN WORK
+                        selected projects
                       </div>
 
-                      <motion.div className="w-full overflow-hidden shadow-md bg-white/80 backdrop-blur-sm cursor-grab h-full relative before:content-['scrollable_\1f91a'] before:absolute before:bottom-0 before:left-0 before:font-medium before:text-[1.125rem] before:w-[140px] before:h-[30px] before:py-0 before:px-2 before:text-gray-400 before:cursor-default dark:bg-neutral-700 dark:text-gray-200"
+                      <motion.div className="w-full overflow-hidden shadow-md bg-white/80 backdrop-blur-sm cursor-grab h-full relative before:content-['scrollable_\1f91a'] before:absolute before:bottom-0 before:left-0 before:font-medium before:text-[1.125rem] before:w-[140px] before:h-[30px] before:py-0 before:px-2 before:text-gray-400 before:cursor-default dark:bg-neutral-700 dark:text-gray-200 2xl:h-[65%] lg:h-[90%]"
                         // className={styles.modalCard}
                         variants={gridVariants}
                         initial="hidden"
@@ -250,7 +250,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                           <motion.div className={stylesCarousel.innerCarousel}
                           drag="x" dragConstraints={{ right: 0, left: -width }}
                           >
-                            {designModalContent.map((modal) => {
+                            {frontEndModalContent.map((modal) => {
                                 return (
                                   <motion.div
                                   key={modal}
@@ -272,7 +272,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
 
                 {/* ====== ====== ===== */}
 
-                <div className="h-[22%] 2xl:mb-8"
+                <div className="h-[22%]"
                   // EXTRAS
                 >
                   <div className="h-[8.5%] w-fit text-[1.2rem] font-semibold text-gray-400 uppercase dark:text-gray-500 xl:text-[1rem] lg:text-[.8rem]"
@@ -281,7 +281,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                     extras
                   </div>
 
-                  <motion.div className="w-full overflow-hidden shadow-md bg-white/80 backdrop-blur-sm cursor-grab h-full relative before:content-['scrollable_\1f91a'] before:absolute before:bottom-0 before:left-0 before:font-medium before:text-[1.125rem] before:w-[140px] before:h-[30px] before:py-0 before:px-2 before:text-gray-400 before:cursor-default dark:bg-neutral-700 dark:text-gray-200"
+                  <motion.div className="w-full overflow-hidden shadow-md bg-white/80 backdrop-blur-sm cursor-grab h-full relative before:content-['scrollable_\1f91a'] before:absolute before:bottom-0 before:left-0 before:font-medium before:text-[1.125rem] before:w-[140px] before:h-[30px] before:py-0 before:px-2 before:text-gray-400 before:cursor-default dark:bg-neutral-700 dark:text-gray-200 2xl:h-[65%] lg:h-[90%]"
                         // className={styles.modalCard}
                         variants={gridVariants}
                         initial="hidden"

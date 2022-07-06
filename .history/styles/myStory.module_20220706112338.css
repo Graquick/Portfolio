@@ -25,7 +25,7 @@
 @media (max-width: 1440px) {
   .myStory {
     width: 1000px;
-    height: 1300px;
+    height: 1400px;
   }
 }
 
@@ -38,7 +38,6 @@
 @media (max-width: 768px) {
   .myStory {
     width: 355px;
-    height: 1200px;
   }
 }
 

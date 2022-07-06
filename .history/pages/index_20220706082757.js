@@ -1,0 +1,231 @@
+import React, { useState, useEffect, useRef } from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Icon } from '@iconify/react';
+import styles from '../styles/Home.module.css';
+import stylesCarousel from '../styles/Carousel.module.css';
+import stylesHeader from '../styles/Header.module.css'
+
+import { useTheme } from 'next-themes';
+
+import Header from '../components/header';
+import useMounted from '../components/useMounted.js'
+import Footer from '../components/footer';
+import Carousel from '../components/carousel';
+import TextAnimation from '../components/animations/TextAnimation';
+
+import SnapModal from '../components/Modals/SnapModal';
+import ApparellModal from '../components/Modals/ApparellModal';
+import BfBlogModal from '../components/Modals/BfBlogModal';
+import CalcModal from "../components/Modals/CalcModal";
+
+export default function Home() {
+
+  
+  // const mounted = useMounted()
+  const [width, setWidth] = useState(0);
+  const { systemTheme, theme, setTheme } = useTheme();
+
+  const currentTheme = theme === "system" ? systemTheme : theme;
+
+
+  const [showModal, setShowModal] = useState(false);
+  const [showCModal, setShowCModal] = useState(false);
+  const [showJModal, setShowJModal] = useState(false);
+  const [showRModal, setShowRModal] = useState(false);
+  const [showNModal, setShowNModal] = useState(false);
+
+  const carousel = useRef();
+
+  useEffect(() => {
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  }, [])
+  
+  //  useEffect(() => {
+  //    setTimeout(() => {
+  //      setShowModal(true)
+  //    }, 5000)
+  //  }, [setShowModal]);
+  
+  const router = useRouter()
+
+
+const gridVariants = {
+  hidden: {
+    x: 600,
+    opacity: 0
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 1.4
+    }
+  }
+};
+
+const pageLoad = {
+  exit: {
+      y: -200
+  },
+  hidden: {
+      y: -200
+  },
+  visible: {
+      y: 0,
+      transition: {
+          delay: .75,
+      }
+  }
+};
+
+const pageNotLoad = {
+  exit: {
+      y: -200
+  },
+  hidden: {
+      y: 0
+  },
+  visible: {
+      y: 0,
+      transition: {
+          delay: .75
+      }
+  }
+};
+
+
+const modalContent = [
+  { id: 1, setShowTrue: () => setShowModal(true), title: <div className="font-[Arial, Helvetica, sans-serif] text-[4rem] font-bold text-gray-200 cursor-pointer transition-all duration-150 ease-in-out relative hover:text-black group dark:text-zinc-500 dark:hover:text-zinc-300 lg:text-[3rem]">  <svg
+  className="absolute top-[2.5rem] -right-8 w-[26px] h-[26px] transition-all duration-500 ease-in-out group-hover:fill-black group-hover:stroke-black lg:top-[1.9rem]"
+  width={26}
+  height={24}
+  viewBox="0 0 26 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <rect x="7.2" y="5.2" width="17.6" height="17.6" rx="1.8" strokeWidth="2.4" className="fill-white/80 stroke-gray-200 dark:fill-neutral-700 dark:stroke-zinc-500 dark:group-hover:fill-neutral-700 dark:group-hover:stroke-zinc-300 group-hover:stroke-black group-hover:fill-white" />
+  <rect
+    className="fill-gray-200 stroke-gray-200 group-hover:fill-black group-hover:stroke-black dark:fill-zinc-500 dark:stroke-zinc-500 dark:group-hover:fill-zinc-300 dark:group-hover:stroke-zinc-300"
+    x="1.2"
+    y="1.2"
+    width="17.6"
+    height="17.6"
+    rx="1.8"
+    strokeWidth="2.4"
+  />
+  <circle cx={13} cy={7} r="2.5" className="stroke-white/80 fill-white/80 group-hover:fill-black group-hover:stroke-white dark:stroke-zinc-500 dark:fill-black/50 dark:group-hover:fill-zinc-300 dark:group-hover:stroke-black/50"/>
+</svg>snap</div>, setShowFalse: () => setShowModal(false), modalType: <SnapModal /> },
+
+  { id: 2, setShowTrue: () => setShowCModal(true), title:
+  <div className="font-roboto text-[4rem] font-light text-gray-200 cursor-pointer transition-all duration-150 ease-in-out relative hover:text-black group dark:text-zinc-500 dark:hover:text-zinc-300 lg:text-[3rem]">.apparell</div>,
+setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
+
+
+  { id: 3, setShowTrue: () => setShowJModal(true), title: <div className="w-[275px] flex justify-center gap-2 cursor-pointer transition-all duration-150 ease-in-out group"><div className="text-[1.5rem] font-bold uppercase bg-gray-200 text-white/70 w-16 h-16 flex items-end justify-end py-0 px-1 transition-all duration-500 ease-in-out dark:bg-zinc-500 dark:text-zinc-400 dark:group-hover:bg-zinc-300 dark:group-hover:text-zinc-500 group-hover:text-white group-hover:bg-black">bf</div><div className="text-[1.5rem] flex items-end justify-end font-bold uppercase text-gray-200 transition-all duration-500 ease-in-out dark:text-zinc-500 group-hover:text-black dark:group-hover:text-zinc-300">blog</div></div>, setShowFalse: () => setShowJModal(false), modalType: <BfBlogModal /> },
+
+
+  { id: 4, setShowTrue: () => setShowRModal(true), title: <div className="font-play text-[2.5rem] font-[600] relative text-gray-200 cursor-pointer capitalize transition-[color] duration-color-500 transition-[transform] duration-transform-150 ease-in-out hover:text-black dark:text-zinc-500 dark:hover:text-zinc-300 lg:text-[1.5rem] lg:relative lg:right-20">Calco,inc.</div>, setShowFalse: () => setShowRModal(false), modalType: <CalcModal /> },
+]
+
+
+  return (
+      <div className="px-5 transition duration-500 bg-gray-200 pt-36 dark:bg-neutral-800 lg:px-0 lg:pt-[5.5rem]" >
+        
+        <Head>
+          <title>Home - Brima Freeman</title>
+          <meta name="description" content="Generated by create next app" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+
+        <Header variants={pageNotLoad} />
+        
+        {/* ModalS */}
+        <SnapModal showModal={showModal} setShowModal={setShowModal} />
+        <ApparellModal showCModal={showCModal} setShowCModal={setShowCModal} />
+        <BfBlogModal showJModal={showJModal} setShowJModal={setShowJModal} />
+        <CalcModal showRModal={showRModal} setShowRModal={setShowRModal} />
+        {/* ModalS */}
+        
+          <motion.main className={styles.main}
+          >
+              <motion.div className={styles.grid}
+              >
+                
+                <motion.div id="/" className="h-[100%] flex flex-col p-8 text-left shadow-md bg-white/80 backdrop-blur-sm dark:bg-neutral-700" 
+                  // className={styles.helloCard}
+                  variants={gridVariants}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  <h1 className="font-medium text-[5rem] mb-4 dark:text-gray-200 2xl:text-[3.75rem] 2xl:mb-2 xl:text-[2.75rem] xl:mb-1 lg:text-[2.5rem] lg:mb-2">Web Developer</h1>
+                  <p className="text-[3rem] mb-8 dark:text-gray-200 2xl:text-[2rem] 2xl:mb-3 xl:text-[1.7rem] xl:mb-3 lg:mb-[1rem]">Brima Freeman</p>
+
+                  <motion.div className="cursor-pointer flex items-center justify-center bg-neutral-800 text-white w-[50%] h-[20%] text-[1.65rem] uppercase relative 2xl:p-0 2xl:text-[1.3rem] 2xl:after:-bottom-2 xl:text-[1.2rem] xl:after:h-[1.5px] dark:bg-neutral-200 dark:text-black"
+                          whileHover={{ x: 10, transition: { duration: .1 }}}
+                          whileTap={{ scale: 0.5 }}
+                        >
+                          <Link href="/home/myStory">
+                            <a>my story &rarr;</a>
+                          </Link>
+                  </motion.div>
+                </motion.div>
+
+                <motion.div className={styles.imgCard} variants={gridVariants}
+                >
+                  <Image src="/myprofile.jpg"
+                    alt="Picture of the author - Brima Freeman"
+                    width={140} height={210} layout="responsive"
+                    objectFit={"cover"}
+                    blurDataURL="/code.jpg"
+                    placeholder="blur"
+                    priority  
+                  />
+                </motion.div>
+
+                <div className="lg:order-2">
+                      <div className="h-fit mb-1 w-fit text-[1.2rem] font-semibold text-gray-400 uppercase flex items-center justify-center dark:text-gray-500 xl:text-[1rem] lg:text-[.8rem]">
+                        selected projects
+                      </div>
+
+                      <motion.div 
+                        // className={styles.modalCard}
+                        variants={gridVariants}
+                        initial="hidden"
+                        animate="visible"        
+                      >
+                        <motion.div  ref={carousel}>
+                          <motion.div className={stylesCarousel.innerCarousel}
+                          drag="x" dragConstraints={{ right: 0, left: -width }}
+                          >
+                            {modalContent.map((modal) => {
+                                return (
+                                  <motion.div
+                                  key={modal}
+                                  onTap={modal.setShowTrue}
+                                  >
+                                    {modal.title}
+                                    <AnimatePresence exitBeforeEnter onExitComplete={modal.setShowFalse}>
+                                      {modal.modalType}
+                                    </AnimatePresence>
+                                  </motion.div>
+                                )
+                              })}
+                          </motion.div>
+                        </motion.div>
+                        
+                      </motion.div>
+                </div>
+              </motion.div>
+          </motion.main>
+
+          <Footer />
+      </div>
+  )
+}

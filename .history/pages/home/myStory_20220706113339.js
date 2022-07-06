@@ -182,7 +182,7 @@ setShowFalse: () => setShowCModal(false), modalType: <ApparellModal /> },
                 viewport={{ once: true, amount: .8 }}
               >
 
-                <div className="h-[22%] mb-24 2xl:mb-12"
+                <div className="h-[22%] mb-24 2xl:mb-20"
                   // INTRO
                 >
                   <motion.div className="w-full h-full backdrop-blur-sm bg-white/80 shadow dark:bg-neutral-700 dark:text-gray-200"
