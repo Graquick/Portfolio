@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Icon } from '@iconify/react';
 import styles from '../../styles/MySite.Modals.module.css';
 
-const SnapMyModal = ( {showSnapMyModal, setShowSnapMyModal} ) => {
+const TannerModal = ( {showTannerModal, setShowTannerModal} ) => {
 
     let [count, setCount] = useState(0)
     let [ref, {width}] = useMeasure()
@@ -43,12 +43,12 @@ const SnapMyModal = ( {showSnapMyModal, setShowSnapMyModal} ) => {
         exit: ({direction, width}) => ({ x: direction * -width }),
     }
     
-    let images = ["bg-[url('/snap-big-1-hero.png')]", "bg-[url('/snap-big-1-hero-dark.png')]", "bg-[url('/snap-big-mobile-hero.png')]"]
+    let images = ["bg-[url('/tanner-big-1-hero.PNG')]", "bg-[url('/tanner-big-2-hero.PNG')]", "bg-[url('/tanner-big-3-hero.PNG')]", "bg-[url('/tanner-big-4-hero.PNG')]"]
     let colors = ["bg-red-500", "bg-blue-500", "bg-green-500", "bg-yellow-500"]
 
     return (
         <AnimatePresence exitBeforeEnter>
-            { showSnapMyModal && (
+            { showTannerModal && (
                 <motion.div className="backdrop"
                     variants={backDrop}
                     initial="hidden"
@@ -57,13 +57,13 @@ const SnapMyModal = ( {showSnapMyModal, setShowSnapMyModal} ) => {
                 >
                     <motion.div
                         variants={modal}
-                        className="m-auto absolute top-0 left-0 bottom-0 right-0 w-[1263px] h-[900px] flex flex-col justify-center align-center backdrop-blur-0 2xl:w-[775px] 2xl:h-[550px] xl:w-[750px] xl:h-[436px] lg:w-[355px] lg:h-[206px]"
+                        className="m-auto absolute top-0 left-0 bottom-0 right-0 w-[1387px] h-[900px] flex flex-col justify-center align-center backdrop-blur-0 2xl:w-[849px] 2xl:h-[550px] xl:w-[750px] xl:h-[491px] lg:w-[355px] lg:h-[233px]"
                     >
                             <motion.div className={styles.closeBar}
                             >
                                 <Icon icon="clarity:window-min-line" style={{ color: "#a8a8a8" }}/>
                                 <Icon icon="mdi:window-restore" style={{ color: "#a8a8a8" }}/>
-                                <motion.div className={styles.closeBtn} onClick={() => {setShowSnapMyModal(false)}}
+                                <motion.div className={styles.closeBtn} onClick={() => {setShowTannerModal(false)}}
                                     whileTap={{ scale: 0.5, transition: { duration: .1 } }}
                                 >
                                     <Icon icon="eva:close-fill"/>
@@ -86,7 +86,7 @@ const SnapMyModal = ( {showSnapMyModal, setShowSnapMyModal} ) => {
 
                             <div ref={ref}  className="self-center flex items-center justify-center overflow-hidden bg-black/50 h-full w-full relative" >
                                 <AnimatePresence custom={{direction, width}}>
-                                    <motion.div className={`w-[1400px] h-[900px] 2xl:w-[1000px] 2xl:h-[550px] xl:w-[750px] lg:w-[355px] lg:h-[450px] ${images[Math.abs(count) % 3]} bg-contain bg-no-repeat bg-center absolute justify-center text-white cursor-default`}
+                                    <motion.div className={`w-[1400px] h-[900px] absolute justify-center text-white cursor-default 2xl:w-[1000px] 2xl:h-[550px] xl:w-[750px] lg:w-[355px] lg:h-[450px] ${images[Math.abs(count) % 4]} bg-contain bg-no-repeat bg-center`}
                                         key={count}
                                         variants={variants}
                                         initial="enter"
@@ -106,4 +106,4 @@ const SnapMyModal = ( {showSnapMyModal, setShowSnapMyModal} ) => {
      );
 }
 
-export default SnapMyModal;
+export default TannerModal;
