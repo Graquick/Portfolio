@@ -7,7 +7,6 @@ import styles from '../styles/Header.module.css';
 import { useTheme } from 'next-themes';
 
 import SideBar from './SideBar';
-import IconSet from './IconSet';
 
 export default function Header(props) {
 
@@ -66,6 +65,7 @@ export default function Header(props) {
 
     }
 
+    const renderIcons 
 
     const router = useRouter();
     
@@ -123,7 +123,7 @@ export default function Header(props) {
             </ul>
         </div>
         
-        <div className="flex items-center justify-center"
+        <div    className="flex items-center justify-center"
             // className={styles.right}
         >
             <div>

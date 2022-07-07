@@ -7,7 +7,6 @@ import styles from '../styles/Header.module.css';
 import { useTheme } from 'next-themes';
 
 import SideBar from './SideBar';
-import IconSet from './IconSet';
 
 export default function Header(props) {
 
@@ -66,6 +65,21 @@ export default function Header(props) {
 
     }
 
+    const   icons = [
+        { id: 1, href: 'https://github.com/Graquick', icon: 'akar-icons:github-fill'},
+        { id: 2, href: 'https://www.instagram.com/abraham.free/', icon: 'akar-icons:instagram-fill'},
+        { id: 3, href: 'mailto:brimafreeman@outlook.com', icon: 'uil:envelopes'},
+    ]
+
+    const renderIcons = () => {
+        {icons.map((ic, i) => (
+            <motion.div key={i} whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.5 }}>
+                <Link href={ic.href} target="_blank">
+                    <Icon icon={ic.icon} className="text-[24px] cursor-pointer"/>
+                </Link>
+            </motion.div>
+        ))}
+    }
 
     const router = useRouter();
     
@@ -123,7 +137,7 @@ export default function Header(props) {
             </ul>
         </div>
         
-        <div className="flex items-center justify-center"
+        <div    className="flex items-center justify-center"
             // className={styles.right}
         >
             <div>
