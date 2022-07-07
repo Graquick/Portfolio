@@ -169,7 +169,7 @@ const Contact = () => {
                     <form className="px-8 pt-8 text-left no-underline shadow-md text-inherit bg-white/80 backdrop-blur-sm dark:bg-neutral-700 2xl:pt-4 2xl:px-4 lg:p-0 "
                       // className={styles.cardI}
                     action="/success
-                    " id="form" name="contact" method="post()" data-netlify="true"
+                    " id="form" name="contact" method="POST" data-netlify="true"
                     >
                         <input type="hidden" name="form-name" value="contact" />
 
