@@ -6,8 +6,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import styles from '../styles/Header.module.css';
 import { useTheme } from 'next-themes';
 
-import IconSet from './IconSet';
-
 function Footer() {
 
   const [show, setShow] = useState(true)
@@ -34,10 +32,9 @@ function Footer() {
   return (
     <div>
       <footer // className={`${show ? "max-w-[1400px] w-[90%] m-auto bg-white/90 backdrop-blur-sm shadow-sm flex py-6 px-0 justify-center text-md uppercase fixed left-0 right-0 z-20 bottom-0 dark:bg-black/80 dark:text-gray-300 opacity-0 transition-all duration-300" : "max-w-[1400px] w-[90%] m-auto bg-white/90 backdrop-blur-sm shadow-sm flex py-6 px-0 justify-center text-md uppercase fixed left-0 right-0 z-20 bottom-0 dark:bg-black/80 dark:text-gray-300 opacity-100 transition-all duration-300"}`} 
-      className="max-w-[1400px] w-[90%] m-auto bg-white/90 backdrop-blur-sm shadow-sm flex flex-col gap-4 py-2 items-center justify-between px-8 justify-center items-center text-xs uppercase dark:bg-neutral-700 dark:text-gray-300 lg:w-full lg:text-[0.45rem] "
+      className="max-w-[1400px] w-[90%] m-auto bg-white/90 backdrop-blur-sm shadow-sm flex py-6 px-0 justify-center items-center text-xs uppercase dark:bg-neutral-700 dark:text-gray-300 lg:w-full lg:text-[0.75rem] "
        // className="footer"
       >
-        <IconSet />
           <Link className="flex justify-center flex-grow align-center"
             href="/"
             target="_blank" rel="noopener noreferrer"

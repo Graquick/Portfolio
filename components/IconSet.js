@@ -17,7 +17,7 @@ function Footer(props) {
     const router = useRouter();
   return (
     <>
-            <div className="w-[100px] h-[24px] flex justify-between">
+            <div className="w-[230px] h-[24px] flex justify-between dark:text-white">
                 {icons.map((ic, i) => (
                     <motion.div key={i} whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.5 }}>
                         <Link href={ic.href} target="_blank">
