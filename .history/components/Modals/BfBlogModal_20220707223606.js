@@ -36,18 +36,14 @@ const BfBlogModal = ( {showJModal, setShowJModal} ) => {
                         variants={modal}
                         className={styles.blogModalCont}
                     >
-                            <motion.div className={styles.closeBar}
+
+
+                            <motion.div
+                                variants={modal}
+                                className={styles.blogModal}
                             >
-                                <Icon icon="clarity:window-min-line" style={{ color: "#a8a8a8" }}/>
-                                <Icon icon="mdi:window-restore" style={{ color: "#a8a8a8" }}/>
-                                <motion.div className={styles.closeBtn} onClick={() => {setShowJModal(false)}}
-                                    whileTap={{ scale: 0.5, transition: { duration: .1 } }}
-                                >
-                                    <Icon icon="eva:close-fill"/>
-                                </motion.div>
+
                             </motion.div>
-
-
 
                             <motion.div
                                 variants={modal}

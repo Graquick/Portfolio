@@ -49,6 +49,8 @@ const BfBlogModal = ( {showJModal, setShowJModal} ) => {
 
 
 
+                            </motion.div>
+
                             <motion.div
                                 variants={modal}
                                 className={styles.blogModalTwo}

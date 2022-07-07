@@ -47,7 +47,12 @@ const BfBlogModal = ( {showJModal, setShowJModal} ) => {
                                 </motion.div>
                             </motion.div>
 
+                            <motion.div
+                                variants={modal}
+                                className={styles.blogModal}
+                            >
 
+                            </motion.div>
 
                             <motion.div
                                 variants={modal}
