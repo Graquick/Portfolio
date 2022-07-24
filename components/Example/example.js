@@ -11,8 +11,8 @@ const sidebar = {
       type: "spring",
       stiffness: 20,
       restDelta: 2,
-      delay: 0.25
-    }
+      delay: 0.25,
+    },
   }),
   closed: {
     clipPath: "circle(30px at 246px 48.5px)",
@@ -20,9 +20,9 @@ const sidebar = {
       delay: 0.5,
       type: "spring",
       stiffness: 400,
-      damping: 40
-    }
-  }
+      damping: 40,
+    },
+  },
 };
 
 export const Example = () => {
@@ -35,7 +35,10 @@ export const Example = () => {
       animate={isOpen ? "open" : "closed"}
       ref={containerRef}
     >
-      <motion.div className="absolute top-0 w-[300px] right-0 bottom-0 h-screen bg-gray-200 shadow-md hidden invisible z-1 xl:visible xl:block dark:bg-neutral-800" variants={sidebar}>
+      <motion.div
+        className="absolute top-0 w-[300px] right-0 bottom-0 h-screen bg-gray-200 shadow-md hidden invisible z-1 xl:visible xl:block dark:bg-neutral-800"
+        variants={sidebar}
+      >
         <Navigation />
         <MenuToggle toggle={() => toggleOpen()} />
       </motion.div>

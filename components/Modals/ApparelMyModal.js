@@ -84,7 +84,7 @@ const ApparelMyModal = ( {showApparelMyModal, setShowApparelMyModal} ) => {
                                 </div>
                             </div>
 
-                            <div ref={ref}  className="self-center flex items-center justify-center overflow-hidden bg-black/50 h-full w-full relative" >
+                            <div ref={ref}  className="relative flex items-center self-center justify-center w-full h-full overflow-hidden bg-black/50" >
                                 <AnimatePresence custom={{direction, width}}>
                                     <motion.div className={`w-[1400px] h-[900px] 2xl:w-[1000px] 2xl:h-[550px] xl:w-[750px] lg:w-[355px] lg:h-[450px] ${images[Math.abs(count) % 3]} bg-contain bg-no-repeat bg-center absolute justify-center text-white cursor-default`}
                                         key={count}

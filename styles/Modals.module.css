@@ -107,7 +107,7 @@
   
   width: 800px;
   height: 400px;
-  background: url('/calc-hero.PNG');
+  background: url('/todo-hero.PNG');
   background-size: cover;
   box-shadow: .5px .5px 4px rgba(0, 0, 0, 0.503);
   
@@ -155,7 +155,7 @@
   }
 
   .calcModal {
-    background: url('/calc-small-hero.PNG') no-repeat;
+    background: url('/todo-small-hero.PNG') no-repeat;
     background-size: contain;
     padding-top: .75rem;
   }

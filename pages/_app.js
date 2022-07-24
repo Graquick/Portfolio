@@ -1,16 +1,13 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { AnimatePresence } from 'framer-motion'
-import { ThemeProvider } from 'next-themes'
-import { useRouter } from 'next/router'
-import '../styles/globals.css'
+import React, { useState, useEffect, useRef, useCallback } from "react";
+import { AnimatePresence } from "framer-motion";
+import { ThemeProvider } from "next-themes";
+import { useRouter } from "next/router";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   const timeoutRef = useRef();
 
-  const clearTimer = useCallback(
-    () => clearTimeout(timeoutRef.current),
-    []
-  );
+  const clearTimer = useCallback(() => clearTimeout(timeoutRef.current), []);
 
   // useEffect(() => {
   //   if (timeoutRef.current) clearTimer();
@@ -25,9 +22,8 @@ function MyApp({ Component, pageProps }) {
   // }, [clearTimer]);
 
   useEffect(() => {
-    window.history.scrollRestoration = 'manual'
+    window.history.scrollRestoration = "manual";
   }, []);
-  
 
   return (
     <AnimatePresence>
@@ -35,7 +31,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </ThemeProvider>
     </AnimatePresence>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;
