@@ -10,7 +10,7 @@ import { Icon } from '@iconify/react';
 const icons = [
     { id: 1, href: 'https://github.com/Graquick', icon: 'akar-icons:github-fill'},
     { id: 2, href: 'https://www.linkedin.com/in/brima-freeman-34aa05238', icon: 'akar-icons:linkedin-box-fill'},
-    { id: 3, href: 'mailto:brimafreeman@outlook.com', icon: 'uil:envelopes'},
+    { id: 3, href: 'mailto:bimu.freeman@outlook.com', icon: 'uil:envelopes'},
 ]
 
 function Footer(props) {
